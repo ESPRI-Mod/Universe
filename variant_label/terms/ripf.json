@@ -1,0 +1,23 @@
+{
+	"id": "esvocab:ripf",
+     	"separator": "",
+	"parts": [
+		{ 
+			"id" : "realization_index:one_digit",
+			"is_required": true
+		},
+		{ 
+			"id" : "initialization_index:one_digit",
+			"is_required": true
+		},
+		{ 
+			"id" : "physic_index:one_digit",
+			"is_required": true
+		},
+		{ 
+			"id" : "forcing_index:multiple_digit",
+			"is_required": true
+		}
+	],
+	"description" : "TODO IMPROVE THIS"
+}	

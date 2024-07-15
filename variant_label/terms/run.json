@@ -1,0 +1,11 @@
+{
+	"id": "esvocab:run",
+     	"separator": "",
+	"parts": [
+		{ 
+			"id" : "realization:run",
+			"is_required": true
+		}
+	],
+	"description" : "TODO IMPROVE THIS"
+}

@@ -1,0 +1,4 @@
+{
+    "id": "physic_index:one_digit",
+    "regex": "^p\\d$"
+}

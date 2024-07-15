@@ -1,0 +1,26 @@
+{
+    "id": "ipsl",
+    "cmip_acronym": "IPSL",
+    "rorIdentifier": "02haar591",
+    "name": "Institut Pierre-Simon Laplace",
+    "url": [
+        "https://www.ipsl.fr/en/"
+    ],
+    "established": 1991,
+    "type": "Facility",
+    "labels": [],
+    "aliases": ["Ipsl"],
+    "acronyms": [
+        "IPSL"
+    ],
+    "location": {
+        "id": "02haar591",
+	"lat": 48.855675,
+	"lon": 2.332105,
+	"city": "Paris",
+	"country": [
+		"France",
+		"FR"
+	    ]
+    }
+}

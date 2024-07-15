@@ -1,0 +1,4 @@
+{
+    "id": "forcing_index:one_digit",
+    "regex": "^f\\d$"
+}

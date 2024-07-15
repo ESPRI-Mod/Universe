@@ -1,0 +1,4 @@
+{
+    "id": "realization_index:one_digit",
+    "regex": "^r\\d$"
+}
