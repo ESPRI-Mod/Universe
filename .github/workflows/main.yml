@@ -1,0 +1,32 @@
+name: Validate Data
+
+on: 
+  push:
+    branches: 
+      - main  # You can change this to the branch you want to monitor for pushes
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12.3'  # Specify the Python version you need
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install linkml
+
+      - name: Run generate_models.py
+        working-directory: /src/wgcm_cvs
+        run: python scripts/generate_models.py
+
+      - name: Run validate.py
+        working-directory: /src/wgcm_cvs
+        run: python scripts/validate.py
