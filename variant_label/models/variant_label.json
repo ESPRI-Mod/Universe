@@ -1,0 +1,55 @@
+{
+    "$defs": {
+        "DataDescriptorId": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "is_required": {
+                    "type": "boolean"
+                }
+            },
+            "title": "DataDescriptorId",
+            "type": "object"
+        },
+        "VariantLabel": {
+            "additionalProperties": false,
+            "description": "a data-descriptor composed from other",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "parts": {
+                    "items": {
+                        "$ref": "#/$defs/DataDescriptorId"
+                    },
+                    "type": "array"
+                },
+                "separator": {
+                    "type": "string"
+                },
+                "validation_method": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "validation_method"
+            ],
+            "title": "VariantLabel",
+            "type": "object"
+        }
+    },
+    "$id": "http://127.0.0.1:8000/uri/Variant_labelSchema",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "variant_label_schema",
+    "type": "object",
+    "version": null
+}

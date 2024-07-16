@@ -1,0 +1,21 @@
+[project]
+name = "WGCM_CVs"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "TROUSSELLIER Laurent", email = "laurent.troussellier@ipsl.fr"},
+]
+dependencies = [
+    "linkml>=1.8.1",
+]
+requires-python = ">=3.12"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+
+[tool.pdm]
+distribution = true

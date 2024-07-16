@@ -1,0 +1,36 @@
+{
+    "$defs": {
+        "InitializationIndex": {
+            "additionalProperties": false,
+            "description": "index describing a run TODO IMPROVE THIS",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "regex": {
+                    "type": "string"
+                },
+                "validation_method": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "validation_method",
+                "regex"
+            ],
+            "title": "InitializationIndex",
+            "type": "object"
+        }
+    },
+    "$id": "http://127.0.0.1:8000/uri/InitializationSchema",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "initialization_schema",
+    "type": "object",
+    "version": null
+}

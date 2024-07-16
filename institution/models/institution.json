@@ -1,0 +1,106 @@
+{
+    "$defs": {
+        "Institution": {
+            "additionalProperties": false,
+            "description": "an registered institution for WCRP modelisation MIP",
+            "properties": {
+                "acronyms": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "aliases": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "cmip_acronym": {
+                    "type": "string"
+                },
+                "established": {
+                    "type": "integer"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "labels": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "location": {
+                    "$ref": "#/$defs/Location"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "rorIdentifier": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "url": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "validation_method": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "validation_method",
+                "acronyms",
+                "name",
+                "cmip_acronym"
+            ],
+            "title": "Institution",
+            "type": "object"
+        },
+        "Location": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "city": {
+                    "type": "string"
+                },
+                "country": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "lat": {
+                    "type": "number"
+                },
+                "lon": {
+                    "type": "number"
+                }
+            },
+            "required": [
+                "id",
+                "lat",
+                "lon",
+                "city"
+            ],
+            "title": "Location",
+            "type": "object"
+        }
+    },
+    "$id": "http://127.0.0.1:8000/uri/InstitutionSchema",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "institution_schema",
+    "type": "object",
+    "version": null
+}

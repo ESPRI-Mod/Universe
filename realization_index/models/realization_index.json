@@ -1,0 +1,36 @@
+{
+    "$defs": {
+        "RealizationIndex": {
+            "additionalProperties": false,
+            "description": "index describing a run TODO IMPROVE THIS",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "regex": {
+                    "type": "string"
+                },
+                "validation_method": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "validation_method",
+                "regex"
+            ],
+            "title": "RealizationIndex",
+            "type": "object"
+        }
+    },
+    "$id": "http://127.0.0.1:8000/uri/RealizationSchema",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "realization_schema",
+    "type": "object",
+    "version": null
+}
