@@ -1,0 +1,56 @@
+id: http://127.0.0.1:8000/uri/InitializationSchema
+name: initialization_schema
+title: initialization schema
+license: https://creativecommons.org/publicdomain/zero/1.0/
+
+
+
+
+prefixes:
+    esvocab: http://127.0.0.1:8000/uri/
+    initialization: http://127.0.0.1:8000/uri/initialization/
+    linkml: https://w3id.org/linkml/
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
+    schema: http://schema.org/
+    institution:  http://127.0.0.1:8000/uri/institution/
+    ror: https://ror.org/
+
+# imports:
+#   - linkml:types
+default_range: string  
+default_prefix: initialization
+default_curi_maps:
+  - semweb_context
+  
+classes:
+    initialization_index:
+        description : index describing a run TODO IMPROVE THIS
+        class_uri: esvocab:initialization
+        attributes:
+            id: 
+                range : string
+                required: true
+                identifier: true
+
+            validation_method :
+                required: true
+                range : string
+                ifabsent: string(regex)
+            regex: 
+                range: string
+                required: true
+                
+            
+            description: 
+                range : string
+                
+types:
+  string:
+    uri: xsd:string
+    base: str
+    description: A character string
+    notes: >-
+      In RDF serializations, a slot with range of string is treated as a literal or type xsd:string.  
+      If you are authoring schemas in LinkML YAML, the type is referenced with the lower case "string".
+    exact_mappings:
+      - schema:Text

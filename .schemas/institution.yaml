@@ -1,0 +1,97 @@
+imports:
+  - linkml:types
+
+
+id: http://127.0.0.1:8000/uri/InstitutionSchema
+name: institution_schema
+
+
+prefixes:
+    esvocab: http://127.0.0.1:8000/uri/
+    linkml: https://w3id.org/linkml/
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
+    schema: http://schema.org/
+    institution:  http://127.0.0.1:8000/uri/institution/
+    ror: https://ror.org/
+
+default_range: string  
+default_prefix: esvocab
+default_curi_maps:
+  - semweb_context
+  
+classes:
+    Institution:
+        description: "an registered institution for WCRP modelisation MIP" 
+        class_uri: esvocab:institution
+        attributes:
+            id:
+                slot_uri: institution:id
+                range: string
+                required: true
+                identifier: true
+
+            validation_method :
+                required: true
+                range : string
+                ifabsent: string(list)
+                slot_uri: institution:validation_method
+                
+            acronyms: 
+                range: string
+                multivalued: true
+                required: true
+                slot_uri: institution:acronyms
+                
+            aliases:
+                slot_uri : schema:alternateName
+                range: string
+                multivalued: true
+                #required: true
+            established:
+                slot_uri: schema:foundingDate 
+                range: integer # TODO change this to date=> need change in data
+            type:
+                range: string # maybe enum there ? 
+            labels:
+                range: string
+                multivalued: true
+
+            location: 
+                slot_uri: schema:location
+                range: Location
+                inlined: true
+                #required: true
+            name:
+                range: string
+                required: true
+            rorIdentifier:
+                slot_uri: ror:id
+                range: string
+
+            cmip_acronym:
+                range: string
+                required: true
+            url:
+                range: string
+                multivalued: true
+                
+    Location :
+        class_uri : schema:location
+        attributes:
+            id:
+                #range: string
+                required: true
+                identifier: true
+            lat: 
+                range: float
+                required: true
+            lon :
+                range: float
+                required: true
+            city: 
+                range: string
+                required: true
+            country: 
+                range: string
+                multivalued: true
+
