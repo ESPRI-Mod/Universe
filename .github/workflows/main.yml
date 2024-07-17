@@ -26,8 +26,8 @@ jobs:
           
       - name: Run generate_models.py
         working-directory: src/wgcm_cvs
-        run: python scripts/generate_models.py
+        run: pdm run python scripts/generate_models.py
 
       - name: Run validate.py
         working-directory: src/wgcm_cvs
-        run: python scripts/validate.py
+        run: pdm run python scripts/validate.py
