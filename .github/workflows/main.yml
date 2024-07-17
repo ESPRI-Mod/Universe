@@ -31,3 +31,14 @@ jobs:
       - name: Run validate.py
         working-directory: src/wgcm_cvs
         run: pdm run python scripts/validate.py
+
+      - name: Commit and push changes
+        working-directory: /src/wgcm_cvs
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -m "Automated commit by GitHub Actions - generated files"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
