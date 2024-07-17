@@ -1,9 +1,9 @@
 name: Validate Data
 
 on: 
-  push:
-    branches: 
-      - main  # You can change this to the branch you want to monitor for pushes
+  pull_request:
+    branches:
+      - main  # This triggers the workflow on pull requests targeting the main branch
 
 jobs:
   validate:
