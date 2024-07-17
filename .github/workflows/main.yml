@@ -33,7 +33,6 @@ jobs:
         run: pdm run python scripts/validate.py
 
       - name: Commit and push changes
-        working-directory: src/wgcm_cvs
         run: |
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
