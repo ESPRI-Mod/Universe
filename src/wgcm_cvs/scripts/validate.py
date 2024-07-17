@@ -7,7 +7,7 @@ import inspect
 
 
 base_path = Path("../..")
-dontlook = ["src","tests",".git",".venv","__pycache__",".pdm-build"]
+dontlook = ["src","tests",".git",".venv","__pycache__",".pdm-build",".github"]
 for dir_path in base_path.iterdir():
     if dir_path.stem in dontlook or not dir_path.is_dir():
         continue
