@@ -56,5 +56,5 @@ for dir_path in base_path.iterdir():
             py_instance = py_class.model_validate_json(path.read_text())
             print(py_instance)
 
-print("END")
+print("END ")
 
