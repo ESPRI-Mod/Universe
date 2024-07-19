@@ -6,12 +6,8 @@ import importlib.util
 import inspect
 
 
-base_path = Path("../..")
-dontlook = ["src","tests",".git",".venv","__pycache__",".pdm-build",".github"]
+base_path = Path("../../data_descriptors")
 for dir_path in base_path.iterdir():
-    if dir_path.stem in dontlook or not dir_path.is_dir():
-        continue
-
     print(dir_path)
     py_sch_name = dir_path.stem + ".py"
     json_sch_name = dir_path.stem + ".json"

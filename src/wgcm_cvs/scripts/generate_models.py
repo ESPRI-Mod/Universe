@@ -5,7 +5,7 @@ from linkml.generators.pydanticgen import PydanticGenerator
 
 
 schemas_path = Path("schemas")
-out_base_dir = Path("../..")
+out_base_dir = Path("../../data_descriptors")
 print( "######## GENERATION Pydantic models from LinkML #######")
 
 
