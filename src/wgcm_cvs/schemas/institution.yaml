@@ -2,16 +2,16 @@ imports:
   - linkml:types
 
 
-id: http://127.0.0.1:8000/uri/InstitutionSchema
+id: http://es-vocab.ipsl.fr/InstitutionSchema
 name: institution_schema
 
 
 prefixes:
-    esvocab: http://127.0.0.1:8000/uri/
+    esvocab: http://es-vocab.ipsl.fr/
     linkml: https://w3id.org/linkml/
     rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
     schema: http://schema.org/
-    institution:  http://127.0.0.1:8000/uri/institution/
+    institution:  http://es-vocab.ipsl.fr/institution/
     ror: https://ror.org/
 
 default_range: string  
