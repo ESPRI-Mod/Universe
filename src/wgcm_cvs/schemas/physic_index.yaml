@@ -1,4 +1,4 @@
-id:  http://127.0.0.1:8000/uri/PhysicSchema
+id:  http://es-vocab.ipsl.fr/PhysicSchema
 name: physic_schema
 title: physic schema
 license: https://creativecommons.org/publicdomain/zero/1.0/
@@ -6,12 +6,12 @@ license: https://creativecommons.org/publicdomain/zero/1.0/
 
 
 prefixes:
-    esvocab: http://127.0.0.1:8000/uri/
-    physic: http://127.0.0.1:8000/uri/physic/
+    esvocab: http://es-vocab.ipsl.fr/
+    physic: http://es-vocab.ipsl.fr/physic_index/
     linkml: https://w3id.org/linkml/
     rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
     schema: http://schema.org/
-    institution:  http://127.0.0.1:8000/uri/institution/
+    institution:  http://es-vocab.ipsl.fr/institution/
     ror: https://ror.org/
 
 # imports:

@@ -1,19 +1,18 @@
 
 
-id: http://127.0.0.1:8000/uri/Variant_labelSchema
+id: http://es-vocab.ipsl.fr/Variant_labelSchema
 name: variant_label_schema
 title: variant_label schema
 license: https://creativecommons.org/publicdomain/zero/1.0/
 
 
 prefixes:
-    esvocab: http://127.0.0.1:8000/uri/
+    esvocab: http://es-vocab.ipsl.fr/
     
-    variant_label: http://127.0.0.1:8000/uri/Variant_label/
+    variant_label: http://es-vocab.ipsl.fr/Variant_label/
     linkml: https://w3id.org/linkml/
     rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
     schema: http://schema.org/
-    institution:  http://127.0.0.1:8000/uri/institution/
     ror: https://ror.org/
 
 # imports:

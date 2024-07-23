@@ -1,15 +1,15 @@
-id: http://127.0.0.1:8000/uri/ForcingSchema
+id: http://es-vocab.ipsl.fr/ForcingSchema
 name: forcing_schema
 title: forcing schema
 license: https://creativecommons.org/publicdomain/zero/1.0/
 
 prefixes:
-    esvocab: http://127.0.0.1:8000/uri/
-    forcing: http://127.0.0.1:8000/uri/forcing/
+    esvocab: http://es-vocab.ipsl.fr/
+    forcing: http://es-vocab.ipsl.fr/forcing_index/
     linkml: https://w3id.org/linkml/
     rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
     schema: http://schema.org/
-    institution:  http://127.0.0.1:8000/uri/institution/
+    institution:  http://es-vocab.ipsl.fr/institution/
     ror: https://ror.org/
 
 # imports:
