@@ -61,7 +61,7 @@ def generate_rdfgraph(jsonlds:list,filesave=False)->Graph:
         g.parse(data=jsonld,format='json-ld')
 
     if filesave : 
-        g.serialize(destination= universe_base_path / "graph" / "es-vocab.rdf")
+        g.serialize(destination= universe_base_path / "graph" / "es-vocab.ttl")
     return g
 
 
