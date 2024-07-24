@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.2"
-content_hash = "sha256:c377a0053f69bcb4fec087f8951e37c0bb173015894b0d6bfdcf40d4f3304e6e"
+content_hash = "sha256:cb06a9f29f9776623db5d3f0bca390b5ed805a4de60b01a1c9061a38e084ee92"
 
 [[package]]
 name = "annotated-types"
@@ -625,7 +625,6 @@ groups = ["default"]
 dependencies = [
     "annotated-types>=0.4.0",
     "pydantic-core==2.20.1",
-    "typing-extensions>=4.12.2; python_version >= \"3.13\"",
     "typing-extensions>=4.6.1; python_version < \"3.13\"",
 ]
 files = [
