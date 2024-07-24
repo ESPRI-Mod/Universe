@@ -1,0 +1,97 @@
+@prefix esvocab: <http://es-vocab.ipsl.fr/> .
+@prefix forcing: <http://es-vocab.ipsl.fr/forcing_index/> .
+@prefix initialization: <http://es-vocab.ipsl.fr/initialization_index/> .
+@prefix institution: <http://es-vocab.ipsl.fr/institution/> .
+@prefix physic: <http://es-vocab.ipsl.fr/physic_index/> .
+@prefix realization: <http://es-vocab.ipsl.fr/realization/> .
+@prefix ror: <https://ror.org/> .
+@prefix schema1: <http://schema.org/> .
+@prefix variant_label: <http://es-vocab.ipsl.fr/Variant_label/> .
+
+esvocab:dkrz esvocab:cmip_acronym "DKRZ" ;
+    institution:acronyms "DKRZ" ;
+    esvocab:name "German Climate Computing Centre" ;
+    esvocab:type "Facility" ;
+    esvocab:url "https://www.dkrz.de/" ;
+    schema1:foundingDate "1987"^^<xsd:integer> ;
+    schema1:location esvocab:03ztgj037 ;
+    ror:id "03ztgj037" .
+
+<http://es-vocab.ipsl.fr/forcing_index:one_digit> forcing:regex "^f\\d$" .
+
+esvocab:ipsl esvocab:cmip_acronym "IPSL" ;
+    institution:acronyms "IPSL" ;
+    esvocab:name "Institut Pierre-Simon Laplace" ;
+    esvocab:type "Facility" ;
+    esvocab:url "https://www.ipsl.fr/en/" ;
+    schema1:alternateName "Ipsl" ;
+    schema1:foundingDate "1991"^^<xsd:integer> ;
+    schema1:location esvocab:02haar591 ;
+    ror:id "02haar591" .
+
+esvocab:llnl esvocab:cmip_acronym "LLNL" ;
+    institution:acronyms "LLL",
+        "LLNL" ;
+    esvocab:name "Lawrence Livermore National Laboratory" ;
+    esvocab:type "Facility" ;
+    esvocab:url "https://www.llnl.gov/" ;
+    schema1:alternateName "U.S. Department of Energy Los Alamos National Laboratory",
+        "U.S. Department of Energy National Nuclear Security Administration Los Alamos National Laboratory",
+        "United States Department of Energy Los Alamos National Laboratory",
+        "United States Department of Energy National Nuclear Security Administration Lawrence Livermore National Laboratory" ;
+    schema1:foundingDate "1952"^^<xsd:integer> ;
+    schema1:location esvocab:041nk4h53 ;
+    ror:id "041nk4h53" .
+
+esvocab:multiple_digit forcing:regex "^f\\d*$" .
+
+esvocab:rip variant_label:description "TODO IMPROVE THIS" ;
+    variant_label:parts <http://es-vocab.ipsl.fr/initialization_index:one_digit>,
+        <http://es-vocab.ipsl.fr/physic_index:one_digit>,
+        <http://es-vocab.ipsl.fr/realization_index:one_digit> ;
+    variant_label:separator "" .
+
+esvocab:ripf variant_label:description "TODO IMPROVE THIS" ;
+    variant_label:parts <http://es-vocab.ipsl.fr/forcing_index:multiple_digit>,
+        <http://es-vocab.ipsl.fr/initialization_index:one_digit>,
+        <http://es-vocab.ipsl.fr/physic_index:one_digit>,
+        <http://es-vocab.ipsl.fr/realization_index:one_digit> ;
+    variant_label:separator "" .
+
+esvocab:run variant_label:description "TODO IMPROVE THIS" ;
+    variant_label:parts <realization:run> ;
+    variant_label:separator "" ;
+    realization:regex "^run\\d$" .
+
+esvocab:02haar591 esvocab:city "Paris" ;
+    esvocab:country "FR",
+        "France" ;
+    esvocab:lat "48.855675"^^<xsd:float> ;
+    esvocab:lon "2.332105"^^<xsd:float> .
+
+esvocab:03ztgj037 esvocab:city "Hamburg" ;
+    esvocab:country "DE",
+        "Germany" ;
+    esvocab:lat "53.55073"^^<xsd:float> ;
+    esvocab:lon "9.99302"^^<xsd:float> .
+
+esvocab:041nk4h53 esvocab:city "Livermore" ;
+    esvocab:country "US",
+        "United States" ;
+    esvocab:lat "37.68187"^^<xsd:float> ;
+    esvocab:lon "-121.76801"^^<xsd:float> ;
+    esvocab:type "location" .
+
+<http://es-vocab.ipsl.fr/forcing_index:multiple_digit> variant_label:is_required "true"^^<xsd:boolean> .
+
+<realization:run> variant_label:is_required "true"^^<xsd:boolean> .
+
+<http://es-vocab.ipsl.fr/initialization_index:one_digit> variant_label:is_required "true"^^<xsd:boolean> ;
+    initialization:regex "^i\\d$" .
+
+<http://es-vocab.ipsl.fr/physic_index:one_digit> variant_label:is_required "true"^^<xsd:boolean> ;
+    physic:regex "^p\\d$" .
+
+<http://es-vocab.ipsl.fr/realization_index:one_digit> variant_label:is_required "true"^^<xsd:boolean> ;
+    realization:regex "^r\\d$" .
+
