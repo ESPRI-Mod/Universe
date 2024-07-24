@@ -4,6 +4,7 @@ from linkml.generators.jsonldcontextgen import ContextGenerator
 from rdflib import Graph
 
 schemas_path = Path("schemas")
+universe_base_path = Path("../..")
 universe_path = Path("../../data_descriptors")
 output_dir = Path("terms/jsonld")
 base = "http://es-vocab.ipsl.fr"
@@ -60,7 +61,7 @@ def generate_rdfgraph(jsonlds:list,filesave=False)->Graph:
         g.parse(data=jsonld,format='json-ld')
 
     if filesave : 
-        g.serialize(destination= universe_path / "graph" / "es-vocab.rdf")
+        g.serialize(destination= universe_base_path / "graph" / "es-vocab.rdf")
     return g
 
 
