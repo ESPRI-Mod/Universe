@@ -70,17 +70,17 @@ class LinkMLMeta(RootModel):
 linkml_meta = LinkMLMeta({'default_curi_maps': ['semweb_context'],
      'default_prefix': 'physic',
      'default_range': 'string',
-     'id': 'http://127.0.0.1:8000/uri/PhysicSchema',
+     'id': 'http://es-vocab.ipsl.fr/PhysicSchema',
      'license': 'https://creativecommons.org/publicdomain/zero/1.0/',
      'name': 'physic_schema',
      'prefixes': {'esvocab': {'prefix_prefix': 'esvocab',
-                              'prefix_reference': 'http://127.0.0.1:8000/uri/'},
+                              'prefix_reference': 'http://es-vocab.ipsl.fr/'},
                   'institution': {'prefix_prefix': 'institution',
-                                  'prefix_reference': 'http://127.0.0.1:8000/uri/institution/'},
+                                  'prefix_reference': 'http://es-vocab.ipsl.fr/institution/'},
                   'linkml': {'prefix_prefix': 'linkml',
                              'prefix_reference': 'https://w3id.org/linkml/'},
                   'physic': {'prefix_prefix': 'physic',
-                             'prefix_reference': 'http://127.0.0.1:8000/uri/physic/'},
+                             'prefix_reference': 'http://es-vocab.ipsl.fr/physic_index/'},
                   'rdf': {'prefix_prefix': 'rdf',
                           'prefix_reference': 'http://www.w3.org/1999/02/22-rdf-syntax-ns'},
                   'ror': {'prefix_prefix': 'ror',
@@ -92,7 +92,7 @@ linkml_meta = LinkMLMeta({'default_curi_maps': ['semweb_context'],
      'types': {'string': {'base': 'str',
                           'description': 'A character string',
                           'exact_mappings': ['schema:Text'],
-                          'from_schema': 'http://127.0.0.1:8000/uri/PhysicSchema',
+                          'from_schema': 'http://es-vocab.ipsl.fr/PhysicSchema',
                           'name': 'string',
                           'notes': ['In RDF serializations, a slot with range of '
                                     'string is treated as a literal or type '
@@ -107,7 +107,7 @@ class PhysicIndex(ConfiguredBaseModel):
     index describing a run TODO IMPROVE THIS
     """
     linkml_meta: ClassVar[LinkMLMeta] = LinkMLMeta({'class_uri': 'esvocab:physic',
-         'from_schema': 'http://127.0.0.1:8000/uri/PhysicSchema'})
+         'from_schema': 'http://es-vocab.ipsl.fr/PhysicSchema'})
 
     id: str = Field(..., json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['physic_index']} })
     validation_method: str = Field("regex", json_schema_extra = { "linkml_meta": {'alias': 'validation_method',

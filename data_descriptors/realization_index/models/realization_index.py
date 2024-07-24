@@ -70,19 +70,19 @@ class LinkMLMeta(RootModel):
 linkml_meta = LinkMLMeta({'default_curi_maps': ['semweb_context'],
      'default_prefix': 'realization',
      'default_range': 'string',
-     'id': 'http://127.0.0.1:8000/uri/RealizationSchema',
+     'id': 'http://es-vocab.ipsl.fr/RealizationSchema',
      'license': 'https://creativecommons.org/publicdomain/zero/1.0/',
      'name': 'realization_schema',
      'prefixes': {'esvocab': {'prefix_prefix': 'esvocab',
-                              'prefix_reference': 'http://127.0.0.1:8000/uri/'},
+                              'prefix_reference': 'http://es-vocab.ipsl.fr/'},
                   'institution': {'prefix_prefix': 'institution',
-                                  'prefix_reference': 'http://127.0.0.1:8000/uri/institution/'},
+                                  'prefix_reference': 'http://es-vocab.ipsl.fr/institution/'},
                   'linkml': {'prefix_prefix': 'linkml',
                              'prefix_reference': 'https://w3id.org/linkml/'},
                   'rdf': {'prefix_prefix': 'rdf',
                           'prefix_reference': 'http://www.w3.org/1999/02/22-rdf-syntax-ns'},
                   'realization': {'prefix_prefix': 'realization',
-                                  'prefix_reference': 'http://127.0.0.1:8000/uri/realization/'},
+                                  'prefix_reference': 'http://es-vocab.ipsl.fr/realization/'},
                   'ror': {'prefix_prefix': 'ror',
                           'prefix_reference': 'https://ror.org/'},
                   'schema': {'prefix_prefix': 'schema',
@@ -92,7 +92,7 @@ linkml_meta = LinkMLMeta({'default_curi_maps': ['semweb_context'],
      'types': {'string': {'base': 'str',
                           'description': 'A character string',
                           'exact_mappings': ['schema:Text'],
-                          'from_schema': 'http://127.0.0.1:8000/uri/RealizationSchema',
+                          'from_schema': 'http://es-vocab.ipsl.fr/RealizationSchema',
                           'name': 'string',
                           'notes': ['In RDF serializations, a slot with range of '
                                     'string is treated as a literal or type '
@@ -107,7 +107,7 @@ class RealizationIndex(ConfiguredBaseModel):
     index describing a run TODO IMPROVE THIS
     """
     linkml_meta: ClassVar[LinkMLMeta] = LinkMLMeta({'class_uri': 'esvocab:realization',
-         'from_schema': 'http://127.0.0.1:8000/uri/RealizationSchema'})
+         'from_schema': 'http://es-vocab.ipsl.fr/RealizationSchema'})
 
     id: str = Field(..., json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['realization_index']} })
     validation_method: str = Field("regex", json_schema_extra = { "linkml_meta": {'alias': 'validation_method',

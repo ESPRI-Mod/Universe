@@ -45,7 +45,7 @@
             "type": "object"
         }
     },
-    "$id": "http://127.0.0.1:8000/uri/Variant_labelSchema",
+    "$id": "http://es-vocab.ipsl.fr/Variant_labelSchema",
     "$schema": "https://json-schema.org/draft/2019-09/schema",
     "additionalProperties": true,
     "metamodel_version": "1.7.0",
