@@ -53,12 +53,14 @@ def generate_all_jsonld(gen_file=False)->list:
 
     return res
 
-def generate_rdfgraph(jsonlds:list)->Graph:
+def generate_rdfgraph(jsonlds:list,filesave=False)->Graph:
     g=Graph()
 
     for jsonld in jsonlds:
         g.parse(data=jsonld,format='json-ld')
 
+    if filesave : 
+        g.serialize(destination= universe_path / "graph" / "es-vocab.rdf")
     return g
 
 
@@ -73,7 +75,7 @@ def generate_rdfgraph(jsonlds:list)->Graph:
 if __name__ == "__main__":
 
     jsonld_list = generate_all_jsonld(True)
-    g = generate_rdfgraph(jsonld_list)
+    g = generate_rdfgraph(jsonld_list,True)
     print(g)
     for s,p,o in g.triples((None,None,None)):
         print(s,p,o)
