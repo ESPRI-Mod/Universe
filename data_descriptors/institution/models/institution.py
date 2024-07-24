@@ -68,15 +68,15 @@ class LinkMLMeta(RootModel):
 
 
 linkml_meta = LinkMLMeta({'default_curi_maps': ['semweb_context'],
-     'default_prefix': 'esvocab',
+     'default_prefix': 'institution',
      'default_range': 'string',
-     'id': 'http://127.0.0.1:8000/uri/InstitutionSchema',
+     'id': 'http://es-vocab.ipsl.fr/InstitutionSchema',
      'imports': ['linkml:types'],
      'name': 'institution_schema',
      'prefixes': {'esvocab': {'prefix_prefix': 'esvocab',
-                              'prefix_reference': 'http://127.0.0.1:8000/uri/'},
+                              'prefix_reference': 'http://es-vocab.ipsl.fr/'},
                   'institution': {'prefix_prefix': 'institution',
-                                  'prefix_reference': 'http://127.0.0.1:8000/uri/institution/'},
+                                  'prefix_reference': 'http://es-vocab.ipsl.fr/institution/'},
                   'linkml': {'prefix_prefix': 'linkml',
                              'prefix_reference': 'https://w3id.org/linkml/'},
                   'rdf': {'prefix_prefix': 'rdf',
@@ -93,7 +93,7 @@ class Institution(ConfiguredBaseModel):
     an registered institution for WCRP modelisation MIP
     """
     linkml_meta: ClassVar[LinkMLMeta] = LinkMLMeta({'class_uri': 'esvocab:institution',
-         'from_schema': 'http://127.0.0.1:8000/uri/InstitutionSchema'})
+         'from_schema': 'http://es-vocab.ipsl.fr/InstitutionSchema'})
 
     id: str = Field(..., json_schema_extra = { "linkml_meta": {'alias': 'id',
          'domain_of': ['Institution', 'Location'],
@@ -124,7 +124,7 @@ class Institution(ConfiguredBaseModel):
 
 class Location(ConfiguredBaseModel):
     linkml_meta: ClassVar[LinkMLMeta] = LinkMLMeta({'class_uri': 'schema:location',
-         'from_schema': 'http://127.0.0.1:8000/uri/InstitutionSchema'})
+         'from_schema': 'http://es-vocab.ipsl.fr/InstitutionSchema'})
 
     id: str = Field(..., json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['Institution', 'Location']} })
     lat: float = Field(..., json_schema_extra = { "linkml_meta": {'alias': 'lat', 'domain_of': ['Location']} })

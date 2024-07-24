@@ -8,33 +8,33 @@
 @prefix schema1: <http://schema.org/> .
 @prefix variant_label: <http://es-vocab.ipsl.fr/Variant_label/> .
 
-esvocab:dkrz esvocab:cmip_acronym "DKRZ" ;
-    institution:acronyms "DKRZ" ;
-    esvocab:name "German Climate Computing Centre" ;
-    esvocab:type "Facility" ;
-    esvocab:url "https://www.dkrz.de/" ;
+esvocab:dkrz institution:acronyms "DKRZ" ;
+    institution:cmip_acronym "DKRZ" ;
+    institution:name "German Climate Computing Centre" ;
+    institution:type "Facility" ;
+    institution:url "https://www.dkrz.de/" ;
     schema1:foundingDate "1987"^^<xsd:integer> ;
     schema1:location esvocab:03ztgj037 ;
     ror:id "03ztgj037" .
 
 <http://es-vocab.ipsl.fr/forcing_index:one_digit> forcing:regex "^f\\d$" .
 
-esvocab:ipsl esvocab:cmip_acronym "IPSL" ;
-    institution:acronyms "IPSL" ;
-    esvocab:name "Institut Pierre-Simon Laplace" ;
-    esvocab:type "Facility" ;
-    esvocab:url "https://www.ipsl.fr/en/" ;
+esvocab:ipsl institution:acronyms "IPSL" ;
+    institution:cmip_acronym "IPSL" ;
+    institution:name "Institut Pierre-Simon Laplace" ;
+    institution:type "Facility" ;
+    institution:url "https://www.ipsl.fr/en/" ;
     schema1:alternateName "Ipsl" ;
     schema1:foundingDate "1991"^^<xsd:integer> ;
     schema1:location esvocab:02haar591 ;
     ror:id "02haar591" .
 
-esvocab:llnl esvocab:cmip_acronym "LLNL" ;
-    institution:acronyms "LLL",
+esvocab:llnl institution:acronyms "LLL",
         "LLNL" ;
-    esvocab:name "Lawrence Livermore National Laboratory" ;
-    esvocab:type "Facility" ;
-    esvocab:url "https://www.llnl.gov/" ;
+    institution:cmip_acronym "LLNL" ;
+    institution:name "Lawrence Livermore National Laboratory" ;
+    institution:type "Facility" ;
+    institution:url "https://www.llnl.gov/" ;
     schema1:alternateName "U.S. Department of Energy Los Alamos National Laboratory",
         "U.S. Department of Energy National Nuclear Security Administration Los Alamos National Laboratory",
         "United States Department of Energy Los Alamos National Laboratory",
@@ -63,24 +63,24 @@ esvocab:run variant_label:description "TODO IMPROVE THIS" ;
     variant_label:separator "" ;
     realization:regex "^run\\d$" .
 
-esvocab:02haar591 esvocab:city "Paris" ;
-    esvocab:country "FR",
+esvocab:02haar591 institution:city "Paris" ;
+    institution:country "FR",
         "France" ;
-    esvocab:lat "48.855675"^^<xsd:float> ;
-    esvocab:lon "2.332105"^^<xsd:float> .
+    institution:lat "48.855675"^^<xsd:float> ;
+    institution:lon "2.332105"^^<xsd:float> .
 
-esvocab:03ztgj037 esvocab:city "Hamburg" ;
-    esvocab:country "DE",
+esvocab:03ztgj037 institution:city "Hamburg" ;
+    institution:country "DE",
         "Germany" ;
-    esvocab:lat "53.55073"^^<xsd:float> ;
-    esvocab:lon "9.99302"^^<xsd:float> .
+    institution:lat "53.55073"^^<xsd:float> ;
+    institution:lon "9.99302"^^<xsd:float> .
 
-esvocab:041nk4h53 esvocab:city "Livermore" ;
-    esvocab:country "US",
+esvocab:041nk4h53 institution:city "Livermore" ;
+    institution:country "US",
         "United States" ;
-    esvocab:lat "37.68187"^^<xsd:float> ;
-    esvocab:lon "-121.76801"^^<xsd:float> ;
-    esvocab:type "location" .
+    institution:lat "37.68187"^^<xsd:float> ;
+    institution:lon "-121.76801"^^<xsd:float> ;
+    institution:type "location" .
 
 <http://es-vocab.ipsl.fr/forcing_index:multiple_digit> variant_label:is_required "true"^^<xsd:boolean> .
 

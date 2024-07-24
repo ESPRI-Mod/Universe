@@ -70,13 +70,11 @@ class LinkMLMeta(RootModel):
 linkml_meta = LinkMLMeta({'default_curi_maps': ['semweb_context'],
      'default_prefix': 'variant_label',
      'default_range': 'string',
-     'id': 'http://127.0.0.1:8000/uri/Variant_labelSchema',
+     'id': 'http://es-vocab.ipsl.fr/Variant_labelSchema',
      'license': 'https://creativecommons.org/publicdomain/zero/1.0/',
      'name': 'variant_label_schema',
      'prefixes': {'esvocab': {'prefix_prefix': 'esvocab',
-                              'prefix_reference': 'http://127.0.0.1:8000/uri/'},
-                  'institution': {'prefix_prefix': 'institution',
-                                  'prefix_reference': 'http://127.0.0.1:8000/uri/institution/'},
+                              'prefix_reference': 'http://es-vocab.ipsl.fr/'},
                   'linkml': {'prefix_prefix': 'linkml',
                              'prefix_reference': 'https://w3id.org/linkml/'},
                   'rdf': {'prefix_prefix': 'rdf',
@@ -86,13 +84,13 @@ linkml_meta = LinkMLMeta({'default_curi_maps': ['semweb_context'],
                   'schema': {'prefix_prefix': 'schema',
                              'prefix_reference': 'http://schema.org/'},
                   'variant_label': {'prefix_prefix': 'variant_label',
-                                    'prefix_reference': 'http://127.0.0.1:8000/uri/Variant_label/'}},
+                                    'prefix_reference': 'http://es-vocab.ipsl.fr/Variant_label/'}},
      'source_file': 'schemas/variant_label.yaml',
      'title': 'variant_label schema',
      'types': {'boolean': {'base': 'Bool',
                            'description': 'A binary (true or false) value',
                            'exact_mappings': ['schema:Boolean'],
-                           'from_schema': 'http://127.0.0.1:8000/uri/Variant_labelSchema',
+                           'from_schema': 'http://es-vocab.ipsl.fr/Variant_labelSchema',
                            'name': 'boolean',
                            'notes': ['If you are authoring schemas in LinkML YAML, '
                                      'the type is referenced with the lower case '
@@ -102,7 +100,7 @@ linkml_meta = LinkMLMeta({'default_curi_maps': ['semweb_context'],
                'string': {'base': 'str',
                           'description': 'A character string',
                           'exact_mappings': ['schema:Text'],
-                          'from_schema': 'http://127.0.0.1:8000/uri/Variant_labelSchema',
+                          'from_schema': 'http://es-vocab.ipsl.fr/Variant_labelSchema',
                           'name': 'string',
                           'notes': ['In RDF serializations, a slot with range of '
                                     'string is treated as a literal or type '
@@ -117,7 +115,7 @@ class VariantLabel(ConfiguredBaseModel):
     a data-descriptor composed from other
     """
     linkml_meta: ClassVar[LinkMLMeta] = LinkMLMeta({'class_uri': 'esvocab:variant_label',
-         'from_schema': 'http://127.0.0.1:8000/uri/Variant_labelSchema'})
+         'from_schema': 'http://es-vocab.ipsl.fr/Variant_labelSchema'})
 
     id: str = Field(..., json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['Variant_label', 'DataDescriptorId']} })
     validation_method: str = Field("composite", json_schema_extra = { "linkml_meta": {'alias': 'validation_method',
@@ -130,7 +128,7 @@ class VariantLabel(ConfiguredBaseModel):
 
 class DataDescriptorId(ConfiguredBaseModel):
     linkml_meta: ClassVar[LinkMLMeta] = LinkMLMeta({'class_uri': 'esvocab:data-descriptor',
-         'from_schema': 'http://127.0.0.1:8000/uri/Variant_labelSchema'})
+         'from_schema': 'http://es-vocab.ipsl.fr/Variant_labelSchema'})
 
     is_required: Optional[bool] = Field(None, json_schema_extra = { "linkml_meta": {'alias': 'is_required', 'domain_of': ['DataDescriptorId']} })
     id: Optional[str] = Field(None, json_schema_extra = { "linkml_meta": {'alias': 'id', 'domain_of': ['Variant_label', 'DataDescriptorId']} })

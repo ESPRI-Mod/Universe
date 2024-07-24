@@ -15,7 +15,7 @@ prefixes:
     ror: https://ror.org/
 
 default_range: string  
-default_prefix: esvocab
+default_prefix: institution
 default_curi_maps:
   - semweb_context
   
