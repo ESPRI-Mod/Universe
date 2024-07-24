@@ -7,7 +7,8 @@ schemas_path = Path("schemas")
 universe_base_path = Path("../..")
 universe_path = Path("../../data_descriptors")
 output_dir = Path("terms/jsonld")
-base = "http://es-vocab.ipsl.fr"
+
+base_base = "http://es-vocab.ipsl.fr/"
 
 print( "######## GENERATION json-ld with context from LinkML #######")
 
@@ -34,6 +35,7 @@ def generate_all_jsonld(gen_file=False)->list:
     res = []
     for sch_path in schemas_path.glob("*.yaml"):
         json_context_gen = ContextGenerator(sch_path)
+        base = base_base + sch_path.stem + "/"
         str_context = json_context_gen.serialize(base)
         jsonld_context = json.loads(str_context)
         
