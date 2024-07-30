@@ -1,3 +1,4 @@
+@prefix activity: <http://es-vocab.ipsl.fr/activity/> .
 @prefix forcing: <http://es-vocab.ipsl.fr/forcing_index/> .
 @prefix initialization: <http://es-vocab.ipsl.fr/initialization_index/> .
 @prefix institution: <http://es-vocab.ipsl.fr/institution/> .
@@ -6,6 +7,108 @@
 @prefix ror: <https://ror.org/> .
 @prefix schema1: <http://schema.org/> .
 @prefix variant_label: <http://es-vocab.ipsl.fr/Variant_label/> .
+
+activity:aerchemmip activity:cmip_acronym "AerChemMIP" ;
+    activity:long_name "Aerosols and Chemistry Model Intercomparison Project" ;
+    activity:name "AerChemMIP" .
+
+activity:c4mip activity:cmip_acronym "C4MIP" ;
+    activity:long_name "Coupled Climate Carbon Cycle Model Intercomparison Project" ;
+    activity:name "C4MIP" .
+
+activity:cdrmip activity:cmip_acronym "CDRMIP" ;
+    activity:long_name "Carbon Dioxide Removal Model Intercomparison Project" ;
+    activity:name "CDRMIP" .
+
+activity:cfmip activity:cmip_acronym "CFMIP" ;
+    activity:long_name "Cloud Feedback Model Intercomparison Project" ;
+    activity:name "CFMIP" .
+
+activity:cmip activity:cmip_acronym "CMIP" ;
+    activity:long_name "CMIP DECK: 1pctCO2, abrupt4xCO2, amip, esm-piControl, esm-historical, historical, and piControl experiments" ;
+    activity:name "CMIP" ;
+    activity:url "https://gmd.copernicus.org/articles/9/1937/2016/gmd-9-1937-2016.pdf" .
+
+activity:cordex activity:cmip_acronym "CORDEX" ;
+    activity:long_name "Coordinated Regional Climate Downscaling Experiment" ;
+    activity:name "CORDEX" .
+
+activity:damip activity:cmip_acronym "DAMIP" ;
+    activity:long_name "Detection and Attribution Model Intercomparison Project" ;
+    activity:name "DAMIP" .
+
+activity:dcpp activity:cmip_acronym "DCPP" ;
+    activity:long_name "Decadal Climate Prediction Project" ;
+    activity:name "DCPP" .
+
+activity:dynvarmip activity:cmip_acronym "DynVarMIP" ;
+    activity:long_name "Dynamics and Variability Model Intercomparison Project" ;
+    activity:name "DynVarMIP" .
+
+activity:fafmip activity:cmip_acronym "FAFMIP" ;
+    activity:long_name "Flux-Anomaly-Forced Model Intercomparison Project" ;
+    activity:name "FAFMIP" .
+
+activity:geomip activity:cmip_acronym "GeoMIP" ;
+    activity:long_name "Geoengineering Model Intercomparison Project" ;
+    activity:name "GeoMIP" .
+
+activity:gmmip activity:cmip_acronym "GMMIP" ;
+    activity:long_name "Global Monsoons Model Intercomparison Project" ;
+    activity:name "GMMIP" .
+
+activity:highresmip activity:cmip_acronym "HighResMIP" ;
+    activity:long_name "High-Resolution Model Intercomparison Project" ;
+    activity:name "HighResMIP" .
+
+activity:ismip6 activity:cmip_acronym "ISMIP6" ;
+    activity:long_name "Ice Sheet Model Intercomparison Project for CMIP6" ;
+    activity:name "ISMIP6" .
+
+activity:lesfmip activity:cmip_acronym "LESFMIP" ;
+    activity:long_name "The Large Ensemble Single Forcing Model Intercomparison Project" ;
+    activity:name "LESFMIP" ;
+    activity:url "https://www.frontiersin.org/articles/10.3389/fclim.2022.955414/full" .
+
+activity:ls3mip activity:cmip_acronym "LS3MIP" ;
+    activity:long_name "Land Surface, Snow and Soil Moisture" ;
+    activity:name "LS3MIP" .
+
+activity:lumip activity:cmip_acronym "LUMIP" ;
+    activity:long_name "Land-Use Model Intercomparison Project" ;
+    activity:name "LUMIP" .
+
+activity:omip activity:cmip_acronym "OMIP" ;
+    activity:long_name "Ocean Model Intercomparison Project" ;
+    activity:name "OMIP" .
+
+activity:pamip activity:cmip_acronym "PAMIP" ;
+    activity:long_name "Polar Amplification Model Intercomparison Project" ;
+    activity:name "PAMIP" .
+
+activity:pmip activity:cmip_acronym "PMIP" ;
+    activity:long_name "Palaeoclimate Modelling Intercomparison Project" ;
+    activity:name "PMIP" .
+
+activity:rfmip activity:cmip_acronym "RFMIP" ;
+    activity:long_name "Radiative Forcing Model Intercomparison Project" ;
+    activity:name "RFMIP" .
+
+activity:scenariomip activity:cmip_acronym "ScenarioMIP" ;
+    activity:long_name "Scenario Model Intercomparison Project" ;
+    activity:name "ScenarioMIP" .
+
+activity:simip activity:cmip_acronym "SIMIP" ;
+    activity:long_name "Sea Ice Model Intercomparison Project" ;
+    activity:name "SIMIP" .
+
+activity:viacsab activity:cmip_acronym "VIACSAB" ;
+    activity:long_name "Vulnerability, Impacts, Adaptation and Climate Services Advisory Board" ;
+    activity:name "VIACSAB" .
+
+activity:volmip activity:cmip_acronym "VolMIP" ;
+    activity:long_name "Volcanic Forcings Model Intercomparison Project" ;
+    activity:name "VolMIP" .
 
 <http://es-vocab.ipsl.fr/forcing_index/forcing_index:one_digit> forcing:regex "^f\\d$" .
 
