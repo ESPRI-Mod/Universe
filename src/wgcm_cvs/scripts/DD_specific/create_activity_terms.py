@@ -40,6 +40,7 @@ for key, value in activity_ids2.items():
 for key, value in activity_dict.items():
     activity_data = {
         'id': key.lower(),
+        'name': key,
         'cmip_acronym': key,
         'long_name': value['long_name'],
         'url': value['url']

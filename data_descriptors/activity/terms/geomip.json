@@ -1,5 +1,6 @@
 {
     "id": "geomip",
+    "name": "GeoMIP",
     "cmip_acronym": "GeoMIP",
     "long_name": "Geoengineering Model Intercomparison Project",
     "url": null

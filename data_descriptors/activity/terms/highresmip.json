@@ -1,5 +1,6 @@
 {
     "id": "highresmip",
+    "name": "HighResMIP",
     "cmip_acronym": "HighResMIP",
     "long_name": "High-Resolution Model Intercomparison Project",
     "url": null
