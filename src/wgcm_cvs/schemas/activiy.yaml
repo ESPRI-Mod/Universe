@@ -1,0 +1,49 @@
+imports:
+  - linkml:types
+
+
+id: http://es-vocab.ipsl.fr/ActivitySchema
+name: activity_schema
+
+
+prefixes:
+    esvocab: http://es-vocab.ipsl.fr/
+    linkml: https://w3id.org/linkml/
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
+    schema: http://schema.org/
+    activity:  http://es-vocab.ipsl.fr/activity/
+    ror: https://ror.org/
+
+default_range: string  
+default_prefix: activity
+default_curi_maps:
+  - semweb_context
+  
+classes:
+    Activity:
+        description: "an 'activity' refers to a coordinated set of modeling experiments designed to address specific scientific questions or objectives. Each activity is focused on different aspects of climate science and utilizes various models to study a wide range of climate phenomena. Activities are often organized around key research themes and may involve multiple experiments, scenarios, and model configurations." 
+        class_uri: esvocab:institution
+        attributes:
+            id:
+                slot_uri: activity:id
+                range: string
+                required: true
+                identifier: true
+
+            validation_method :
+                required: true
+                range : string
+                ifabsent: string(list)
+                slot_uri: es-vocab:validation_method
+                
+            name:
+                range: string
+                required: true
+            
+            long_name:
+                range: string
+                required: true
+            
+            cmip_acronym:
+                range: string
+                required: true
