@@ -1,0 +1,30 @@
+{
+    "id": "piclim-histghg",
+    "experiment_id": "piClim-histghg",
+    "activity_id": [
+        "RFMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "Time-varying forcing by non-ozone GHGs. SST and sea ice fixed at preindustrial control. Interactive vegetation",
+    "end_year": "2100",
+    "experiment": "transient effective radiative forcing by greenhouse gases",
+    "min_number_yrs_per_sim": "251",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "piControl"
+    ],
+    "required_model_components": [
+        "AGCM"
+    ],
+    "start_year": "1850",
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "2"
+}

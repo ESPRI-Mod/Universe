@@ -1,0 +1,30 @@
+{
+    "id": "ssp370sst-ssp126lu",
+    "experiment_id": "ssp370SST-ssp126Lu",
+    "activity_id": [
+        "AerChemMIP"
+    ],
+    "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+    ],
+    "description": "Future SSP3-7.0 with low land use change (from ssp126), prescribed SSTs",
+    "end_year": "2100",
+    "experiment": "SSP3-7.0, prescribed SSTs, with SSP1-2.6 land use",
+    "min_number_yrs_per_sim": "86",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "historical"
+    ],
+    "required_model_components": [
+        "AGCM",
+        "AER"
+    ],
+    "start_year": "2015",
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "1"
+}

@@ -1,0 +1,30 @@
+{
+    "id": "hist-pivolc",
+    "experiment_id": "hist-piVolc",
+    "activity_id": [
+        "LESFMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "historical simulations with 1850 volcanic emissions",
+    "end_year": 2020,
+    "experiment": "historical all-but-volcanic run",
+    "min_number_yrs_per_sim": "none",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "piControl"
+    ],
+    "required_model_components": [
+        "AOGCM"
+    ],
+    "start_year": 1850,
+    "sub_experiment_id": [
+        "f2023"
+    ],
+    "tier": 3
+}

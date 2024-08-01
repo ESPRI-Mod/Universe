@@ -1,0 +1,30 @@
+{
+    "id": "pa-futantsic",
+    "experiment_id": "pa-futAntSIC",
+    "activity_id": [
+        "PAMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "PA2.5: investigate response to Antarctic sea ice in coupled model",
+    "end_year": "2001",
+    "experiment": "Partially-coupled time slice constrained by future Antarctic SIC",
+    "min_number_yrs_per_sim": "1",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "historical"
+    ],
+    "required_model_components": [
+        "AOGCM"
+    ],
+    "start_year": "2000",
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "2"
+}

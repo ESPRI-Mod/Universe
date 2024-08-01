@@ -1,0 +1,30 @@
+{
+    "id": "fut-lu",
+    "experiment_id": "fut-lu",
+    "activity_id": [
+        "LESFMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "As hist-lu but with updated forcings",
+    "end_year": 2024,
+    "experiment": "Single forcing projections",
+    "min_number_yrs_per_sim": "none",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "piControl"
+    ],
+    "required_model_components": [
+        "AOGCM"
+    ],
+    "start_year": 2015,
+    "sub_experiment_id": [
+        "f2023"
+    ],
+    "tier": 2
+}

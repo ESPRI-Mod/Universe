@@ -1,0 +1,30 @@
+{
+    "id": "ssp370-lowntcf",
+    "experiment_id": "ssp370-lowNTCF",
+    "activity_id": [
+        "AerChemMIP"
+    ],
+    "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+    ],
+    "description": "Future SSP3-7.0 with reduced NTCF emissions",
+    "end_year": "2100",
+    "experiment": "SSP3-7.0, with low NTCF emissions",
+    "min_number_yrs_per_sim": "86",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "historical"
+    ],
+    "required_model_components": [
+        "AOGCM",
+        "AER"
+    ],
+    "start_year": "2015",
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "1"
+}

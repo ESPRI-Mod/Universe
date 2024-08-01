@@ -1,0 +1,28 @@
+{
+    "id": "ism-ssp585-self",
+    "experiment_id": "ism-ssp585-self",
+    "activity_id": [
+        "ISMIP6"
+    ],
+    "additional_allowed_model_components": [
+        ""
+    ],
+    "description": "Future climate ScenarioMIP SSP5-8.5 simulation using \"offline\" ice sheet models. Forcing for ice sheet model is from its own AOGCM",
+    "end_year": "2100 or 2300",
+    "experiment": "offline ice sheet forced by ISM's own AOGCM ssp585 output",
+    "min_number_yrs_per_sim": "86",
+    "parent_activity_id": [
+        "ISMIP6"
+    ],
+    "parent_experiment_id": [
+        "ism-historical-self"
+    ],
+    "required_model_components": [
+        "ISM"
+    ],
+    "start_year": "2015",
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "2"
+}

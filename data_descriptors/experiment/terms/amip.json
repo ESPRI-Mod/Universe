@@ -1,0 +1,30 @@
+{
+    "id": "amip",
+    "experiment_id": "amip",
+    "activity_id": [
+        "CMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "DECK: AMIP",
+    "end_year": 2022,
+    "experiment": "AMIP",
+    "min_number_yrs_per_sim": 43,
+    "parent_activity_id": [
+        "no parent"
+    ],
+    "parent_experiment_id": [
+        "no parent"
+    ],
+    "required_model_components": [
+        "AGCM"
+    ],
+    "start_year": 1979,
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": 1
+}

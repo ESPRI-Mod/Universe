@@ -1,0 +1,30 @@
+{
+    "id": "esm-past1000",
+    "experiment_id": "esm-past1000",
+    "activity_id": [
+        "PMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+    ],
+    "description": "Parallel experiment to past1000, but for model set-ups with interactive carbon cycle. Main forcings: trace gases, volcanoes, solar variability, land-use",
+    "end_year": "1849",
+    "experiment": "last millennium experiment with interactive carbon cycle",
+    "min_number_yrs_per_sim": "1000",
+    "parent_activity_id": [
+        "no parent"
+    ],
+    "parent_experiment_id": [
+        "no parent"
+    ],
+    "required_model_components": [
+        "AOGCM",
+        "BGC"
+    ],
+    "start_year": "850",
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "3"
+}

@@ -1,0 +1,29 @@
+{
+    "id": "hist-spaer-aer",
+    "experiment_id": "hist-spAer-aer",
+    "activity_id": [
+        "RFMIP"
+    ],
+    "additional_allowed_model_components": [
+        "CHEM",
+        "BGC"
+    ],
+    "description": "Prescribed anthropogenic aerosol optical properties. Changes in aerosols only",
+    "end_year": "2014",
+    "experiment": "historical simulation with specified anthropogenic aerosols, no other forcings",
+    "min_number_yrs_per_sim": "165",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "piControl"
+    ],
+    "required_model_components": [
+        "AOGCM"
+    ],
+    "start_year": "1850",
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "2"
+}

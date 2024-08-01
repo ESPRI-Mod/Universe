@@ -1,0 +1,31 @@
+{
+    "id": "esm-1pctco2",
+    "experiment_id": "esm-1pctCO2",
+    "activity_id": [
+        "C4MIP",
+        "CDRMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+    ],
+    "description": "An emissions-driven simulation (fully interactive CO2), initiated from the esm-piControl using CO2 emissions diagnosed from the 1pctCO2 experiment so that the emissions-driven run replicates as closely as possible the 1pctCO2 concentration profile",
+    "end_year": "",
+    "experiment": "emissions driven 1% run",
+    "min_number_yrs_per_sim": "150",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "esm-piControl"
+    ],
+    "required_model_components": [
+        "AOGCM",
+        "BGC"
+    ],
+    "start_year": "",
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "3"
+}

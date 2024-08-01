@@ -1,0 +1,30 @@
+{
+    "id": "hist-nolu",
+    "experiment_id": "hist-noLu",
+    "activity_id": [
+        "LESFMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "Same as CMIP6 historical but with land cover held at 1850, no human activity; concentration driven",
+    "end_year": 2020,
+    "experiment": "historical with no land-use change",
+    "min_number_yrs_per_sim": "none",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "piControl"
+    ],
+    "required_model_components": [
+        "AOGCM"
+    ],
+    "start_year": 1850,
+    "sub_experiment_id": [
+        "f2023"
+    ],
+    "tier": 3
+}

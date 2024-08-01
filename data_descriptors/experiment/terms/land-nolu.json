@@ -1,0 +1,28 @@
+{
+    "id": "land-nolu",
+    "experiment_id": "land-noLu",
+    "activity_id": [
+        "LUMIP"
+    ],
+    "additional_allowed_model_components": [
+        "BGC"
+    ],
+    "description": "Same as land-hist except no land-use change",
+    "end_year": "2014",
+    "experiment": "historical land-only with no land-use change",
+    "min_number_yrs_per_sim": "165",
+    "parent_activity_id": [
+        "no parent"
+    ],
+    "parent_experiment_id": [
+        "no parent"
+    ],
+    "required_model_components": [
+        "LAND"
+    ],
+    "start_year": "1850 or 1700",
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "1"
+}
