@@ -1,0 +1,30 @@
+{
+    "id": "dcppc-pac-control",
+    "experiment_id": "dcppC-pac-control",
+    "activity_id": [
+        "DCPP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "C1.4 Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs",
+    "end_year": null,
+    "experiment": "idealized Pacific control",
+    "min_number_yrs_per_sim": "10",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "piControl"
+    ],
+    "required_model_components": [
+        "AOGCM"
+    ],
+    "start_year": null,
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "1"
+}

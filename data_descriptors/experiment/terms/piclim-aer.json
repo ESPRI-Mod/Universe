@@ -1,0 +1,31 @@
+{
+    "id": "piclim-aer",
+    "experiment_id": "piClim-aer",
+    "activity_id": [
+        "RFMIP",
+        "AerChemMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "As in piClim-control but with with present-day aerosols. Note that this experiment is considered to be tier 1 by RFMIP but tier 2 by AerChemMIP",
+    "end_year": null,
+    "experiment": "effective radiative forcing by present-day aerosols",
+    "min_number_yrs_per_sim": "30",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "piControl"
+    ],
+    "required_model_components": [
+        "AGCM"
+    ],
+    "start_year": null,
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "1"
+}

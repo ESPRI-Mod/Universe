@@ -1,0 +1,29 @@
+{
+    "id": "piclim-anthro",
+    "experiment_id": "piClim-anthro",
+    "activity_id": [
+        "RFMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+    ],
+    "description": "As in piClim-control but with present-day anthropogenic forcing (greenhouse gases, ozone, aerosols and land-use)",
+    "end_year": null,
+    "experiment": "effective radiative forcing by present day anthropogenic agents",
+    "min_number_yrs_per_sim": "30",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "piControl"
+    ],
+    "required_model_components": [
+        "AGCM"
+    ],
+    "start_year": null,
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "1"
+}

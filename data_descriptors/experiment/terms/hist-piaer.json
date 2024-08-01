@@ -1,0 +1,30 @@
+{
+    "id": "hist-piaer",
+    "experiment_id": "hist-piAer",
+    "activity_id": [
+        "LESFMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "Historical WMGHG, halocarbon concentrations and O3 precursor emissions, 1850 aerosol precursor emissions.",
+    "end_year": 2020,
+    "experiment": "historical forcing, but with pre-industrial aerosol emissions",
+    "min_number_yrs_per_sim": "none",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "piControl"
+    ],
+    "required_model_components": [
+        "AOGCM"
+    ],
+    "start_year": 1850,
+    "sub_experiment_id": [
+        "f2023"
+    ],
+    "tier": 3
+}

@@ -1,0 +1,80 @@
+imports:
+  - linkml:types
+
+
+id: http://es-vocab.ipsl.fr/ExperimentSchema
+name: experiement_schema
+
+
+prefixes:
+    esvocab: http://es-vocab.ipsl.fr/
+    linkml: https://w3id.org/linkml/
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
+    schema: http://schema.org/
+    experiment:  http://es-vocab.ipsl.fr/experiment/
+    ror: https://ror.org/
+
+default_range: string  
+default_prefix: experiment
+default_curi_maps:
+  - semweb_context
+  
+classes:
+    Experiment:
+        description: "an 'experiment' refers to a specific, controlled simulation conducted using climate models to investigate particular aspects of the Earth's climate system. These experiments are designed with set parameters, such as initial conditions, external forcings (like greenhouse gas concentrations or solar radiation), and duration, to explore and understand climate behavior under various scenarios and conditions." 
+        class_uri: esvocab:experiment
+        attributes:
+            id:
+                slot_uri: experiement:id
+                range: string
+                required: true
+                identifier: true
+
+            validation_method :
+                required: true
+                range : string
+                ifabsent: string(list)
+                slot_uri: es-vocab:validation_method
+            activity:
+                range: string
+                required: true
+                multivalued: true
+ 
+            description:
+                range: string
+                required: true
+            tiers : 
+                range : string
+                
+            
+            experiment_id:
+                range: string
+                required: true
+            sub_experiment_id:
+                range: string
+                multivalued: true
+            experiment:
+                range : string
+                required: true
+            required_model_component:
+                range: string
+                multivalued : true
+
+
+            additionnal_allowed_model_components:
+                range: string
+                multivalued : true
+            start_year:
+                range: integer
+            end_year : 
+                range: integer
+            min_numbers_yrs_per_sim:
+                range: string
+            parent_activity_id:
+                range: string
+                multivalued : true
+            parent_experiement_id:
+                range: string
+                multivalued: true
+
+

@@ -1,0 +1,90 @@
+{
+    "$defs": {
+        "Experiment": {
+            "additionalProperties": false,
+            "description": "an 'experiment' refers to a specific, controlled simulation conducted using climate models to investigate particular aspects of the Earth's climate system. These experiments are designed with set parameters, such as initial conditions, external forcings (like greenhouse gas concentrations or solar radiation), and duration, to explore and understand climate behavior under various scenarios and conditions.",
+            "properties": {
+                "activity": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "additionnal_allowed_model_components": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "description": {
+                    "type": "string"
+                },
+                "end_year": {
+                    "type": "integer"
+                },
+                "experiment": {
+                    "type": "string"
+                },
+                "experiment_id": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "min_numbers_yrs_per_sim": {
+                    "type": "string"
+                },
+                "parent_activity_id": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "parent_experiement_id": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "required_model_component": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "start_year": {
+                    "type": "integer"
+                },
+                "sub_experiment_id": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "tiers": {
+                    "type": "string"
+                },
+                "validation_method": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "validation_method",
+                "activity",
+                "description",
+                "experiment_id",
+                "experiment"
+            ],
+            "title": "Experiment",
+            "type": "object"
+        }
+    },
+    "$id": "http://es-vocab.ipsl.fr/ExperimentSchema",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "experiement_schema",
+    "type": "object",
+    "version": null
+}

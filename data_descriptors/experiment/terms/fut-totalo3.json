@@ -1,0 +1,30 @@
+{
+    "id": "fut-totalo3",
+    "experiment_id": "fut-totalO3",
+    "activity_id": [
+        "LESFMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "As hist-totalO3 but with updated forcings",
+    "end_year": 2024,
+    "experiment": "future total ozone-only run",
+    "min_number_yrs_per_sim": "none",
+    "parent_activity_id": [
+        "LESFMIP"
+    ],
+    "parent_experiment_id": [
+        "hist-totalO3"
+    ],
+    "required_model_components": [
+        "AOGCM"
+    ],
+    "start_year": 2015,
+    "sub_experiment_id": [
+        "f2023"
+    ],
+    "tier": 2
+}

@@ -1,0 +1,30 @@
+{
+    "id": "abrupt-2xco2",
+    "experiment_id": "abrupt-2xCO2",
+    "activity_id": [
+        "CFMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "Identical to the DECK abrupt-4xCO2, but at 2xCO2",
+    "end_year": null,
+    "experiment": "abrupt doubling of CO2",
+    "min_number_yrs_per_sim": "150",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "piControl"
+    ],
+    "required_model_components": [
+        "AOGCM"
+    ],
+    "start_year": null,
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "2"
+}

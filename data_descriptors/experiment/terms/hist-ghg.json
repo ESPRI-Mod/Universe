@@ -1,0 +1,30 @@
+{
+    "id": "hist-ghg",
+    "experiment_id": "hist-GHG",
+    "activity_id": [
+        "LESFMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "Well-mixed greenhouse-gas-only historical simulations",
+    "end_year": 2020,
+    "experiment": "historical well-mixed GHG-only run",
+    "min_number_yrs_per_sim": "none",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "piControl"
+    ],
+    "required_model_components": [
+        "AOGCM"
+    ],
+    "start_year": 1850,
+    "sub_experiment_id": [
+        "f2023"
+    ],
+    "tier": 1
+}

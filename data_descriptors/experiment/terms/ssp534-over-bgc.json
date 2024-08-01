@@ -1,0 +1,30 @@
+{
+    "id": "ssp534-over-bgc",
+    "experiment_id": "ssp534-over-bgc",
+    "activity_id": [
+        "C4MIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM"
+    ],
+    "description": "This simulation should optionally be extended to year 2300",
+    "end_year": null,
+    "experiment": "biogeochemically-coupled version of the RCP3.4-overshoot based on SSP5",
+    "min_number_yrs_per_sim": "61",
+    "parent_activity_id": [
+        "C4MIP"
+    ],
+    "parent_experiment_id": [
+        "ssp585-bgc"
+    ],
+    "required_model_components": [
+        "AOGCM",
+        "BGC"
+    ],
+    "start_year": 2040,
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "2"
+}

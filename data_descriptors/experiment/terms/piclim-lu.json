@@ -1,0 +1,30 @@
+{
+    "id": "piclim-lu",
+    "experiment_id": "piClim-lu",
+    "activity_id": [
+        "RFMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "As in piClim-control but with present-day land use",
+    "end_year": null,
+    "experiment": "effective radiative forcing by present-day land use",
+    "min_number_yrs_per_sim": "30",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "piControl"
+    ],
+    "required_model_components": [
+        "AGCM"
+    ],
+    "start_year": null,
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "1"
+}

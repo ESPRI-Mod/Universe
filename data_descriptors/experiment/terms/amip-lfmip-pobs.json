@@ -1,0 +1,30 @@
+{
+    "id": "amip-lfmip-pobs",
+    "experiment_id": "amip-lfmip-pObs",
+    "activity_id": [
+        "LS3MIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "Land-hist land conditions; AMIP SSTs",
+    "end_year": 2014,
+    "experiment": "prescribed land (from pseudo-observations) and AMIP SSTs",
+    "min_number_yrs_per_sim": "36",
+    "parent_activity_id": [
+        "no parent"
+    ],
+    "parent_experiment_id": [
+        "no parent"
+    ],
+    "required_model_components": [
+        "AGCM"
+    ],
+    "start_year": 1979,
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "2"
+}

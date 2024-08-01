@@ -1,0 +1,30 @@
+{
+    "id": "ssp585",
+    "experiment_id": "ssp585",
+    "activity_id": [
+        "ScenarioMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "Future scenario with high radiative forcing by the end of century. Following approximately RCP8.5 global forcing pathway but with new forcing based on SSP5. Concentration-driven. As a tier 2 option, this simulation should be extended to year 2300",
+    "end_year": null,
+    "experiment": "update of RCP8.5 based on SSP5",
+    "min_number_yrs_per_sim": "86",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "historical"
+    ],
+    "required_model_components": [
+        "AOGCM"
+    ],
+    "start_year": 2015,
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "1"
+}

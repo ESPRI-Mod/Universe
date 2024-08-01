@@ -1,0 +1,30 @@
+{
+    "id": "piclim-ghg",
+    "experiment_id": "piClim-ghg",
+    "activity_id": [
+        "RFMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "As in piClim-control but with present-day non-ozone greenhouse gases",
+    "end_year": null,
+    "experiment": "effective radiative forcing by present-day greenhouse gases",
+    "min_number_yrs_per_sim": "30",
+    "parent_activity_id": [
+        "CMIP"
+    ],
+    "parent_experiment_id": [
+        "piControl"
+    ],
+    "required_model_components": [
+        "AGCM"
+    ],
+    "start_year": null,
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "1"
+}

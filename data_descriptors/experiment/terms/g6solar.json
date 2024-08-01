@@ -1,0 +1,30 @@
+{
+    "id": "g6solar",
+    "experiment_id": "G6solar",
+    "activity_id": [
+        "GeoMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "Using solar irradiance reduction, return the radiative forcing from a background of the ScenarioMIP high forcing to the ScenarioMIP middle forcing",
+    "end_year": 2100,
+    "experiment": "total solar irradiance reduction to reduce net forcing from SSP585 to SSP245",
+    "min_number_yrs_per_sim": "81",
+    "parent_activity_id": [
+        "ScenarioMIP"
+    ],
+    "parent_experiment_id": [
+        "ssp585"
+    ],
+    "required_model_components": [
+        "AOGCM"
+    ],
+    "start_year": 2020,
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "1"
+}

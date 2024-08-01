@@ -1,0 +1,30 @@
+{
+    "id": "ssp245-covid",
+    "experiment_id": "ssp245-covid",
+    "activity_id": [
+        "DAMIP"
+    ],
+    "additional_allowed_model_components": [
+        "AER",
+        "CHEM",
+        "BGC"
+    ],
+    "description": "Future scenario based on ssp245, but with 2-year perturbation to emissions for 2020 and 2021 due to Covid-19 pandemic restrictions. Emissions revert to ssp245 after this. Concentration-driven",
+    "end_year": null,
+    "experiment": "2-year Covid-19 emissions blip based upon ssp245",
+    "min_number_yrs_per_sim": "5",
+    "parent_activity_id": [
+        "ScenarioMIP"
+    ],
+    "parent_experiment_id": [
+        "ssp245"
+    ],
+    "required_model_components": [
+        "AOGCM"
+    ],
+    "start_year": 2020,
+    "sub_experiment_id": [
+        "none"
+    ],
+    "tier": "2"
+}
