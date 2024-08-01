@@ -24,7 +24,7 @@
     "required_model_components": [
         "AOGCM"
     ],
-    "start_year": "a year in the range 2017-2029",
+    "start_year": null,
     "sub_experiment_id": [
         "s2017",
         "s2018",

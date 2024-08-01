@@ -24,7 +24,7 @@
     "required_model_components": [
         "AOGCM"
     ],
-    "start_year": "1981",
+    "start_year": 1981,
     "sub_experiment_id": [
         "s1981"
     ],

@@ -22,7 +22,7 @@
         "AER",
         "CHEM"
     ],
-    "start_year": "",
+    "start_year": null,
     "sub_experiment_id": [
         "none"
     ],

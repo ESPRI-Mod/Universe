@@ -21,7 +21,7 @@
     "required_model_components": [
         "AOGCM"
     ],
-    "start_year": "2021",
+    "start_year": 2021,
     "sub_experiment_id": [
         "none"
     ],

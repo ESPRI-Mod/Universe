@@ -22,7 +22,7 @@
     "required_model_components": [
         "AOGCM"
     ],
-    "start_year": "1910, 1920 or 1950",
+    "start_year": null,
     "sub_experiment_id": [
         "s1910",
         "s1920",

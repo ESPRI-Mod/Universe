@@ -20,7 +20,7 @@
     "required_model_components": [
         "AGCM"
     ],
-    "start_year": "2015",
+    "start_year": 2015,
     "sub_experiment_id": [
         "none"
     ],

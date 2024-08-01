@@ -22,7 +22,7 @@
     "required_model_components": [
         "AOGCM"
     ],
-    "start_year": "2000",
+    "start_year": 2000,
     "sub_experiment_id": [
         "none"
     ],

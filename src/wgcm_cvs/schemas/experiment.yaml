@@ -65,9 +65,9 @@ classes:
                 range: string
                 multivalued : true
             start_year:
-                range: string
+                range: integer
             end_year : 
-                range: string
+                range: integer
             min_numbers_yrs_per_sim:
                 range: string
             parent_activity_id:

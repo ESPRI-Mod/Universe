@@ -22,7 +22,7 @@
     "required_model_components": [
         "AOGCM"
     ],
-    "start_year": "A year in the range 1992-1999",
+    "start_year": null,
     "sub_experiment_id": [
         "s1992",
         "s1993",

@@ -28,6 +28,12 @@ experiment_ids2 = data2.get('experiment_id', {})
 
 # Normalize and merge data
 def normalize_experiment_data(experiment_data):
+    start_year = experiment_data.get('start', experiment_data.get('start_year', ''))
+    try:
+        start_year = int(start_year)
+    except ValueError:
+        start_year = None  # or handle as needed if conversion fails
+
     return {
         'activity_id': experiment_data.get('activity_id', []),
         'additional_allowed_model_components': experiment_data.get('additional_allowed_model_components', []),
@@ -39,7 +45,7 @@ def normalize_experiment_data(experiment_data):
         'parent_activity_id': experiment_data.get('parent_activity_id', []),
         'parent_experiment_id': experiment_data.get('parent_experiment_id', []),
         'required_model_components': experiment_data.get('required_model_components', []),
-        'start_year': experiment_data.get('start', experiment_data.get('start_year', '')),
+        'start_year': start_year,
         'sub_experiment_id': experiment_data.get('sub_experiment_id', []),
         'tier': experiment_data.get('tier', '')
     }
