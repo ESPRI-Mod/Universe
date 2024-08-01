@@ -8,7 +8,7 @@
         ""
     ],
     "description": "Future climate ScenarioMIP SSP5-8.5 simulation using \"offline\" ice sheet models. Forcing for ice sheet model is the standard dataset based on ScenarioMIP ssp585",
-    "end_year": "2100 or 2300",
+    "end_year": null,
     "experiment": "offline ice sheet forced by ISMIP6-specified AOGCM ssp585 output",
     "min_number_yrs_per_sim": "86",
     "parent_activity_id": [

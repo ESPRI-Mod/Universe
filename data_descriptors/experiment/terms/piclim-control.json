@@ -11,7 +11,7 @@
         "BGC"
     ],
     "description": "30-year atmosphere only integration using preindustrial sea-surface temperature and sea-ice climatology. Interactive vegetation",
-    "end_year": "",
+    "end_year": null,
     "experiment": "Control simulation providing baseline for evaluating effective radiative forcing (ERF)",
     "min_number_yrs_per_sim": "30",
     "parent_activity_id": [

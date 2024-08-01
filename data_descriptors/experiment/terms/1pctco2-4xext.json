@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "branched from 1pctCO2 run at year 140 and run with CO2 fixed at 4x pre-industrial concentration",
-    "end_year": "",
+    "end_year": null,
     "experiment": "extension from year 140 of 1pctCO2 with 4xCO2",
     "min_number_yrs_per_sim": "210",
     "parent_activity_id": [

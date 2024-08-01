@@ -8,7 +8,7 @@
         "BGC"
     ],
     "description": "Perturbation from 1850 control using 2014 CO/VOC emissions",
-    "end_year": "",
+    "end_year": null,
     "experiment": "pre-industrial climatological SSTs and forcing, but with 2014 VOC emissions",
     "min_number_yrs_per_sim": "30",
     "parent_activity_id": [

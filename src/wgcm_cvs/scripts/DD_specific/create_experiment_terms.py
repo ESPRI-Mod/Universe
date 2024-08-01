@@ -29,16 +29,22 @@ experiment_ids2 = data2.get('experiment_id', {})
 # Normalize and merge data
 def normalize_experiment_data(experiment_data):
     start_year = experiment_data.get('start', experiment_data.get('start_year', ''))
+    end_year = experiment_data.get('end', experiment_data.get('end_year', ''))
+
     try:
         start_year = int(start_year)
     except ValueError:
         start_year = None  # or handle as needed if conversion fails
-
+    try:
+        end_year = int(end_year)
+    except ValueError:
+        end_year = None  # or handle as needed if conversion fails
+    
     return {
         'activity_id': experiment_data.get('activity_id', []),
         'additional_allowed_model_components': experiment_data.get('additional_allowed_model_components', []),
         'description': experiment_data.get('description', ''),
-        'end_year': experiment_data.get('end', experiment_data.get('end_year', '')),
+        'end_year':end_year,
         'experiment': experiment_data.get('experiment', ''),
         'experiment_id': experiment_data.get('experiment_id', ''),
         'min_number_yrs_per_sim': experiment_data.get('min_number_yrs_per_sim', ''),

@@ -8,7 +8,7 @@
         "BGC"
     ],
     "description": "Same as land-hist except no land-use change",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "historical land-only with no land-use change",
     "min_number_yrs_per_sim": "165",
     "parent_activity_id": [

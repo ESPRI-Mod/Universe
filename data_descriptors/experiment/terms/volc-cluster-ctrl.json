@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Early 19th century cluster of strong tropical volcanic eruptions, including the 1809 event of unknown location, the 1815 Tambora and 1835 Cosigueina eruptions. Experiment initialized from PiControl",
-    "end_year": "",
+    "end_year": null,
     "experiment": "19th century volcanic cluster initialized from PiControl",
     "min_number_yrs_per_sim": "50",
     "parent_activity_id": [

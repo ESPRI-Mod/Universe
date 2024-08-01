@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Future scenario with medium radiative forcing by the end of century. Following approximately RCP6.0 global forcing pathway but with new forcing based on SSP4. Concentration-driven",
-    "end_year": "2100",
+    "end_year": 2100,
     "experiment": "update of RCP6.0 based on SSP4",
     "min_number_yrs_per_sim": "86",
     "parent_activity_id": [

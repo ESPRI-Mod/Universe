@@ -8,7 +8,7 @@
         ""
     ],
     "description": "Offline ice sheet evolution for the last few decades forced by amip",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "offline ice sheet forced by ISMIP6-specified AGCM AMIP output",
     "min_number_yrs_per_sim": "36",
     "parent_activity_id": [

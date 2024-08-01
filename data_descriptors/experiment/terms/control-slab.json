@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "slab control run for volc-pinatubo-slab",
-    "end_year": "",
+    "end_year": null,
     "experiment": "control with slab ocean",
     "min_number_yrs_per_sim": "30",
     "parent_activity_id": [

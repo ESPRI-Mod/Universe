@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Historical ALL forcing run with alternates estimate of solar and volcanic forcing",
-    "end_year": "2020",
+    "end_year": 2020,
     "experiment": "historical ALL-forcing run with alternate estimates of natural forcing",
     "min_number_yrs_per_sim": "171",
     "parent_activity_id": [

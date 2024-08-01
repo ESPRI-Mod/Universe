@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Against a background of the ScenarioMIP high forcing, reduce cirrus cloud optical depth by a constant amount",
-    "end_year": "2100",
+    "end_year": 2100,
     "experiment": "increase cirrus ice crystal fall speed to reduce net forcing in SSP585 by 1 W m-2",
     "min_number_yrs_per_sim": "81",
     "parent_activity_id": [

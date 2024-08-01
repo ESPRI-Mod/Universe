@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "main forcings: trace gases, volcanoes, solar variability, land use",
-    "end_year": "1849",
+    "end_year": 1849,
     "experiment": "last millennium",
     "min_number_yrs_per_sim": "1000",
     "parent_activity_id": [

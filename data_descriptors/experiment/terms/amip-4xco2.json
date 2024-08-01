@@ -9,7 +9,7 @@
         "CHEM"
     ],
     "description": "As CMIP5/CFMIP-2 amip4xCO2 experiment. AMIP experiment where SSTs are held at control values and the CO2 seen by the radiation scheme is quadrupled",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "AMIP SSTs with 4xCO2",
     "min_number_yrs_per_sim": "36",
     "parent_activity_id": [

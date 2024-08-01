@@ -8,7 +8,7 @@
         ""
     ],
     "description": "Same as land-hist but with anthropogenic ignition and suppression held to 1850 levels",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "historical land-only with no human fire management",
     "min_number_yrs_per_sim": "165",
     "parent_activity_id": [

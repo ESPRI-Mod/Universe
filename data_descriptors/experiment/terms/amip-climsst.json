@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "PA5.1: investigate role of transient sea ice in recent climate change",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "AMIP with climatological SST",
     "min_number_yrs_per_sim": "36",
     "parent_activity_id": [

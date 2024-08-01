@@ -9,7 +9,7 @@
         "CHEM"
     ],
     "description": "As in piClim-control but with present-day anthropogenic forcing (greenhouse gases, ozone, aerosols and land-use)",
-    "end_year": "",
+    "end_year": null,
     "experiment": "effective radiative forcing by present day anthropogenic agents",
     "min_number_yrs_per_sim": "30",
     "parent_activity_id": [

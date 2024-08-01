@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Land-hist land conditions; AMIP SSTs",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "prescribed land (from pseudo-observations) and AMIP SSTs",
     "min_number_yrs_per_sim": "36",
     "parent_activity_id": [

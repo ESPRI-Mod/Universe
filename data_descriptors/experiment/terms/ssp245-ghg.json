@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Extension of well-mixed GHG-only run under SSP2-4.5. Models with interactive chemistry schemes should either turn off the chemistry or use a preindustrial climatology of stratospheric and tropospheric ozone in their radiation schemes",
-    "end_year": "2100",
+    "end_year": 2100,
     "experiment": "well-mixed GHG-only SSP2-4.5 run",
     "min_number_yrs_per_sim": "80",
     "parent_activity_id": [

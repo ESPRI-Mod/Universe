@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "CMIP6 historical",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "all-forcing simulation of the recent past (CO2 concentration-driven)",
     "min_number_yrs_per_sim": 165,
     "parent_activity_id": [

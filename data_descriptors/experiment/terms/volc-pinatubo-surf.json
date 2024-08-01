@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "As volc-pinatubo-full, but with prescribed perturbation to the shortwave flux to mimic the attenuation of solar radiation by volcanic aerosols",
-    "end_year": "",
+    "end_year": null,
     "experiment": "Pinatubo experiment with partial radiative forcing, solar radiation scattering only",
     "min_number_yrs_per_sim": "3",
     "parent_activity_id": [

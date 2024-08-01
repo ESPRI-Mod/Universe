@@ -9,7 +9,7 @@
         "CHEM"
     ],
     "description": "Simulation of abrupt termination of ocean alkalinsation in 2070 during an emission driven SSP5-8.5 scenario (part of the CDR-ocean-alk experiment)",
-    "end_year": "2100",
+    "end_year": 2100,
     "experiment": "emission-driven SSP5-8.5 scenario with alkalinization terminated in year 2070",
     "min_number_yrs_per_sim": "31",
     "parent_activity_id": [

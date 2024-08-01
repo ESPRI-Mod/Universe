@@ -9,7 +9,7 @@
         "BGC"
     ],
     "description": "Land only simulations",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "historical land-only",
     "min_number_yrs_per_sim": "165",
     "parent_activity_id": [

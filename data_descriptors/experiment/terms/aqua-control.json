@@ -9,7 +9,7 @@
         "CHEM"
     ],
     "description": "Extended version of CMIP5/CFMIP-2 aquaControl experiment. Aquaplanet (no land) experiment with no seasonal cycle forced with specified zonally symmetric SSTs",
-    "end_year": "",
+    "end_year": null,
     "experiment": "aquaplanet control",
     "min_number_yrs_per_sim": "10",
     "parent_activity_id": [

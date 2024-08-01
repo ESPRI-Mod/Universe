@@ -9,7 +9,7 @@
         "CHEM"
     ],
     "description": "As a4SSTice, but CO2 is quadrupled, and the increase in CO2 is seen by both the radiation scheme and vegetation",
-    "end_year": "",
+    "end_year": null,
     "experiment": "as piSST but with SSTs and sea ice from abrupt-4xCO2, and 4xCO2 seen by radiation and vegetation",
     "min_number_yrs_per_sim": "30",
     "parent_activity_id": [

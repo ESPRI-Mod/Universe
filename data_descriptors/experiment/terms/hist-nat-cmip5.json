@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "historical natural-only run (CMIP5-era historical [1850-2005] and RCP4.5 [2006-2020] forcing)",
-    "end_year": "2020",
+    "end_year": 2020,
     "experiment": "historical natural-only run (CMIP5-era historical [1850-2005] and RCP4.5 [2006-2020] forcing)",
     "min_number_yrs_per_sim": "171",
     "parent_activity_id": [

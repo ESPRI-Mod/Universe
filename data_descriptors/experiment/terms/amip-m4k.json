@@ -9,7 +9,7 @@
         "CHEM"
     ],
     "description": "As amip experiment but SSTs are subject to a uniform cooling of 4K",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "AMIP with uniform 4K SST decrease",
     "min_number_yrs_per_sim": "36",
     "parent_activity_id": [

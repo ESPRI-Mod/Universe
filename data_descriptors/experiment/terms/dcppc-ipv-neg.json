@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "C1.6 Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs",
-    "end_year": "",
+    "end_year": null,
     "experiment": "idealized negative IPV anomaly pattern",
     "min_number_yrs_per_sim": "10",
     "parent_activity_id": [

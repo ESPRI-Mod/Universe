@@ -9,7 +9,7 @@
         "BGC"
     ],
     "description": "Experimental set up as ssp370SST except sea surface temperatures (SST) and sea ice concentrations (SICONC) are from a 2005-2014 climatology. Diagnostics are as ssp370SST",
-    "end_year": "2100",
+    "end_year": 2100,
     "experiment": "SSP3-7.0, with SSTs prescribed as present day",
     "min_number_yrs_per_sim": "86",
     "parent_activity_id": [

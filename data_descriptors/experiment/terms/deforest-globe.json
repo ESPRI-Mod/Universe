@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Idealized deforestation experiment, 20 million km2 forest removed linearly over a period of 50 years, with an additional 30 years with no specified change in forest cover; all other forcings held constant",
-    "end_year": "",
+    "end_year": null,
     "experiment": "idealized transient global deforestation",
     "min_number_yrs_per_sim": "81",
     "parent_activity_id": [

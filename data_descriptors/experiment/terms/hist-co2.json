@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Historical CO2-only run",
-    "end_year": "2020",
+    "end_year": 2020,
     "experiment": "historical CO2-only run",
     "min_number_yrs_per_sim": "171",
     "parent_activity_id": [

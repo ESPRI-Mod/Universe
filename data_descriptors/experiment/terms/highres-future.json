@@ -8,7 +8,7 @@
         "AER"
     ],
     "description": "Coupled integrations with SSP5 forcing (nearest to CMIP5 RCP8.5 (as in highresSST-future)",
-    "end_year": "2050",
+    "end_year": 2050,
     "experiment": "coupled future 2015-2050 using a scenario as close to CMIP5 RCP8.5 as possible within CMIP6",
     "min_number_yrs_per_sim": "36",
     "parent_activity_id": [

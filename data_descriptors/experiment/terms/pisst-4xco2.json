@@ -9,7 +9,7 @@
         "CHEM"
     ],
     "description": "Same as piSST but CO2 is quadrupled. The increase in CO2 is seen by both the radiation scheme and vegetation",
-    "end_year": "",
+    "end_year": null,
     "experiment": "as piSST with radiation and vegetation seeing 4xCO2",
     "min_number_yrs_per_sim": "30",
     "parent_activity_id": [

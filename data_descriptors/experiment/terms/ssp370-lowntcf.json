@@ -9,7 +9,7 @@
         "BGC"
     ],
     "description": "Future SSP3-7.0 with reduced NTCF emissions",
-    "end_year": "2100",
+    "end_year": 2100,
     "experiment": "SSP3-7.0, with low NTCF emissions",
     "min_number_yrs_per_sim": "86",
     "parent_activity_id": [

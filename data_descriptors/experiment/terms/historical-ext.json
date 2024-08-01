@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Extension beyond 2014 of the CMIP6 historical",
-    "end_year": "present",
+    "end_year": null,
     "experiment": "post-2014 all-forcing simulation",
     "min_number_yrs_per_sim": "1",
     "parent_activity_id": [

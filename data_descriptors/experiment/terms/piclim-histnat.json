@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Time-varying forcing from volcanos, solar variability, etc. SST and sea ice fixed at preindustrial control. Interactive vegetation",
-    "end_year": "2100",
+    "end_year": 2100,
     "experiment": "transient effective radiative forcing by natural perturbations",
     "min_number_yrs_per_sim": "251",
     "parent_activity_id": [

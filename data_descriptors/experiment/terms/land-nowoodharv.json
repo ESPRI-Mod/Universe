@@ -8,7 +8,7 @@
         ""
     ],
     "description": "Same as land-hist but with wood harvest maintained at 1850 amounts/areas",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "historical land-only with no wood harvest",
     "min_number_yrs_per_sim": "165",
     "parent_activity_id": [

@@ -9,7 +9,7 @@
         "BGC"
     ],
     "description": "Historical WMGHG and halocarbons concentrations, 1850 NTCF emissions",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "historical forcing, but with pre-industrial NTCF emissions",
     "min_number_yrs_per_sim": "165",
     "parent_activity_id": [

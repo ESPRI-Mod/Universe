@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Parallel experiment to past1000. Instead of the complete forcing set, only volcanic forcing is considered",
-    "end_year": "1849",
+    "end_year": 1849,
     "experiment": "last millennium experiment using only volcanic forcing",
     "min_number_yrs_per_sim": "1000",
     "parent_activity_id": [

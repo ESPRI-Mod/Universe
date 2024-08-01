@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "PA1.3: investigate role of SST in polar amplification",
-    "end_year": "2001",
+    "end_year": 2001,
     "experiment": "Atmosphere time slice with pre-industrial SST and present day SIC",
     "min_number_yrs_per_sim": "1",
     "parent_activity_id": [

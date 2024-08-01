@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "DECK: control",
-    "end_year": "",
+    "end_year": null,
     "experiment": "pre-industrial control (CO2 concentration-driven)",
     "min_number_yrs_per_sim": 500,
     "parent_activity_id": [

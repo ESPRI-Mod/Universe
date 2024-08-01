@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Future scenario based on ssp245, but with 2-year perturbation to emissions for 2020 and 2021 due to Covid-19 pandemic restrictions. Emissions revert to ssp245 after this. Concentration-driven",
-    "end_year": "2024 or 2050",
+    "end_year": null,
     "experiment": "2-year Covid-19 emissions blip based upon ssp245",
     "min_number_yrs_per_sim": "5",
     "parent_activity_id": [

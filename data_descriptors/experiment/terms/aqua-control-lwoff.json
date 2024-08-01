@@ -9,7 +9,7 @@
         "CHEM"
     ],
     "description": "As aqua-control experiment, but with cloud-radiative effects switched off in the LW radiation code",
-    "end_year": "",
+    "end_year": null,
     "experiment": "aquaplanet control with longwave cloud radiative effects off",
     "min_number_yrs_per_sim": "10",
     "parent_activity_id": [

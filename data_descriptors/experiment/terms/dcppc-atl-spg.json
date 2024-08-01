@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "C2.1 (and C2.2) Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs. First full hindcast year follows start year (e.g., for s1992, first full hindcast year is 1993)",
-    "end_year": "5 - 10 years after start year",
+    "end_year": null,
     "experiment": "predictability of 1990s warming of Atlantic sub-polar gyre",
     "min_number_yrs_per_sim": "5",
     "parent_activity_id": [

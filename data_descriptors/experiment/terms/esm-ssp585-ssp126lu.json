@@ -9,7 +9,7 @@
         "CHEM"
     ],
     "description": "Additional land use policy sensitivity simulation for high radiative forcing scenario, keep all forcings the same as in C4MIP esmssp5-8.5 scenario except use SSP1-2.6 land use; emission driven",
-    "end_year": "2100",
+    "end_year": 2100,
     "experiment": "emissions-driven SSP5-8.5 with SSP1-2.6 land use",
     "min_number_yrs_per_sim": "86",
     "parent_activity_id": [

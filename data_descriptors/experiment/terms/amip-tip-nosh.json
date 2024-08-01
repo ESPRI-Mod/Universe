@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Surface sensible heat released at the elevation above 500m over the TIP is not allowed to heat the atmosphere. Same model as DECK",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "same as \"amip\" run, but sensible heat not allowed for elevations of the Tibetan-Iranian Plateau and Himalayas above 500m",
     "min_number_yrs_per_sim": "36",
     "parent_activity_id": [

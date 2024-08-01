@@ -9,7 +9,7 @@
         "CHEM"
     ],
     "description": "Identical to standard AMIP experiment but from 1870-present with constant pre-industrial forcing levels (anthropogenic and natural)",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "AMIP SSTs with pre-industrial anthropogenic and natural forcing",
     "min_number_yrs_per_sim": "145",
     "parent_activity_id": [

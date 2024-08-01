@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Extended AMIP run that covers 1870-2014. All natural and anthropogenic historical forcings as used in CMIP6 Historical Simulation will be included. AGCM resolution as CMIP6 Historical Simulation. The HadISST data will be used",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "AMIP-style simulation covering the period 1870-2014",
     "min_number_yrs_per_sim": "145",
     "parent_activity_id": [

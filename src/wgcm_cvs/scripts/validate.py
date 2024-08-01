@@ -8,7 +8,7 @@ import inspect
 
 base_path = Path("../../data_descriptors")
 for dir_path in base_path.iterdir():
-    print(dir_path)
+    print(" datadescriptor to validate: ", dir_path)
     py_sch_name = dir_path.stem + ".py"
     json_sch_name = dir_path.stem + ".json"
     
@@ -31,12 +31,13 @@ for dir_path in base_path.iterdir():
             with open(path,"r") as fp:
                 jsonstr = json.load(fp)
 
-            print(validator.is_valid(jsonstr))
+            print(path,validator.is_valid(jsonstr))
     
 
     print("through pydantic")
     for path in rootdatapath.iterdir():
         if path.is_file():
+            print(path)
             class_name = "".join([part.capitalize() for part in dir_path.stem.split("_")])
             pydantic_module_file_path = dir_path / "models" / py_sch_name
 

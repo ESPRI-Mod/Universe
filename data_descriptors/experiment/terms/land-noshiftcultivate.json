@@ -8,7 +8,7 @@
         ""
     ],
     "description": "Same as land-hist except shifting cultivation turned off. An additional LUC transitions dataset will be provided as a data layer within LUMIP LUH2 dataset with shifting cultivation deactivated",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "historical land-only with shifting cultivation turned off",
     "min_number_yrs_per_sim": "165",
     "parent_activity_id": [

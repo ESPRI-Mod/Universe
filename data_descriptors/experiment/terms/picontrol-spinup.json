@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "DECK: spin-up portion of the control",
-    "end_year": "",
+    "end_year": null,
     "experiment": "pre-industrial control (spin-up)",
     "min_number_yrs_per_sim": 100,
     "parent_activity_id": [

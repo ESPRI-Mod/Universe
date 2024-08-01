@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "main forcings: trace gases, orography, ice-sheet",
-    "end_year": "",
+    "end_year": null,
     "experiment": "mid-Pliocene warm period",
     "min_number_yrs_per_sim": "100",
     "parent_activity_id": [

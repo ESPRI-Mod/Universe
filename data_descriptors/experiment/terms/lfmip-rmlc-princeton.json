@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Prescribed land conditions 30yr running mean with Land-Hist-princeton",
-    "end_year": "2100",
+    "end_year": 2100,
     "experiment": "as LFMIP-rmLC with Land-Hist-princeton",
     "min_number_yrs_per_sim": "121",
     "parent_activity_id": [

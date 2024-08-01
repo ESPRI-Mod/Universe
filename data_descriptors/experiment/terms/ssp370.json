@@ -11,7 +11,7 @@
         "BGC"
     ],
     "description": "Future scenario with high radiative forcing by the end of century. Reaches about 7.0 W/m2 by 2100; fills gap in RCP forcing pathways between 6.0 and 8.5 W/m2. Concentration-driven",
-    "end_year": "2100",
+    "end_year": 2100,
     "experiment": "gap-filling scenario reaching 7.0 based on SSP3",
     "min_number_yrs_per_sim": "86",
     "parent_activity_id": [

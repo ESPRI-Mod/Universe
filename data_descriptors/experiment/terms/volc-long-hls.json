@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Idealized Southern Hemisphere high-latitude eruption emitting 28.1 Tg of SO2. Experiment initialized from PiControl",
-    "end_year": "",
+    "end_year": null,
     "experiment": "Idealized Southern Hemisphere high-latitude eruption emitting 28.1 Tg of SO2",
     "min_number_yrs_per_sim": "20",
     "parent_activity_id": [

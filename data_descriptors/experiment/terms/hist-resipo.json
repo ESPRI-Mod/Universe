@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Pacemaker 20th century historical run that includes all forcing as used in CMIP6 Historical Simulation, and the observational historical SST is restored in the tropical lobe of the IPO domain (20degS-20degN, 175degE-75degW)",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "initialized from \"historical\" run year 1870 and SSTs in tropical lobe of the IPO domain (20degS-20degN, 175degE-75degW) restored to AMIP SSTs with historical forcings",
     "min_number_yrs_per_sim": "145",
     "parent_activity_id": [

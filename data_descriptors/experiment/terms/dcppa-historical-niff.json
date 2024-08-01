@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "A4.2 Hindcasts initialized from historical climate simulations as in DCPP-A2.2, but with no information from the future. First full hindcast year follows start year (e.g., for s1960, first full hindcast year is 1961)",
-    "end_year": "5 - 10 years after start year",
+    "end_year": null,
     "experiment": "hindcast initialized from historical climate simulation but without using knowledge of subsequent historical forcing",
     "min_number_yrs_per_sim": "5",
     "parent_activity_id": [

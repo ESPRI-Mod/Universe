@@ -9,7 +9,7 @@
         "BGC"
     ],
     "description": "Historical WMGHG, halocarbon concentrations and tropospheric ozone precursors emissions, 1850 aerosol precursor emissions, prescribed SSTs",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "historical SSTs and historical forcing, but with pre-industrial aerosol emissions",
     "min_number_yrs_per_sim": "165",
     "parent_activity_id": [

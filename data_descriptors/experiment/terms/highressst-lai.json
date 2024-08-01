@@ -8,7 +8,7 @@
         "AER"
     ],
     "description": "Forced global atmosphere-land simulations as highresSST-present, but using an common LAI dataset across models",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "common LAI dataset within the highresSST-present experiment",
     "min_number_yrs_per_sim": "36",
     "parent_activity_id": [

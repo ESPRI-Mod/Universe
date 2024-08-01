@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "An uncoupled (atmosphere and land) experiment in which sea surface temperatures (SST) and sea ice concentrations (SICONC) are taken from historical (as in existing histSST experiment). All forcing agents to follow historical except LULCC. LULCC set to 1850 (exactly following hist-noLu prescription)",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "historical SSTs and historical forcing, but with pre-industrial LULCC",
     "min_number_yrs_per_sim": "165",
     "parent_activity_id": [

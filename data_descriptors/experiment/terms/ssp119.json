@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Future scenario with low radiative forcing throughout reaching about 1.9 W/m2 in 2100 based on SSP1. Concentration-driven",
-    "end_year": "2100",
+    "end_year": 2100,
     "experiment": "low-end scenario reaching 1.9 W m-2, based on SSP1",
     "min_number_yrs_per_sim": "86",
     "parent_activity_id": [

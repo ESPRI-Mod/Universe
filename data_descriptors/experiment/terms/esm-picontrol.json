@@ -9,7 +9,7 @@
         "CHEM"
     ],
     "description": "DECK: control (emission-driven)",
-    "end_year": "",
+    "end_year": null,
     "experiment": "pre-industrial control simulation with preindustrial CO2 emissions defined (CO2 emission-driven)",
     "min_number_yrs_per_sim": 500,
     "parent_activity_id": [

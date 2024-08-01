@@ -9,7 +9,7 @@
         "CHEM"
     ],
     "description": "DECK: spin-up portion of the control (emission-driven)",
-    "end_year": "",
+    "end_year": null,
     "experiment": "pre-industrial control simulation with CO2 concentration calculated (spin-up)",
     "min_number_yrs_per_sim": 100,
     "parent_activity_id": [

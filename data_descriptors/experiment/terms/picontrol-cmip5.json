@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "DECK: control (CMIP5-era pre-industrial forcing)",
-    "end_year": "",
+    "end_year": null,
     "experiment": "pre-industrial control (CMIP5-era [1850-2005] forcing)",
     "min_number_yrs_per_sim": "500",
     "parent_activity_id": [

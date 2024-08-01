@@ -10,7 +10,7 @@
         "CHEM"
     ],
     "description": "An emissions-driven simulation (fully interactive CO2), initiated from esm-piControl using CO2 emissions, amounting to 1000 PgC, following a bell-shape curve for 100 years followed by zero-emissions for 100 years",
-    "end_year": "",
+    "end_year": null,
     "experiment": "emissions driven 1000PgC bell-curve",
     "min_number_yrs_per_sim": "200",
     "parent_activity_id": [

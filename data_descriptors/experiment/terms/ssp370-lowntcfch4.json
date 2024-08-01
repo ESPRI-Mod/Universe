@@ -9,7 +9,7 @@
         "BGC"
     ],
     "description": "This experiment is identical to ssp370-lowNTCF except that the methane concentrations also follow the \"low\" scenario from SSP3-7.0_lowNTCF",
-    "end_year": "2100",
+    "end_year": 2100,
     "experiment": "SSP3-7.0, with low NTCF emissions and methane concentrations",
     "min_number_yrs_per_sim": "86",
     "parent_activity_id": [

@@ -8,7 +8,7 @@
         "BGC"
     ],
     "description": "land only simulation for ssp5-8.5",
-    "end_year": "2100",
+    "end_year": 2100,
     "experiment": "future ssp5-8.5 land only",
     "min_number_yrs_per_sim": "86",
     "parent_activity_id": [

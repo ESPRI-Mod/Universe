@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "1991 Pinatubo forcing as used in the CMIP6 historical simulations. Requires special diagnostics of radiative and latent heating rates. A large number of ensemble members is required to address internal atmospheric variability",
-    "end_year": "",
+    "end_year": null,
     "experiment": "Pinatubo experiment",
     "min_number_yrs_per_sim": "3",
     "parent_activity_id": [

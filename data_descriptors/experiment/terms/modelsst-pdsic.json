@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "PA4.1: atmosphere only model present day control with coupled model SST",
-    "end_year": "2001",
+    "end_year": 2001,
     "experiment": "Atmosphere time slice present day control with coupled model SST",
     "min_number_yrs_per_sim": "1",
     "parent_activity_id": [

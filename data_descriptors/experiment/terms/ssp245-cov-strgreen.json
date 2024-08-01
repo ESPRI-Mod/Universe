@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Future scenario based on ssp245, but following a path of reduced emissions due to a strong-green stimulus economic recovery from the Covid-19 pandemic restrictions. Concentration-driven",
-    "end_year": "2050",
+    "end_year": 2050,
     "experiment": "2-year Covid-19 emissions blip followed by strong-green stimulus recovery, based upon ssp245",
     "min_number_yrs_per_sim": "31",
     "parent_activity_id": [

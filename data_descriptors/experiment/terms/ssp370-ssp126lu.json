@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Additional land use policy sensitivity simulation for high radiative forcing scenario, keep all forcings the same as ScenarioMIP SSP3-7 (deforestation scenario), but replace land use from SSP1-2.6 (afforestation) scenario; concentration-driven",
-    "end_year": "2100",
+    "end_year": 2100,
     "experiment": "SSP3-7.0 with SSP1-2.6 land use",
     "min_number_yrs_per_sim": "86",
     "parent_activity_id": [

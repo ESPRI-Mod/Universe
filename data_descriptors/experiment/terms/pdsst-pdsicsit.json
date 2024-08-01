@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "PA1.9: atmosphere only model present day control with sea ice thickness",
-    "end_year": "2001",
+    "end_year": 2001,
     "experiment": "Atmosphere time slice constrained by present day conditions including sea ice thickness",
     "min_number_yrs_per_sim": "1",
     "parent_activity_id": [

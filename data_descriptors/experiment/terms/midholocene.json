@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "main forcings: trace gases, orbital parameters, dust (forcing, or feedback if dust cycle represented in model)",
-    "end_year": "",
+    "end_year": null,
     "experiment": "mid-Holocene",
     "min_number_yrs_per_sim": "200",
     "parent_activity_id": [

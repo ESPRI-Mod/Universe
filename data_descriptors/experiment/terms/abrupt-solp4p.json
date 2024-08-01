@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Conceptually similar to abrupt 4xCO2 DECK experiment, except that the solar constant rather than CO2 is abruptly increased by 4%",
-    "end_year": "",
+    "end_year": null,
     "experiment": "abrupt 4% increase in solar constant",
     "min_number_yrs_per_sim": "150",
     "parent_activity_id": [

@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Future climate from ScenarioMIP SSP5-8.5 simulation that includes interactive ice sheets. Set up follows the standard SSP5-8.5 experiment",
-    "end_year": "2100 or 2300",
+    "end_year": null,
     "experiment": "ssp585 with interactive ice sheet",
     "min_number_yrs_per_sim": "86",
     "parent_activity_id": [

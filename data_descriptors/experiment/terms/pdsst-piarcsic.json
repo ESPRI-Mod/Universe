@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "PA1.5: investigate response to Arctic sea ice and its role in polar amplification",
-    "end_year": "2001",
+    "end_year": 2001,
     "experiment": "Atmosphere time slice with present day SST and pre-industrial Arctic SIC",
     "min_number_yrs_per_sim": "1",
     "parent_activity_id": [

@@ -10,7 +10,7 @@
         "CHEM"
     ],
     "description": "An emissions-driven simulation (fully interactive CO2), initiated from the esm-piControl using CO2 emissions diagnosed from the 1pctCO2 experiment so that the emissions-driven run replicates as closely as possible the 1pctCO2 concentration profile",
-    "end_year": "",
+    "end_year": null,
     "experiment": "emissions driven 1% run",
     "min_number_yrs_per_sim": "150",
     "parent_activity_id": [

@@ -9,7 +9,7 @@
         "BGC"
     ],
     "description": "Prescribed anthropogenic aerosol optical properties. All forcings",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "historical simulation with specified anthropogenic aerosols",
     "min_number_yrs_per_sim": "165",
     "parent_activity_id": [

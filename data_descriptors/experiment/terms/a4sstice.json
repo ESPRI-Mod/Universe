@@ -9,7 +9,7 @@
         "CHEM"
     ],
     "description": "As piSST, but with monthly-varying SSTs and sea-ice taken from years 111-140 of each model's own abrupt-4xCO2 experiment instead of from piControl",
-    "end_year": "",
+    "end_year": null,
     "experiment": "as piSST but with SSTs and sea ice from abrupt-4xCO2",
     "min_number_yrs_per_sim": "30",
     "parent_activity_id": [

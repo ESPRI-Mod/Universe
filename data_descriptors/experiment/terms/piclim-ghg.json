@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "As in piClim-control but with present-day non-ozone greenhouse gases",
-    "end_year": "",
+    "end_year": null,
     "experiment": "effective radiative forcing by present-day greenhouse gases",
     "min_number_yrs_per_sim": "30",
     "parent_activity_id": [

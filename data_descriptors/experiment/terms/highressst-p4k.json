@@ -8,7 +8,7 @@
         "AER"
     ],
     "description": "Similar to CFMIP amip-p4K, add a uniform warming of 4K to highresSST-present SSTs and run the experiment parallel to highresSST-present",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "uniform 4K warming of highresSST-present SST",
     "min_number_yrs_per_sim": "36",
     "parent_activity_id": [

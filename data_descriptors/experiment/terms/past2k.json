@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "Experiment extending the past1000 simulation back in time to include the first millennium CE. Main forcings: trace gases, volcanoes, solar variability, land-use. past1000 forcings data sets include the first millennium, except for land-use. For the latter, a linear ramp-up to 850CE values is recommended",
-    "end_year": "1849",
+    "end_year": 1849,
     "experiment": "last two millennia experiment",
     "min_number_yrs_per_sim": "1849",
     "parent_activity_id": [

@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "B1 (and B2.1, B2.2) Ongoing decadal forecasts. First full forecast year follows start year (e.g., for s2017, first full forecast year is 2018)",
-    "end_year": "5 years after start year",
+    "end_year": null,
     "experiment": "forecast initialized from observations with forcing from ssp245",
     "min_number_yrs_per_sim": "5",
     "parent_activity_id": [

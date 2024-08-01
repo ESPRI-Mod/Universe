@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "C1.10 Mechanisms and predictability of the hiatus and of similar long timescale variations of both signs. First full hindcast year is 2015",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "pacemaker Pacific experiment",
     "min_number_yrs_per_sim": "65",
     "parent_activity_id": [

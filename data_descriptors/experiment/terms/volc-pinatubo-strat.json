@@ -10,7 +10,7 @@
         "BGC"
     ],
     "description": "As volc-pinatubo-full, but with prescribed perturbation to the total (LW+SW) radiative heating rates",
-    "end_year": "",
+    "end_year": null,
     "experiment": "Pinatubo experiment with partial radiative forcing, includes only stratospheric warming",
     "min_number_yrs_per_sim": "3",
     "parent_activity_id": [

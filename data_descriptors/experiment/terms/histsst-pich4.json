@@ -8,7 +8,7 @@
         "BGC"
     ],
     "description": "Historical (non-CH4) WMGHG concentrations and NTCF emissions, 1850 CH4 concentrations",
-    "end_year": "2014",
+    "end_year": 2014,
     "experiment": "historical SSTs and historical forcing, but with pre-industrial methane concentrations",
     "min_number_yrs_per_sim": "165",
     "parent_activity_id": [
