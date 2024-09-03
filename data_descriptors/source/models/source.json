@@ -1,0 +1,136 @@
+{
+    "$defs": {
+        "LicenseInfo": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "exceptions_contact": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "license": {
+                    "type": "string"
+                },
+                "range": {
+                    "type": "string"
+                },
+                "source_specific_info": {
+                    "type": "string"
+                },
+                "url": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "license"
+            ],
+            "title": "LicenseInfo",
+            "type": "object"
+        },
+        "ModelComponent": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "aerosol": {
+                    "$ref": "#/$defs/ModelComponentInfo"
+                },
+                "atmos": {
+                    "$ref": "#/$defs/ModelComponentInfo"
+                },
+                "atmosChem": {
+                    "$ref": "#/$defs/ModelComponentInfo"
+                },
+                "land": {
+                    "$ref": "#/$defs/ModelComponentInfo"
+                },
+                "ocean": {
+                    "$ref": "#/$defs/ModelComponentInfo"
+                },
+                "seaIce": {
+                    "$ref": "#/$defs/ModelComponentInfo"
+                }
+            },
+            "title": "ModelComponent",
+            "type": "object"
+        },
+        "ModelComponentInfo": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "native_nominal_resolution": {
+                    "type": "string"
+                },
+                "version": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "description"
+            ],
+            "title": "ModelComponentInfo",
+            "type": "object"
+        },
+        "Source": {
+            "additionalProperties": false,
+            "description": "a 'source' refers to a numerical representations of the Earth's climate system. They simulate the interactions between the atmosphere, oceans, land surface, and ice. These models are based on fundamental physical, chemical, and biological processes and are used to understand past, present, and future climate conditions. Each source or model is typically associated with a specific research institution, center, or group. For instance, models like 'EC-Earth' are developed by a consortium of European institutes, while 'GFDL-CM4' is developed by the Geophysical Fluid Dynamics Laboratory (GFDL) in the United States.",
+            "properties": {
+                "activity_participation": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "cohort": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "institution_id": {
+                    "type": "string"
+                },
+                "label_extended": {
+                    "type": "string"
+                },
+                "license_info": {
+                    "$ref": "#/$defs/LicenseInfo"
+                },
+                "model_component": {
+                    "$ref": "#/$defs/ModelComponent"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "release_year": {
+                    "type": "integer"
+                },
+                "validation_method": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "validation_method",
+                "name",
+                "activity_participation",
+                "cohort",
+                "institution_id"
+            ],
+            "title": "Source",
+            "type": "object"
+        }
+    },
+    "$id": "http://es-vocab.ipsl.fr/sourceschema",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "source_schema",
+    "type": "object",
+    "version": null
+}
