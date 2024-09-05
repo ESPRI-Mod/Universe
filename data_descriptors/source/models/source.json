@@ -87,13 +87,19 @@
                     "type": "array"
                 },
                 "cohort": {
-                    "type": "string"
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "id": {
                     "type": "string"
                 },
                 "institution_id": {
-                    "type": "string"
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
                 },
                 "label_extended": {
                     "type": "string"
@@ -103,9 +109,6 @@
                 },
                 "model_component": {
                     "$ref": "#/$defs/ModelComponent"
-                },
-                "name": {
-                    "type": "string"
                 },
                 "release_year": {
                     "type": "integer"
@@ -117,8 +120,6 @@
             "required": [
                 "id",
                 "validation_method",
-                "name",
-                "activity_participation",
                 "cohort",
                 "institution_id"
             ],

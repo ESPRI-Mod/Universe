@@ -100,12 +100,11 @@ class Source(ConfiguredBaseModel):
          'domain_of': ['Source'],
          'ifabsent': 'string(list)',
          'slot_uri': 'es-vocab:validation_method'} })
-    name: str = Field(..., json_schema_extra = { "linkml_meta": {'alias': 'name', 'domain_of': ['Source']} })
-    activity_participation: List[str] = Field(..., json_schema_extra = { "linkml_meta": {'alias': 'activity_participation',
+    activity_participation: Optional[List[str]] = Field(None, json_schema_extra = { "linkml_meta": {'alias': 'activity_participation',
          'domain_of': ['Source'],
          'slot_uri': 'source:activity_participation'} })
-    cohort: str = Field(..., json_schema_extra = { "linkml_meta": {'alias': 'cohort', 'domain_of': ['Source'], 'slot_uri': 'source:cohort'} })
-    institution_id: str = Field(..., json_schema_extra = { "linkml_meta": {'alias': 'institution_id',
+    cohort: List[str] = Field(default_factory=list, json_schema_extra = { "linkml_meta": {'alias': 'cohort', 'domain_of': ['Source'], 'slot_uri': 'source:cohort'} })
+    institution_id: List[str] = Field(default_factory=list, json_schema_extra = { "linkml_meta": {'alias': 'institution_id',
          'domain_of': ['Source'],
          'slot_uri': 'source:institution'} })
     label_extended: Optional[str] = Field(None, json_schema_extra = { "linkml_meta": {'alias': 'label_extended',

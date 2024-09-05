@@ -36,25 +36,24 @@ classes:
                 ifabsent: string(list)
                 slot_uri: es-vocab:validation_method
                 
-            name:
-                range: string
-                required: true
             
             activity-participation:
                 slot_uri: source:activity_participation
                 range: string
                 multivalued : true
-                required : true
+                #required : true
 
             cohort :
                 slot_uri: source:cohort
                 range: string
                 required : true # ???
+                multivalued : true
 
             institution_id:
                 slot_uri: source:institution
                 range : string
                 required: true
+                multivalued : true
 
             label_extended :
                 slot_uri : source:label_extend

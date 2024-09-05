@@ -25,8 +25,13 @@ source_ids1 = data1.get('source_id', {})
 
 #print(source_ids1)
 
+
 for key, value in source_ids1.items():
     print(key)
+    print(value)
+    ## NEED TO MODIFIY 2,3 THINGS
+    value["id"] = value["label"]
+    
     file_path = os.path.join(save_dir, f"{key.lower()}.json")
     with open(file_path, 'w') as f:
         json.dump(value, f, indent=4)

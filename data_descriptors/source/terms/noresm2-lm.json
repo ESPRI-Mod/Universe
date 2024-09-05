@@ -61,5 +61,6 @@
         }
     },
     "release_year": 2017,
-    "source_id": "NorESM2-LM"
+    "source_id": "NorESM2-LM",
+    "id": "NorESM2-LM"
 }

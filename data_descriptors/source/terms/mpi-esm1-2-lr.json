@@ -56,5 +56,6 @@
         }
     },
     "release_year": 2017,
-    "source_id": "MPI-ESM1-2-LR"
+    "source_id": "MPI-ESM1-2-LR",
+    "id": "MPI-ESM1-2-LR"
 }

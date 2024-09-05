@@ -48,7 +48,7 @@ for dir_path in base_path.iterdir():
             module_classes =  {name: cls for name, cls in classes if cls.__module__ == module.__name__}
 
             py_class = module_classes[class_name]
-            
+            print(py_class) 
             #Institution.model_validate_json(path.read_text())
             py_instance = py_class.model_validate_json(path.read_text())
             print(py_instance)
