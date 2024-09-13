@@ -1,0 +1,57 @@
+
+
+imports:
+  - linkml:types
+
+
+id: http://es-vocab.ipsl.fr/gridSchema
+name: grid_schema
+
+
+prefixes:
+    esvocab: http://es-vocab.ipsl.fr/
+    linkml: https://w3id.org/linkml/
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
+    schema: http://schema.org/
+    grid:  http://es-vocab.ipsl.fr/grid/
+
+default_range: string  
+default_prefix: grid
+default_curi_maps:
+  - semweb_context
+  
+classes:
+    Grid:
+        description: >
+            In the context of CMIP6, the grid_label refers to a standardized identifier that describes the specific grid or spatial resolution on which a climate model's output data is provided. Climate models use different grids to discretize the Earth's surface and atmosphere for numerical simulations, and the grid_label helps users distinguish between various types of model grids and resolutions.
+
+            The grid_label is part of the metadata for a model's output and typically provides information on:
+
+            Type of grid (e.g., regular latitude-longitude grid, rotated pole grid, etc.).
+            Horizontal resolution (e.g., coarse vs fine resolution).
+            Whether the grid is native or regridded to a common format for ease of comparison.
+            Common grid_labels in CMIP6:
+            gn: Native grid. This represents the original grid used by the climate model in its simulation.
+            gr: Regridded to a regular latitude-longitude grid. This is typically done to standardize model outputs across different models.
+            gm: A grid where the data is zonally averaged (averaged over longitude).        
+        class_uri: esvocab:grid
+        attributes:
+            id:
+                slot_uri: grid:id
+                range: string
+                required: true
+                identifier: true
+
+            validation_method :
+                required: true
+                range : string
+                ifabsent: string(list)
+                slot_uri: es-vocab:validation_method
+                
+            label:
+                range: string
+                required: true
+
+            description:
+                range: string
+                

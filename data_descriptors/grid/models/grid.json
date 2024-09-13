@@ -1,0 +1,36 @@
+{
+    "$defs": {
+        "Grid": {
+            "additionalProperties": false,
+            "description": "In the context of CMIP6, the grid_label refers to a standardized identifier that describes the specific grid or spatial resolution on which a climate model's output data is provided. Climate models use different grids to discretize the Earth's surface and atmosphere for numerical simulations, and the grid_label helps users distinguish between various types of model grids and resolutions.\nThe grid_label is part of the metadata for a model's output and typically provides information on:\nType of grid (e.g., regular latitude-longitude grid, rotated pole grid, etc.). Horizontal resolution (e.g., coarse vs fine resolution). Whether the grid is native or regridded to a common format for ease of comparison. Common grid_labels in CMIP6: gn: Native grid. This represents the original grid used by the climate model in its simulation. gr: Regridded to a regular latitude-longitude grid. This is typically done to standardize model outputs across different models. gm: A grid where the data is zonally averaged (averaged over longitude).",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "validation_method": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "validation_method",
+                "label"
+            ],
+            "title": "Grid",
+            "type": "object"
+        }
+    },
+    "$id": "http://es-vocab.ipsl.fr/gridSchema",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "grid_schema",
+    "type": "object",
+    "version": null
+}
