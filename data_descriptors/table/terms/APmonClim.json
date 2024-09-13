@@ -1,0 +1,12 @@
+{
+    "id": "APmonClim",
+    "variable_entry": [
+        "ch4Clim",
+        "ch4globalClim",
+        "co2Clim",
+        "co2massClim",
+        "n2oClim",
+        "n2oglobalClim",
+        "o3Clim"
+    ]
+}

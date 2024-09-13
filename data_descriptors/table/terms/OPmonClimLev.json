@@ -1,0 +1,29 @@
+{
+    "id": "OPmonClimLev",
+    "variable_entry": [
+        "difmxybo",
+        "difmxylo",
+        "diftrbbo",
+        "diftrblo",
+        "diftrebo",
+        "diftrelo",
+        "diftrxybo",
+        "diftrxylo",
+        "difvho",
+        "difvmbo",
+        "difvmfdo",
+        "difvmo",
+        "difvmto",
+        "difvso",
+        "difvtrbo",
+        "difvtrto",
+        "dispkevfo",
+        "dispkexyfo",
+        "tnkebto",
+        "tnpeo",
+        "tnpeot",
+        "tnpeotb",
+        "zfullo",
+        "zhalfo"
+    ]
+}

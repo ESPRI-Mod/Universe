@@ -1,0 +1,21 @@
+{
+    "id": "OPmonZ",
+    "variable_entry": [
+        "hfbasin",
+        "hfbasinpadv",
+        "hfbasinpmadv",
+        "hfbasinpmdiff",
+        "hfbasinpsmadv",
+        "htovgyre",
+        "htovovrt",
+        "msftmrho",
+        "msftmrhompa",
+        "msftmz",
+        "msftmzmpa",
+        "msftmzsmpa",
+        "msftyzsmpa",
+        "sltbasin",
+        "sltovgyre",
+        "sltovovrt"
+    ]
+}

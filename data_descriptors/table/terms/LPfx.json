@@ -1,0 +1,18 @@
+{
+    "id": "LPfx",
+    "variable_entry": [
+        "areacellr",
+        "clayfrac",
+        "fldcapacity",
+        "ksat",
+        "mrsofc",
+        "orog",
+        "rootd",
+        "rootdsl",
+        "sandfrac",
+        "sftgif",
+        "slthick",
+        "vegHeight",
+        "wilt"
+    ]
+}
