@@ -1,6 +1,7 @@
 @prefix : <http://es-vocab.ipsl.fr/experiment/> .
 @prefix activity: <http://es-vocab.ipsl.fr/activity/> .
 @prefix forcing: <http://es-vocab.ipsl.fr/forcing_index/> .
+@prefix grid: <http://es-vocab.ipsl.fr/grid/> .
 @prefix initialization: <http://es-vocab.ipsl.fr/initialization_index/> .
 @prefix institution: <http://es-vocab.ipsl.fr/institution/> .
 @prefix physic: <http://es-vocab.ipsl.fr/physic_index/> .
@@ -5263,6 +5264,141 @@ activity:volmip activity:cmip_acronym "VolMIP" ;
 <http://es-vocab.ipsl.fr/forcing_index/forcing_index:one_digit> forcing:regex "^f\\d$" .
 
 forcing:multiple_digit forcing:regex "^f\\d*$" .
+
+grid:gm grid:description "global mean data" ;
+    grid:label "gm" .
+
+grid:gn grid:description "data reported on a model's native grid" ;
+    grid:label "gn" .
+
+grid:gna grid:description "data reported on a native grid in the region of Antarctica" ;
+    grid:label "gna" .
+
+grid:gng grid:description "data reported on a native grid in the region of Greenland" ;
+    grid:label "gng" .
+
+grid:gnz grid:description "zonal mean data reported on a model's native latitude grid" ;
+    grid:label "gnz" .
+
+grid:gr grid:description "regridded data reported on the data provider's preferred target grid" ;
+    grid:label "gr" .
+
+grid:gr1 grid:description "regridded data reported on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr1" .
+
+grid:gr1a grid:description "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr1a" .
+
+grid:gr1g grid:description "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr1g" .
+
+grid:gr1z grid:description "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid" ;
+    grid:label "gr1z" .
+
+grid:gr2 grid:description "regridded data reported on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr2" .
+
+grid:gr2a grid:description "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr2a" .
+
+grid:gr2g grid:description "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr2g" .
+
+grid:gr2z grid:description "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid" ;
+    grid:label "gr2z" .
+
+grid:gr3 grid:description "regridded data reported on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr3" .
+
+grid:gr3a grid:description "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr3a" .
+
+grid:gr3g grid:description "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr3g" .
+
+grid:gr3z grid:description "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid" ;
+    grid:label "gr3z" .
+
+grid:gr4 grid:description "regridded data reported on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr4" .
+
+grid:gr4a grid:description "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr4a" .
+
+grid:gr4g grid:description "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr4g" .
+
+grid:gr4z grid:description "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid" ;
+    grid:label "gr4z" .
+
+grid:gr5 grid:description "regridded data reported on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr5" .
+
+grid:gr5a grid:description "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr5a" .
+
+grid:gr5g grid:description "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr5g" .
+
+grid:gr5z grid:description "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid" ;
+    grid:label "gr5z" .
+
+grid:gr6 grid:description "regridded data reported on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr6" .
+
+grid:gr6a grid:description "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr6a" .
+
+grid:gr6g grid:description "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr6g" .
+
+grid:gr6z grid:description "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid" ;
+    grid:label "gr6z" .
+
+grid:gr7 grid:description "regridded data reported on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr7" .
+
+grid:gr7a grid:description "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr7a" .
+
+grid:gr7g grid:description "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr7g" .
+
+grid:gr7z grid:description "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid" ;
+    grid:label "gr7z" .
+
+grid:gr8 grid:description "regridded data reported on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr8" .
+
+grid:gr8a grid:description "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr8a" .
+
+grid:gr8g grid:description "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr8g" .
+
+grid:gr8z grid:description "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid" ;
+    grid:label "gr8z" .
+
+grid:gr9 grid:description "regridded data reported on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr9" .
+
+grid:gr9a grid:description "regridded data reported in the region of Antarctica on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr9a" .
+
+grid:gr9g grid:description "regridded data reported in the region of Greenland on a grid other than the native grid and other than the preferred target grid" ;
+    grid:label "gr9g" .
+
+grid:gr9z grid:description "regridded zonal mean data reported on a grid other than the native latitude grid and other than the preferred latitude target grid" ;
+    grid:label "gr9z" .
+
+grid:gra grid:description "regridded data in the region of Antarctica reported on the data provider's preferred target grid" ;
+    grid:label "gra" .
+
+grid:grg grid:description "regridded data in the region of Greenland reported on the data provider's preferred target grid" ;
+    grid:label "grg" .
+
+grid:grz grid:description "regridded zonal mean data reported on the data provider's preferred latitude target grid" ;
+    grid:label "grz" .
 
 <http://es-vocab.ipsl.fr/initialization_index/initialization_index:one_digit> initialization:regex "^i\\d$" .
 
