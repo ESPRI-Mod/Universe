@@ -1,0 +1,48 @@
+
+imports:
+  - linkml:types
+
+
+id: http://es-vocab.ipsl.fr/tableSchema
+name: table_schema
+
+
+prefixes:
+    esvocab: http://es-vocab.ipsl.fr/
+    linkml: https://w3id.org/linkml/
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
+    schema: http://schema.org/
+    table:  http://es-vocab.ipsl.fr/table/
+
+default_range: string  
+default_prefix: table
+default_curi_maps:
+  - semweb_context
+  
+classes:
+    Table:
+        description: >
+            a table defines a set of climate model outputs, describing which variables should be recorded, their frequency, dimensions, and the contexts (such as atmosphere, ocean, or land surface). 
+            Commun exemples: 
+            Amon: Monthly data for atmospheric variables (e.g., temperature, wind speed, humidity).
+            Omon: Monthly data for ocean variables (e.g., sea surface temperature, ocean currents).
+            Lmon: Monthly data for land surface variables (e.g., soil moisture, surface temperature).
+        
+        class_uri: esvocab:table
+        attributes:
+            id:
+                slot_uri: table:id
+                range: string
+                required: true
+                identifier: true
+
+            validation_method :
+                required: true
+                range : string
+                ifabsent: string(list)
+                slot_uri: es-vocab:validation_method
+                
+            variable_entry:
+                range: string
+                multivalued: true
+                required: true

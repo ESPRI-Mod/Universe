@@ -1,0 +1,10 @@
+{
+    "id": "APmonDiurnal",
+    "variable_entry": [
+        "rlut",
+        "rlutcs",
+        "rsdt",
+        "rsut",
+        "rsutcs"
+    ]
+}

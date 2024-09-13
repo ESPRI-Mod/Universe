@@ -1,0 +1,14 @@
+{
+    "id": "LPyrPt",
+    "variable_entry": [
+        "cLitter",
+        "cLitterLut",
+        "cProduct",
+        "cProductLut",
+        "cSoil",
+        "cSoilLut",
+        "cVeg",
+        "cVegLut",
+        "fracLut"
+    ]
+}

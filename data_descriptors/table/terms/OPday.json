@@ -1,0 +1,12 @@
+{
+    "id": "OPday",
+    "variable_entry": [
+        "mlotst",
+        "omldamax",
+        "sos",
+        "sossq",
+        "t20d",
+        "tos",
+        "tossq"
+    ]
+}

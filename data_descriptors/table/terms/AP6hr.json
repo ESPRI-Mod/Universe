@@ -1,0 +1,21 @@
+{
+    "id": "AP6hr",
+    "variable_entry": [
+        "hurs",
+        "hus4",
+        "pr",
+        "prhmax",
+        "psl",
+        "rv850",
+        "sfcWind",
+        "tas",
+        "ua100m",
+        "uas",
+        "va100m",
+        "vas",
+        "wap4",
+        "wsgmax100m",
+        "wsgmax10m",
+        "zg1000"
+    ]
+}

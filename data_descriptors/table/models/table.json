@@ -1,0 +1,36 @@
+{
+    "$defs": {
+        "Table": {
+            "additionalProperties": false,
+            "description": "a table defines a set of climate model outputs, describing which variables should be recorded, their frequency, dimensions, and the contexts (such as atmosphere, ocean, or land surface).  Commun exemples:  Amon: Monthly data for atmospheric variables (e.g., temperature, wind speed, humidity). Omon: Monthly data for ocean variables (e.g., sea surface temperature, ocean currents). Lmon: Monthly data for land surface variables (e.g., soil moisture, surface temperature).",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "validation_method": {
+                    "type": "string"
+                },
+                "variable_entry": {
+                    "items": {
+                        "type": "string"
+                    },
+                    "type": "array"
+                }
+            },
+            "required": [
+                "id",
+                "validation_method",
+                "variable_entry"
+            ],
+            "title": "Table",
+            "type": "object"
+        }
+    },
+    "$id": "http://es-vocab.ipsl.fr/tableSchema",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "table_schema",
+    "type": "object",
+    "version": null
+}

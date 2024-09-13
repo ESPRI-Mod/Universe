@@ -1,0 +1,14 @@
+{
+    "id": "OPfx",
+    "variable_entry": [
+        "areacello",
+        "basin",
+        "deptho",
+        "hfgeou",
+        "masscello",
+        "sftof",
+        "thkcello",
+        "ugrido",
+        "volcello"
+    ]
+}
