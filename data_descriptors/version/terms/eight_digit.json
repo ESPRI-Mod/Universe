@@ -1,0 +1,4 @@
+{
+    "id": "version:eight_digit",
+    "regex": "^v\\d{8}$"
+}
