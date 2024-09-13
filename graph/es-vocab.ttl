@@ -10,6 +10,7 @@
 @prefix source: <http://es-vocab.ipsl.fr/source/> .
 @prefix table: <http://es-vocab.ipsl.fr/table/> .
 @prefix variant_label: <http://es-vocab.ipsl.fr/Variant_label/> .
+@prefix version: <http://es-vocab.ipsl.fr/version/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 activity:aerchemmip activity:cmip_acronym "AerChemMIP" ;
@@ -7616,6 +7617,8 @@ table:SImonPt table:variable_entry "sidivvel",
 <http://es-vocab.ipsl.fr/variant_label/run> variant_label:description "TODO IMPROVE THIS" ;
     variant_label:parts <realization:run> ;
     variant_label:separator "" .
+
+version:eight_digit version:regex "^v\\d{8}$" .
 
 institution:02haar591 institution:city "Paris" ;
     institution:country "FR",

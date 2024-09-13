@@ -1,0 +1,36 @@
+{
+    "$defs": {
+        "Version": {
+            "additionalProperties": false,
+            "description": "this data descriptor explicit the regex use to encode the version datasets",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "regex": {
+                    "type": "string"
+                },
+                "validation_method": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "validation_method",
+                "regex"
+            ],
+            "title": "Version",
+            "type": "object"
+        }
+    },
+    "$id": "http://es-vocab.ipsl.fr/versionSchema",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "version_schema",
+    "type": "object",
+    "version": null
+}
