@@ -1,0 +1,5 @@
+{
+    "id": "hxys",
+    "label": "hxys",
+    "description": "the variable is a function of longitude and latitude, but is reported only at selected sites.  This differs from 'hms' in that each reported value should be representative of an area about the size of an original grid cell (e.g., data reported from a subset of cells extracted from a grid).  For observations each value should be from measurements made at a single site (not an average of a collection of sites)."
+}

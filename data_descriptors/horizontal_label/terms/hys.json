@@ -1,0 +1,5 @@
+{
+    "id": "hys",
+    "label": "hys",
+    "description": "the variable is a function of latitude alone but may represent selected transects or means (or sums) over sub-domains (e.g., a mean over longitude for different ocean basins as a function of latitude)"
+}

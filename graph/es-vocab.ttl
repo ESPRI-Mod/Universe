@@ -10,6 +10,7 @@
 @prefix schema1: <http://schema.org/> .
 @prefix source: <http://es-vocab.ipsl.fr/source/> .
 @prefix table: <http://es-vocab.ipsl.fr/table/> .
+@prefix temporal_label: <http://es-vocab.ipsl.fr/temporal_label/> .
 @prefix time_range: <http://es-vocab.ipsl.fr/time_range/> .
 @prefix timebound: <http://es-vocab.ipsl.fr/timebound/> .
 @prefix variable: <http://es-vocab.ipsl.fr/variable/> .
@@ -7739,6 +7740,24 @@ table:SImonPt table:variable_entry "sidivvel",
         "sishevel",
         "sistremax",
         "sistresave" .
+
+temporal_label:tavg temporal_label:description "time-average" ;
+    temporal_label:label "tavg" .
+
+temporal_label:tclmdc temporal_label:description "diurnal cycle climatology" ;
+    temporal_label:label "tclmdc" .
+
+temporal_label:ti temporal_label:description "time-independent data (no time coordinate)" ;
+    temporal_label:label "ti" .
+
+temporal_label:tpt temporal_label:description "synoptically sampled (i.e., a snapshot, referred to as 'point' data in the CF conventions cell_methods)" ;
+    temporal_label:label "tpt" .
+
+temporal_label:tstat temporal_label:description "statistical measure (e.g., a maximum or minimum value), other than those, like 'mean value' already accounted for by other options above." ;
+    temporal_label:label "tstat" .
+
+temporal_label:tsum temporal_label:description "accumulation, sum, or integral over the reporting interval" ;
+    temporal_label:label "tsum" .
 
 time_range:monthly time_range:description "Regex to validate time range like YYYYMM-YYYYMM" ;
     time_range:parts <timebound:six_digits> ;
