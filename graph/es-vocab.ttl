@@ -10,12 +10,9 @@
 @prefix schema1: <http://schema.org/> .
 @prefix source: <http://es-vocab.ipsl.fr/source/> .
 @prefix table: <http://es-vocab.ipsl.fr/table/> .
-<<<<<<< HEAD
-@prefix variable: <http://es-vocab.ipsl.fr/variable/> .
-=======
 @prefix time_range: <http://es-vocab.ipsl.fr/time_range/> .
 @prefix timebound: <http://es-vocab.ipsl.fr/timebound/> .
->>>>>>> 5fd36401f98b737b9dc263e943be7a501717a178
+@prefix variable: <http://es-vocab.ipsl.fr/variable/> .
 @prefix variant_label: <http://es-vocab.ipsl.fr/Variant_label/> .
 @prefix version: <http://es-vocab.ipsl.fr/version/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -7743,7 +7740,20 @@ table:SImonPt table:variable_entry "sidivvel",
         "sistremax",
         "sistresave" .
 
-<<<<<<< HEAD
+time_range:monthly time_range:description "Regex to validate time range like YYYYMM-YYYYMM" ;
+    time_range:parts <timebound:six_digits> ;
+    time_range:separator "-" .
+
+timebound:eight_digit timebound:regex "^\\d{8}$" .
+
+timebound:fourteen_digit timebound:regex "^\\d{14}$" .
+
+timebound:six_digit timebound:regex "^\\d{6}$" .
+
+timebound:ten_digit timebound:regex "^\\d{10}$" .
+
+timebound:twelve_digit timebound:regex "^\\d{12}$" .
+
 variable:abs550aer variable:cmip_acronym "abs550aer" ;
     variable:long_name "Ambient Aerosol Absorption Optical Thickness at 550nm" ;
     variable:standard_name "atmosphere_absorption_optical_thickness_due_to_ambient_aerosol_particles" ;
@@ -15681,21 +15691,6 @@ variable:zvelsurf variable:cmip_acronym "zvelsurf" ;
     variable:standard_name "land_ice_surface_upward_velocity" ;
     variable:type "real" ;
     variable:units "m s-1" .
-=======
-time_range:monthly time_range:description "Regex to validate time range like YYYYMM-YYYYMM" ;
-    time_range:parts <timebound:six_digits> ;
-    time_range:separator "-" .
-
-timebound:eight_digit timebound:regex "^\\d{8}$" .
-
-timebound:fourteen_digit timebound:regex "^\\d{14}$" .
-
-timebound:six_digit timebound:regex "^\\d{6}$" .
-
-timebound:ten_digit timebound:regex "^\\d{10}$" .
-
-timebound:twelve_digit timebound:regex "^\\d{12}$" .
->>>>>>> 5fd36401f98b737b9dc263e943be7a501717a178
 
 <http://es-vocab.ipsl.fr/variant_label/rip> variant_label:description "TODO IMPROVE THIS" ;
     variant_label:parts <http://es-vocab.ipsl.fr/variant_label/initialization_index:one_digit>,
