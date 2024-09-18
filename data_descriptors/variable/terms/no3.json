@@ -1,0 +1,8 @@
+{
+    "id": "no3",
+    "cmip_acronym": "no3",
+    "long_name": "Dissolved Nitrate Concentration",
+    "standard_name": "mole_concentration_of_nitrate_in_sea_water",
+    "type": "real",
+    "units": "mol m-3"
+}

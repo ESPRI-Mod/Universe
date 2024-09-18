@@ -1,0 +1,8 @@
+{
+    "id": "siu",
+    "cmip_acronym": "siu",
+    "long_name": "X-Component of Sea-Ice Velocity",
+    "standard_name": "sea_ice_x_velocity",
+    "type": "real",
+    "units": "m s-1"
+}

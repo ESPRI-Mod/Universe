@@ -1,0 +1,8 @@
+{
+    "id": "va100m",
+    "cmip_acronym": "va100m",
+    "long_name": "Northward Wind at 100m",
+    "standard_name": "northward_wind",
+    "type": "real",
+    "units": "m s-1"
+}

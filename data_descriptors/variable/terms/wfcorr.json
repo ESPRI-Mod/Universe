@@ -1,0 +1,8 @@
+{
+    "id": "wfcorr",
+    "cmip_acronym": "wfcorr",
+    "long_name": "Water Flux Correction",
+    "standard_name": "water_flux_correction",
+    "type": "real",
+    "units": "kg m-2 s-1"
+}

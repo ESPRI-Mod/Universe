@@ -1,0 +1,8 @@
+{
+    "id": "thetaot700",
+    "cmip_acronym": "thetaot700",
+    "long_name": "Depth Average Potential Temperature of Upper 700m",
+    "standard_name": "sea_water_potential_temperature",
+    "type": "real",
+    "units": "degC"
+}

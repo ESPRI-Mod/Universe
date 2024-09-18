@@ -1,0 +1,8 @@
+{
+    "id": "sfo3max",
+    "cmip_acronym": "sfo3max",
+    "long_name": "Daily Maximum O3 Volume Mixing Ratio in Lowest Model Layer",
+    "standard_name": "mole_fraction_of_ozone_in_air",
+    "type": "real",
+    "units": "mol mol-1"
+}

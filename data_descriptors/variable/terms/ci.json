@@ -1,0 +1,8 @@
+{
+    "id": "ci",
+    "cmip_acronym": "ci",
+    "long_name": "Fraction of Time Convection Occurs in Cell",
+    "standard_name": "convection_time_fraction",
+    "type": "real",
+    "units": "1"
+}

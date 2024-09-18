@@ -1,0 +1,8 @@
+{
+    "id": "siflswdbot",
+    "cmip_acronym": "siflswdbot",
+    "long_name": "Downwelling Shortwave Flux Under Sea Ice",
+    "standard_name": "downwelling_shortwave_flux_in_sea_water_at_sea_ice_base",
+    "type": "real",
+    "units": "W m-2"
+}

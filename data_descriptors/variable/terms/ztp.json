@@ -1,0 +1,8 @@
+{
+    "id": "ztp",
+    "cmip_acronym": "ztp",
+    "long_name": "Tropopause Altitude Above Geoid",
+    "standard_name": "tropopause_altitude",
+    "type": "real",
+    "units": "m"
+}

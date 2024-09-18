@@ -1,0 +1,8 @@
+{
+    "id": "c14Veg",
+    "cmip_acronym": "c14Veg",
+    "long_name": "Mass of 14C in Vegetation",
+    "standard_name": "vegetation_mass_content_of_14C",
+    "type": "real",
+    "units": "kg m-2"
+}

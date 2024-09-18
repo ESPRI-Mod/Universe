@@ -1,0 +1,8 @@
+{
+    "id": "evs",
+    "cmip_acronym": "evs",
+    "long_name": "Water Evaporation Flux Where Ice Free Ocean over Sea",
+    "standard_name": "water_evapotranspiration_flux",
+    "type": "real",
+    "units": "kg m-2 s-1"
+}

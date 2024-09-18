@@ -1,0 +1,8 @@
+{
+    "id": "snw",
+    "cmip_acronym": "snw",
+    "long_name": "Surface Snow Amount",
+    "standard_name": "surface_snow_amount",
+    "type": "real",
+    "units": "kg m-2"
+}

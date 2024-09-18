@@ -1,0 +1,77 @@
+
+imports:
+  - linkml:types
+
+
+id: http://es-vocab.ipsl.fr/variableSchema
+name: variable_schema
+
+
+prefixes:
+    esvocab: http://es-vocab.ipsl.fr/
+    linkml: https://w3id.org/linkml/
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
+    schema: http://schema.org/
+    variable:  http://es-vocab.ipsl.fr/variable/
+
+default_range: string  
+default_prefix: variable
+default_curi_maps:
+  - semweb_context
+  
+classes:
+    Variable:
+        description: >
+
+            a variable refers to a specific type of climate-related quantity or measurement that is simulated and stored in a data file. These variables represent key physical, chemical, or biological properties of the Earth system and are outputs from climate models.
+
+            Each variable captures a different aspect of the climate system, such as temperature, precipitation, sea level, radiation, or atmospheric composition.
+
+            Examples of Variables:
+            tas: Near-surface air temperature (often measured at 2 meters above the surface)
+            pr: Precipitation
+            psl: Sea level pressure
+            zg: Geopotential height
+            rlut: Top-of-atmosphere longwave radiation
+            siconc: Sea ice concentration
+            co2: Atmospheric CO2 concentration
+
+        class_uri: esvocab:variable
+        attributes:
+            id:
+                slot_uri: variable:id
+                range: string
+                required: true
+                identifier: true
+
+            cmip_acronym:
+                range: string
+                required: true
+            
+            validation_method :
+                required: true
+                range : string
+                ifabsent: string(list)
+                slot_uri: variable:validation_method
+
+            long_name : 
+                required : true
+                range: string
+                slot_uri : variable:long_name
+
+            standard_name : 
+                required : false
+                range: string
+                slot_uri : variable:standard_name
+
+            type:
+                required : false
+                range : string
+
+            units: 
+                required : false
+                range : string
+                
+
+                            
+   

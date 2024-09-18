@@ -1,0 +1,8 @@
+{
+    "id": "hfbasin",
+    "cmip_acronym": "hfbasin",
+    "long_name": "Northward Ocean Heat Transport",
+    "standard_name": "northward_ocean_heat_transport",
+    "type": "real",
+    "units": "W"
+}

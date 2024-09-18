@@ -1,0 +1,8 @@
+{
+    "id": "sifb",
+    "cmip_acronym": "sifb",
+    "long_name": "Sea-Ice Freeboard",
+    "standard_name": "sea_ice_freeboard",
+    "type": "real",
+    "units": "m"
+}

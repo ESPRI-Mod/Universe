@@ -1,0 +1,8 @@
+{
+    "id": "grassFrac",
+    "cmip_acronym": "grassFrac",
+    "long_name": "Natural Grass Area Percentage",
+    "standard_name": "area_fraction",
+    "type": "real",
+    "units": "%"
+}

@@ -1,0 +1,8 @@
+{
+    "id": "rsdsIs",
+    "cmip_acronym": "rsdsIs",
+    "long_name": "Ice Sheet Surface Downwelling Shortwave Radiation",
+    "standard_name": "surface_downwelling_shortwave_flux_in_air",
+    "type": "real",
+    "units": "W m-2"
+}

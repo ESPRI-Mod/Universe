@@ -1,0 +1,8 @@
+{
+    "id": "mrrob",
+    "cmip_acronym": "mrrob",
+    "long_name": "Subsurface Runoff",
+    "standard_name": "subsurface_runoff_flux",
+    "type": "real",
+    "units": "kg m-2 s-1"
+}

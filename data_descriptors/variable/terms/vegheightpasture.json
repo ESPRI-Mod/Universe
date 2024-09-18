@@ -1,0 +1,8 @@
+{
+    "id": "vegHeightPasture",
+    "cmip_acronym": "vegHeightPasture",
+    "long_name": "Height of Pastures",
+    "standard_name": "canopy_height",
+    "type": "real",
+    "units": "m"
+}

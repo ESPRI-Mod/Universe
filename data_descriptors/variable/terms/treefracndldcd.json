@@ -1,0 +1,8 @@
+{
+    "id": "treeFracNdlDcd",
+    "cmip_acronym": "treeFracNdlDcd",
+    "long_name": "Needleleaf Deciduous Tree Area Percentage",
+    "standard_name": "area_fraction",
+    "type": "real",
+    "units": "%"
+}

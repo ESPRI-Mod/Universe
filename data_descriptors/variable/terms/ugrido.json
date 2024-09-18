@@ -1,0 +1,8 @@
+{
+    "id": "ugrido",
+    "cmip_acronym": "ugrido",
+    "long_name": "UGRID Grid Specification",
+    "standard_name": "longitude",
+    "type": "real",
+    "units": ""
+}

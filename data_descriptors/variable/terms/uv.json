@@ -1,0 +1,8 @@
+{
+    "id": "uv",
+    "cmip_acronym": "uv",
+    "long_name": "Product of Eastward Wind and Northward Wind",
+    "standard_name": "product_of_eastward_wind_and_northward_wind",
+    "type": "real",
+    "units": "m2 s-2"
+}

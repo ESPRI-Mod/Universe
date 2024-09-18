@@ -1,0 +1,8 @@
+{
+    "id": "sisnhc",
+    "cmip_acronym": "sisnhc",
+    "long_name": "Snow Heat Content per Unit Area",
+    "standard_name": "thermal_energy_content_of_surface_snow",
+    "type": "real",
+    "units": "J m-2"
+}

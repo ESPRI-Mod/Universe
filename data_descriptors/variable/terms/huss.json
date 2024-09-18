@@ -1,0 +1,8 @@
+{
+    "id": "huss",
+    "cmip_acronym": "huss",
+    "long_name": "Near-Surface Specific Humidity",
+    "standard_name": "specific_humidity",
+    "type": "real",
+    "units": "1"
+}

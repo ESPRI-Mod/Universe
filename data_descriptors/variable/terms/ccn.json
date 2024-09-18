@@ -1,0 +1,8 @@
+{
+    "id": "ccn",
+    "cmip_acronym": "ccn",
+    "long_name": "Cloud Condensation Nuclei Concentration at Liquid Cloud Top",
+    "standard_name": "number_concentration_of_cloud_condensation_nuclei_at_stp_in_air",
+    "type": "real",
+    "units": "m-3"
+}

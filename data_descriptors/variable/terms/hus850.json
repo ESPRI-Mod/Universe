@@ -1,0 +1,8 @@
+{
+    "id": "hus850",
+    "cmip_acronym": "hus850",
+    "long_name": "Specific Humidity",
+    "standard_name": "specific_humidity",
+    "type": "real",
+    "units": "1"
+}

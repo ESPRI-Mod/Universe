@@ -1,0 +1,8 @@
+{
+    "id": "sosga",
+    "cmip_acronym": "sosga",
+    "long_name": "Global Average Sea Surface Salinity",
+    "standard_name": "sea_surface_salinity",
+    "type": "real",
+    "units": "0.001"
+}

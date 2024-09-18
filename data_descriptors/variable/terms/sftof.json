@@ -1,0 +1,8 @@
+{
+    "id": "sftof",
+    "cmip_acronym": "sftof",
+    "long_name": "Sea Area Percentage",
+    "standard_name": "sea_area_fraction",
+    "type": "real",
+    "units": "%"
+}

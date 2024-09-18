@@ -1,0 +1,8 @@
+{
+    "id": "sitempsnic",
+    "cmip_acronym": "sitempsnic",
+    "long_name": "Temperature at Snow-Ice Interface",
+    "standard_name": "sea_ice_surface_temperature",
+    "type": "real",
+    "units": "K"
+}

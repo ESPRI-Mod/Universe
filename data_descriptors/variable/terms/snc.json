@@ -1,0 +1,8 @@
+{
+    "id": "snc",
+    "cmip_acronym": "snc",
+    "long_name": "Snow Area Percentage",
+    "standard_name": "surface_snow_area_fraction",
+    "type": "real",
+    "units": "%"
+}

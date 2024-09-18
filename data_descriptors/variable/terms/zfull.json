@@ -1,0 +1,8 @@
+{
+    "id": "zfull",
+    "cmip_acronym": "zfull",
+    "long_name": "Altitude of Model Full-Levels",
+    "standard_name": "height_above_reference_ellipsoid",
+    "type": "real",
+    "units": "m"
+}

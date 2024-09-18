@@ -1,0 +1,8 @@
+{
+    "id": "ua10",
+    "cmip_acronym": "ua10",
+    "long_name": "Eastward Wind at 10hPa",
+    "standard_name": "eastward_wind",
+    "type": "real",
+    "units": "m s-1"
+}

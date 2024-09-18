@@ -1,0 +1,8 @@
+{
+    "id": "wtd",
+    "cmip_acronym": "wtd",
+    "long_name": "Water Table Depth",
+    "standard_name": "water_table_depth",
+    "type": "real",
+    "units": "m"
+}

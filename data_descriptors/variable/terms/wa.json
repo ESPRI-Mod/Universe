@@ -1,0 +1,8 @@
+{
+    "id": "wa",
+    "cmip_acronym": "wa",
+    "long_name": "Upward Air Velocity",
+    "standard_name": "upward_air_velocity",
+    "type": "real",
+    "units": "m s-1"
+}

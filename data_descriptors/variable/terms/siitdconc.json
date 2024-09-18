@@ -1,0 +1,8 @@
+{
+    "id": "siitdconc",
+    "cmip_acronym": "siitdconc",
+    "long_name": "Sea-Ice Area Percentages in Thickness Categories",
+    "standard_name": "sea_ice_area_fraction",
+    "type": "real",
+    "units": "%"
+}

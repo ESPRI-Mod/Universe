@@ -1,0 +1,8 @@
+{
+    "id": "intdic",
+    "cmip_acronym": "intdic",
+    "long_name": "Dissolved Inorganic Carbon Content",
+    "standard_name": "ocean_mass_content_of_dissolved_inorganic_carbon",
+    "type": "real",
+    "units": "kg m-2"
+}

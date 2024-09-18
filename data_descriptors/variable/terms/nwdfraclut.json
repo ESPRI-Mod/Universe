@@ -1,0 +1,8 @@
+{
+    "id": "nwdFracLut",
+    "cmip_acronym": "nwdFracLut",
+    "long_name": "Non-Woody Vegetation Percentage Cover",
+    "standard_name": "area_fraction",
+    "type": "real",
+    "units": "%"
+}

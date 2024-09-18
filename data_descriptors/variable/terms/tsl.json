@@ -1,0 +1,8 @@
+{
+    "id": "tsl",
+    "cmip_acronym": "tsl",
+    "long_name": "Temperature of Soil",
+    "standard_name": "soil_temperature",
+    "type": "real",
+    "units": "K"
+}

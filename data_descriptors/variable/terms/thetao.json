@@ -1,0 +1,8 @@
+{
+    "id": "thetao",
+    "cmip_acronym": "thetao",
+    "long_name": "Sea Water Potential Temperature",
+    "standard_name": "sea_water_potential_temperature",
+    "type": "real",
+    "units": "degC"
+}

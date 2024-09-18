@@ -1,0 +1,8 @@
+{
+    "id": "pfull",
+    "cmip_acronym": "pfull",
+    "long_name": "Pressure at Model Full-Levels",
+    "standard_name": "air_pressure",
+    "type": "real",
+    "units": "Pa"
+}

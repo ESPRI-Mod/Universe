@@ -1,0 +1,8 @@
+{
+    "id": "prlsns",
+    "cmip_acronym": "prlsns",
+    "long_name": "Stratiform Snowfall Flux",
+    "standard_name": "stratiform_snowfall_flux",
+    "type": "real",
+    "units": "kg m-2 s-1"
+}

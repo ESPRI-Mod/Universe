@@ -1,0 +1,8 @@
+{
+    "id": "licalvf",
+    "cmip_acronym": "licalvf",
+    "long_name": "Land Ice Calving Flux",
+    "standard_name": "land_ice_specific_mass_flux_due_to_calving",
+    "type": "real",
+    "units": "kg m-2 s-1"
+}

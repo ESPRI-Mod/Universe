@@ -1,0 +1,8 @@
+{
+    "id": "ps",
+    "cmip_acronym": "ps",
+    "long_name": "Surface Air Pressure",
+    "standard_name": "surface_air_pressure",
+    "type": "real",
+    "units": "Pa"
+}

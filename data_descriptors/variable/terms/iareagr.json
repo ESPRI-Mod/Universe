@@ -1,0 +1,8 @@
+{
+    "id": "iareagr",
+    "cmip_acronym": "iareagr",
+    "long_name": "Area Covered by Grounded Ice Sheet",
+    "standard_name": "grounded_ice_sheet_area",
+    "type": "real",
+    "units": "m2"
+}

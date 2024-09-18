@@ -1,0 +1,8 @@
+{
+    "id": "simpconc",
+    "cmip_acronym": "simpconc",
+    "long_name": "Percentage Cover of Sea Ice by Meltpond",
+    "standard_name": "area_fraction",
+    "type": "real",
+    "units": "%"
+}

@@ -1,0 +1,8 @@
+{
+    "id": "tossq",
+    "cmip_acronym": "tossq",
+    "long_name": "Square of Sea Surface Temperature",
+    "standard_name": "square_of_sea_surface_temperature",
+    "type": "real",
+    "units": "degC2"
+}

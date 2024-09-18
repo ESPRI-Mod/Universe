@@ -1,0 +1,8 @@
+{
+    "id": "rlutaf",
+    "cmip_acronym": "rlutaf",
+    "long_name": "TOA Outgoing Aerosol-Free Longwave Radiation",
+    "standard_name": "toa_outgoing_longwave_flux",
+    "type": "real",
+    "units": "W m-2"
+}

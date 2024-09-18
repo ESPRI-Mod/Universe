@@ -1,0 +1,8 @@
+{
+    "id": "rld",
+    "cmip_acronym": "rld",
+    "long_name": "Downwelling Longwave Radiation",
+    "standard_name": "downwelling_longwave_flux_in_air",
+    "type": "real",
+    "units": "W m-2"
+}

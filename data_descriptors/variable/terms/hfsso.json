@@ -1,0 +1,8 @@
+{
+    "id": "hfsso",
+    "cmip_acronym": "hfsso",
+    "long_name": "Surface Downward Sensible Heat Flux",
+    "standard_name": "surface_downward_sensible_heat_flux",
+    "type": "real",
+    "units": "W m-2"
+}

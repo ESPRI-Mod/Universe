@@ -1,0 +1,8 @@
+{
+    "id": "t2",
+    "cmip_acronym": "t2",
+    "long_name": "Mean-Squared Air Temperature",
+    "standard_name": "square_of_air_temperature",
+    "type": "real",
+    "units": "K2"
+}

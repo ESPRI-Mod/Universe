@@ -1,0 +1,8 @@
+{
+    "id": "tos",
+    "cmip_acronym": "tos",
+    "long_name": "Sea Surface Temperature",
+    "standard_name": "sea_surface_temperature",
+    "type": "real",
+    "units": "degC"
+}

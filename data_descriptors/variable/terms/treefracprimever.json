@@ -1,0 +1,8 @@
+{
+    "id": "treeFracPrimEver",
+    "cmip_acronym": "treeFracPrimEver",
+    "long_name": "Percentage Cover by Primary Evergreen Trees",
+    "standard_name": "area_fraction",
+    "type": "real",
+    "units": "%"
+}

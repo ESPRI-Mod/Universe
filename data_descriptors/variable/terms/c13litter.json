@@ -1,0 +1,8 @@
+{
+    "id": "c13Litter",
+    "cmip_acronym": "c13Litter",
+    "long_name": "Mass of 13C in Litter Pool",
+    "standard_name": "litter_mass_content_of_13C",
+    "type": "real",
+    "units": "kg m-2"
+}
