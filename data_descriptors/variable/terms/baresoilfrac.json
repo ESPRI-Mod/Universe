@@ -1,0 +1,8 @@
+{
+    "id": "baresoilFrac",
+    "cmip_acronym": "baresoilFrac",
+    "long_name": "Bare Soil Percentage Area Coverage",
+    "standard_name": "area_fraction",
+    "type": "real",
+    "units": "%"
+}

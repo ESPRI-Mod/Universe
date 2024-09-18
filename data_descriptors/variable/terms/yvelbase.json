@@ -1,0 +1,8 @@
+{
+    "id": "yvelbase",
+    "cmip_acronym": "yvelbase",
+    "long_name": "Y-Component of Land Ice Basal Velocity",
+    "standard_name": "land_ice_basal_y_velocity",
+    "type": "real",
+    "units": "m s-1"
+}

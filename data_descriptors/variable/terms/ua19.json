@@ -1,0 +1,8 @@
+{
+    "id": "ua19",
+    "cmip_acronym": "ua19",
+    "long_name": "Eastward Wind",
+    "standard_name": "eastward_wind",
+    "type": "real",
+    "units": "m s-1"
+}

@@ -1,0 +1,8 @@
+{
+    "id": "clwmodis",
+    "cmip_acronym": "clwmodis",
+    "long_name": "MODIS Liquid Cloud Percentage",
+    "standard_name": "liquid_water_cloud_area_fraction",
+    "type": "real",
+    "units": "%"
+}

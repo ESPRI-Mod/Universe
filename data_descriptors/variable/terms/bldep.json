@@ -1,0 +1,8 @@
+{
+    "id": "bldep",
+    "cmip_acronym": "bldep",
+    "long_name": "Boundary Layer Depth",
+    "standard_name": "atmosphere_boundary_layer_thickness",
+    "type": "real",
+    "units": "m"
+}

@@ -1,0 +1,8 @@
+{
+    "id": "aoanh",
+    "cmip_acronym": "aoanh",
+    "long_name": "Northern Hemisphere Tracer Lifetime",
+    "standard_name": "tracer_lifetime",
+    "type": "real",
+    "units": "yr"
+}

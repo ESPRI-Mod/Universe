@@ -1,0 +1,8 @@
+{
+    "id": "clcalipso",
+    "cmip_acronym": "clcalipso",
+    "long_name": "CALIPSO Percentage Cloud Cover",
+    "standard_name": "cloud_area_fraction_in_atmosphere_layer",
+    "type": "real",
+    "units": "%"
+}

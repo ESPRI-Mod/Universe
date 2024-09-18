@@ -1,0 +1,46 @@
+{
+    "$defs": {
+        "Variable": {
+            "additionalProperties": false,
+            "description": "a variable refers to a specific type of climate-related quantity or measurement that is simulated and stored in a data file. These variables represent key physical, chemical, or biological properties of the Earth system and are outputs from climate models.\nEach variable captures a different aspect of the climate system, such as temperature, precipitation, sea level, radiation, or atmospheric composition.\nExamples of Variables: tas: Near-surface air temperature (often measured at 2 meters above the surface) pr: Precipitation psl: Sea level pressure zg: Geopotential height rlut: Top-of-atmosphere longwave radiation siconc: Sea ice concentration co2: Atmospheric CO2 concentration",
+            "properties": {
+                "cmip_acronym": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "long_name": {
+                    "type": "string"
+                },
+                "standard_name": {
+                    "type": "string"
+                },
+                "type": {
+                    "type": "string"
+                },
+                "units": {
+                    "type": "string"
+                },
+                "validation_method": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "cmip_acronym",
+                "validation_method",
+                "long_name"
+            ],
+            "title": "Variable",
+            "type": "object"
+        }
+    },
+    "$id": "http://es-vocab.ipsl.fr/variableSchema",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "variable_schema",
+    "type": "object",
+    "version": null
+}

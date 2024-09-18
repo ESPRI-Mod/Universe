@@ -1,0 +1,8 @@
+{
+    "id": "siflsenstop",
+    "cmip_acronym": "siflsenstop",
+    "long_name": "Net Upward Sensible Heat Flux over Sea Ice",
+    "standard_name": "surface_upward_sensible_heat_flux",
+    "type": "real",
+    "units": "W m-2"
+}

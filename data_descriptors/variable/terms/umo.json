@@ -1,0 +1,8 @@
+{
+    "id": "umo",
+    "cmip_acronym": "umo",
+    "long_name": "Ocean Mass X Transport",
+    "standard_name": "ocean_mass_x_transport",
+    "type": "real",
+    "units": "kg s-1"
+}

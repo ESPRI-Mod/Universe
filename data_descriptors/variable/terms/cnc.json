@@ -1,0 +1,8 @@
+{
+    "id": "cnc",
+    "cmip_acronym": "cnc",
+    "long_name": "Canopy Covered Area Percentage",
+    "standard_name": "vegetation_area_fraction",
+    "type": "real",
+    "units": "%"
+}

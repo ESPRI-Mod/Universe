@@ -1,0 +1,8 @@
+{
+    "id": "yvelsurf",
+    "cmip_acronym": "yvelsurf",
+    "long_name": "Y-Component of Land Ice Surface Velocity",
+    "standard_name": "land_ice_surface_y_velocity",
+    "type": "real",
+    "units": "m s-1"
+}

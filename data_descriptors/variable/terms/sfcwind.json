@@ -1,0 +1,8 @@
+{
+    "id": "sfcWind",
+    "cmip_acronym": "sfcWind",
+    "long_name": "Daily-Mean Near-Surface Wind Speed",
+    "standard_name": "wind_speed",
+    "type": "real",
+    "units": "m s-1"
+}

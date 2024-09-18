@@ -1,0 +1,8 @@
+{
+    "id": "sidmassevapsubl",
+    "cmip_acronym": "sidmassevapsubl",
+    "long_name": "Sea-Ice Mass Change Through Evaporation and Sublimation",
+    "standard_name": "water_evapotranspiration_flux",
+    "type": "real",
+    "units": "kg m-2 s-1"
+}

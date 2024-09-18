@@ -1,0 +1,8 @@
+{
+    "id": "sftgif",
+    "cmip_acronym": "sftgif",
+    "long_name": "Land Ice Area Percentage",
+    "standard_name": "land_ice_area_fraction",
+    "type": "real",
+    "units": "%"
+}

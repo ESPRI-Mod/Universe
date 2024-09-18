@@ -1,0 +1,8 @@
+{
+    "id": "rootd",
+    "cmip_acronym": "rootd",
+    "long_name": "Maximum Root Depth",
+    "standard_name": "root_depth",
+    "type": "real",
+    "units": "m"
+}

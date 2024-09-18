@@ -1,0 +1,8 @@
+{
+    "id": "nudgincswe",
+    "cmip_acronym": "nudgincswe",
+    "long_name": "Nudging Increment of Water in Snow",
+    "standard_name": "nudging_increment_in_snow_and_ice_amount_on_land",
+    "type": "real",
+    "units": "kg m-2"
+}

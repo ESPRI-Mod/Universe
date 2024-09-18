@@ -1,0 +1,8 @@
+{
+    "id": "sfcWindmax",
+    "cmip_acronym": "sfcWindmax",
+    "long_name": "Daily Maximum Near-Surface Wind Speed",
+    "standard_name": "wind_speed",
+    "type": "real",
+    "units": "m s-1"
+}

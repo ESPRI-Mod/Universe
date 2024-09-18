@@ -1,0 +1,8 @@
+{
+    "id": "hfssIs",
+    "cmip_acronym": "hfssIs",
+    "long_name": "Ice Sheet Surface Upward Sensible Heat Flux",
+    "standard_name": "surface_upward_sensible_heat_flux",
+    "type": "real",
+    "units": "W m-2"
+}

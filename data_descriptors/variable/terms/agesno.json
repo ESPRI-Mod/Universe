@@ -1,0 +1,8 @@
+{
+    "id": "agesno",
+    "cmip_acronym": "agesno",
+    "long_name": "Mean Age of Snow",
+    "standard_name": "age_of_surface_snow",
+    "type": "real",
+    "units": "day"
+}

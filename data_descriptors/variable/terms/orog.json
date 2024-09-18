@@ -1,0 +1,8 @@
+{
+    "id": "orog",
+    "cmip_acronym": "orog",
+    "long_name": "Surface Altitude",
+    "standard_name": "surface_altitude",
+    "type": "real",
+    "units": "m"
+}

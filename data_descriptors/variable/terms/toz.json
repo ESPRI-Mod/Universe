@@ -1,0 +1,8 @@
+{
+    "id": "toz",
+    "cmip_acronym": "toz",
+    "long_name": "Total Column Ozone",
+    "standard_name": "equivalent_thickness_at_stp_of_atmosphere_ozone_content",
+    "type": "real",
+    "units": "m"
+}

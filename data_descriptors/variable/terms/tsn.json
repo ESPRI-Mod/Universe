@@ -1,0 +1,8 @@
+{
+    "id": "tsn",
+    "cmip_acronym": "tsn",
+    "long_name": "Snow Internal Temperature",
+    "standard_name": "temperature_in_surface_snow",
+    "type": "real",
+    "units": "K"
+}

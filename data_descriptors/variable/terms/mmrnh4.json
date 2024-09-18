@@ -1,0 +1,8 @@
+{
+    "id": "mmrnh4",
+    "cmip_acronym": "mmrnh4",
+    "long_name": "NH4 Mass Mixing Ratio",
+    "standard_name": "mass_fraction_of_ammonium_dry_aerosol_particles_in_air",
+    "type": "real",
+    "units": "kg kg-1"
+}

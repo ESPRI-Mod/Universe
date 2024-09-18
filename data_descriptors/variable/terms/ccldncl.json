@@ -1,0 +1,8 @@
+{
+    "id": "ccldncl",
+    "cmip_acronym": "ccldncl",
+    "long_name": "Cloud Droplet Number Concentration of Convective Cloud Tops",
+    "standard_name": "number_concentration_of_convective_cloud_liquid_water_particles_at_convective_liquid_water_cloud_top",
+    "type": "real",
+    "units": "m-3"
+}

@@ -1,0 +1,8 @@
+{
+    "id": "flashrate",
+    "cmip_acronym": "flashrate",
+    "long_name": "Lightning Flash Rate",
+    "standard_name": "frequency_of_lightning_flashes_per_unit_area",
+    "type": "real",
+    "units": "km-2 s-1"
+}

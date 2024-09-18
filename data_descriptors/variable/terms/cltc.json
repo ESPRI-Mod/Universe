@@ -1,0 +1,8 @@
+{
+    "id": "cltc",
+    "cmip_acronym": "cltc",
+    "long_name": "Convective Cloud Cover Percentage",
+    "standard_name": "convective_cloud_area_fraction",
+    "type": "real",
+    "units": "%"
+}

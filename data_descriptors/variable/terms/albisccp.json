@@ -1,0 +1,8 @@
+{
+    "id": "albisccp",
+    "cmip_acronym": "albisccp",
+    "long_name": "ISCCP Mean Cloud Albedo",
+    "standard_name": "cloud_albedo",
+    "type": "real",
+    "units": "1"
+}

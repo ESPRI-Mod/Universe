@@ -1,0 +1,8 @@
+{
+    "id": "rls",
+    "cmip_acronym": "rls",
+    "long_name": "Net Longwave Surface Radiation",
+    "standard_name": "surface_net_downward_longwave_flux",
+    "type": "real",
+    "units": "W m-2"
+}

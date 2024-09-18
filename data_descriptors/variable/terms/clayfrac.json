@@ -1,0 +1,8 @@
+{
+    "id": "clayfrac",
+    "cmip_acronym": "clayfrac",
+    "long_name": "Clay Fraction",
+    "standard_name": "volume_fraction_of_clay_in_soil",
+    "type": "real",
+    "units": "1"
+}

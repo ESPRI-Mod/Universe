@@ -1,0 +1,8 @@
+{
+    "id": "uas",
+    "cmip_acronym": "uas",
+    "long_name": "Eastward Near-Surface Wind",
+    "standard_name": "eastward_wind",
+    "type": "real",
+    "units": "m s-1"
+}

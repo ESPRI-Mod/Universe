@@ -1,0 +1,8 @@
+{
+    "id": "agessc",
+    "cmip_acronym": "agessc",
+    "long_name": "Sea Water Age Since Surface Contact",
+    "standard_name": "sea_water_age_since_surface_contact",
+    "type": "real",
+    "units": "yr"
+}

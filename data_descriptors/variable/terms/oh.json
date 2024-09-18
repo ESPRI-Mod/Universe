@@ -1,0 +1,8 @@
+{
+    "id": "oh",
+    "cmip_acronym": "oh",
+    "long_name": "OH Volume Mixing Ratio",
+    "standard_name": "mole_fraction_of_hydroxyl_radical_in_air",
+    "type": "real",
+    "units": "mol mol-1"
+}

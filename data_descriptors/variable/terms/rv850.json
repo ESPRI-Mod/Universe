@@ -1,0 +1,8 @@
+{
+    "id": "rv850",
+    "cmip_acronym": "rv850",
+    "long_name": "Relative Vorticity at 850hPa",
+    "standard_name": "atmosphere_relative_vorticity",
+    "type": "real",
+    "units": "s-1"
+}

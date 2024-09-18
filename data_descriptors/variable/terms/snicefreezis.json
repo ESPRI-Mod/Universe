@@ -1,0 +1,8 @@
+{
+    "id": "snicefreezIs",
+    "cmip_acronym": "snicefreezIs",
+    "long_name": "Ice Sheet Surface Snow and Ice Refreeze Flux",
+    "standard_name": "surface_snow_and_ice_refreezing_flux",
+    "type": "real",
+    "units": "kg m-2 s-1"
+}

@@ -1,0 +1,8 @@
+{
+    "id": "pbo",
+    "cmip_acronym": "pbo",
+    "long_name": "Sea Water Pressure at Sea Floor",
+    "standard_name": "sea_water_pressure_at_sea_floor",
+    "type": "real",
+    "units": "Pa"
+}

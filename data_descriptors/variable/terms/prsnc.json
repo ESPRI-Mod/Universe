@@ -1,0 +1,8 @@
+{
+    "id": "prsnc",
+    "cmip_acronym": "prsnc",
+    "long_name": "Convective Snowfall Flux",
+    "standard_name": "convective_snowfall_flux",
+    "type": "real",
+    "units": "kg m-2 s-1"
+}

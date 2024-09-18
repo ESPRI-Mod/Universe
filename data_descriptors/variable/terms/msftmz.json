@@ -1,0 +1,8 @@
+{
+    "id": "msftmz",
+    "cmip_acronym": "msftmz",
+    "long_name": "Ocean Meridional Overturning Mass Streamfunction",
+    "standard_name": "ocean_meridional_overturning_mass_streamfunction",
+    "type": "real",
+    "units": "kg s-1"
+}

@@ -1,0 +1,8 @@
+{
+    "id": "demc",
+    "cmip_acronym": "demc",
+    "long_name": "Convective Cloud Emissivity",
+    "standard_name": "convective_cloud_longwave_emissivity",
+    "type": "real",
+    "units": "1"
+}

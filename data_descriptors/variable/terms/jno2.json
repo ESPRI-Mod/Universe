@@ -1,0 +1,8 @@
+{
+    "id": "jno2",
+    "cmip_acronym": "jno2",
+    "long_name": "Photolysis Rate of NO2",
+    "standard_name": "photolysis_rate_of_nitrogen_dioxide",
+    "type": "real",
+    "units": "s-1"
+}

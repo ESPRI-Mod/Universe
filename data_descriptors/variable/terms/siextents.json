@@ -1,0 +1,8 @@
+{
+    "id": "siextents",
+    "cmip_acronym": "siextents",
+    "long_name": "Sea-Ice Extent South",
+    "standard_name": "sea_ice_extent",
+    "type": "real",
+    "units": "1e6 km2"
+}

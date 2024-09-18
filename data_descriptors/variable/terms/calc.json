@@ -1,0 +1,8 @@
+{
+    "id": "calc",
+    "cmip_acronym": "calc",
+    "long_name": "Calcite Concentration",
+    "standard_name": "mole_concentration_of_calcite_expressed_as_carbon_in_sea_water",
+    "type": "real",
+    "units": "mol m-3"
+}

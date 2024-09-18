@@ -1,0 +1,8 @@
+{
+    "id": "loaddust",
+    "cmip_acronym": "loaddust",
+    "long_name": "Load of Dust",
+    "standard_name": "atmosphere_mass_content_of_dust_dry_aerosol_particles",
+    "type": "real",
+    "units": "kg m-2"
+}

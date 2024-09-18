@@ -1,0 +1,8 @@
+{
+    "id": "fracOutLut",
+    "cmip_acronym": "fracOutLut",
+    "long_name": "Annual Gross Percentage of Land-Use Tile That Was Transferred into Other Land-Use Tiles",
+    "standard_name": "area_fraction",
+    "type": "real",
+    "units": "%"
+}

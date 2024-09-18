@@ -1,0 +1,8 @@
+{
+    "id": "mfo",
+    "cmip_acronym": "mfo",
+    "long_name": "Sea Water Transport",
+    "standard_name": "sea_water_transport_across_line",
+    "type": "real",
+    "units": "kg s-1"
+}

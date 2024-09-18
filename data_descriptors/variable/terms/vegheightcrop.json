@@ -1,0 +1,8 @@
+{
+    "id": "vegHeightCrop",
+    "cmip_acronym": "vegHeightCrop",
+    "long_name": "Height of Crops",
+    "standard_name": "canopy_height",
+    "type": "real",
+    "units": "m"
+}

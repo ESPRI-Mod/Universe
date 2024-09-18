@@ -1,0 +1,8 @@
+{
+    "id": "dissocos",
+    "cmip_acronym": "dissocos",
+    "long_name": "Surface Dissolved Organic Carbon Concentration",
+    "standard_name": "mole_concentration_of_dissolved_organic_carbon_in_sea_water",
+    "type": "real",
+    "units": "mol m-3"
+}

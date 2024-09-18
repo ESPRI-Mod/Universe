@@ -1,0 +1,8 @@
+{
+    "id": "phalf",
+    "cmip_acronym": "phalf",
+    "long_name": "Pressure on Model Half-Levels",
+    "standard_name": "air_pressure",
+    "type": "real",
+    "units": "Pa"
+}
