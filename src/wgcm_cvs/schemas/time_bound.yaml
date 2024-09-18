@@ -1,0 +1,60 @@
+
+id:  http://es-vocab.ipsl.fr/timeBoundSchema
+name: time_schema
+title: time schema
+license: https://creativecommons.org/publicdomain/zero/1.0/
+
+
+
+prefixes:
+    esvocab: http://es-vocab.ipsl.fr/
+    linkml: https://w3id.org/linkml/
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
+    schema: http://schema.org/
+    timebound:  http://es-vocab.ipsl.fr/timebound/
+
+# imports:
+#   - linkml:types
+default_range: string  
+default_prefix: timebound
+default_curi_maps:
+  - semweb_context
+  
+classes:
+    time_bound:
+        description : >
+            the timebound refers to the temporal boundaries that indicate the start and end points of the time range represented in a specific NetCDF data file. These are two strings separated by a hyphen ("-"), and they typically encode dates in a standardized format (like YYYYMMDD) depending on the project:
+            Granularity: The timebound can represent time at different levels of granularity depending on the type of data. It may be a year (YYYY), a year and month (YYYYMM), or a full date (YYYYMMDD), depending on the temporal resolution of the data (e.g., monthly, daily).
+            Purpose: It helps users quickly identify which period of time the data covers, making it easier to manage and access specific time slices from large climate datasets.
+
+
+        class_uri: esvocab:timebound
+        attributes:
+            id: 
+                range : string
+                required: true
+                identifier: true
+
+            validation_method :
+                required: true
+                range : string
+                ifabsent: string(regex)
+            
+            regex: 
+                range: string
+                required: true
+                
+            
+            description: 
+                range : string
+                
+types:
+  string:
+    uri: xsd:string
+    base: str
+    description: A character string
+    notes: >-
+      In RDF serializations, a slot with range of string is treated as a literal or type xsd:string.  
+      If you are authoring schemas in LinkML YAML, the type is referenced with the lower case "string".
+    exact_mappings:
+      - schema:Text
