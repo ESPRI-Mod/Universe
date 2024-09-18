@@ -1,0 +1,16 @@
+
+{
+	"id": "monthly",
+     	"separator": "-",
+	"parts": [
+		{ 
+			"id" : "timebound:six_digits",
+			"is_required": true
+		},
+		{ 
+			"id" : "timebound:six_digits",
+			"is_required": true
+		}
+	],
+	"description" : "Regex to validate time range like YYYYMM-YYYYMM"
+}

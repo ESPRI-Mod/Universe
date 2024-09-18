@@ -1,0 +1,36 @@
+{
+    "$defs": {
+        "TimeBound": {
+            "additionalProperties": false,
+            "description": "the timebound refers to the temporal boundaries that indicate the start and end points of the time range represented in a specific NetCDF data file. These are two strings separated by a hyphen (\"-\"), and they typically encode dates in a standardized format (like YYYYMMDD) depending on the project: Granularity: The timebound can represent time at different levels of granularity depending on the type of data. It may be a year (YYYY), a year and month (YYYYMM), or a full date (YYYYMMDD), depending on the temporal resolution of the data (e.g., monthly, daily). Purpose: It helps users quickly identify which period of time the data covers, making it easier to manage and access specific time slices from large climate datasets.",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "regex": {
+                    "type": "string"
+                },
+                "validation_method": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "validation_method",
+                "regex"
+            ],
+            "title": "TimeBound",
+            "type": "object"
+        }
+    },
+    "$id": "http://es-vocab.ipsl.fr/timeBoundSchema",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "time_schema",
+    "type": "object",
+    "version": null
+}

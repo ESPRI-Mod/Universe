@@ -1,0 +1,55 @@
+{
+    "$defs": {
+        "DataDescriptorId": {
+            "additionalProperties": false,
+            "description": "",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "is_required": {
+                    "type": "boolean"
+                }
+            },
+            "title": "DataDescriptorId",
+            "type": "object"
+        },
+        "TimeRange": {
+            "additionalProperties": false,
+            "description": "a data-descriptor composed from other",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "parts": {
+                    "items": {
+                        "$ref": "#/$defs/DataDescriptorId"
+                    },
+                    "type": "array"
+                },
+                "separator": {
+                    "type": "string"
+                },
+                "validation_method": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "validation_method"
+            ],
+            "title": "TimeRange",
+            "type": "object"
+        }
+    },
+    "$id": "http://es-vocab.ipsl.fr/timeRangeSchema",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "time_range_schema",
+    "type": "object",
+    "version": null
+}
