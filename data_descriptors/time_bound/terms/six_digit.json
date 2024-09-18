@@ -1,0 +1,5 @@
+
+{
+    "id": "timebound:six_digit",
+    "regex": "^\\d{6}$"
+}

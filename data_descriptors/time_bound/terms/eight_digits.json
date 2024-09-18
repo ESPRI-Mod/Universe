@@ -1,0 +1,5 @@
+
+{
+    "id": "timebound:eight_digit",
+    "regex": "^\\d{8}$"
+}

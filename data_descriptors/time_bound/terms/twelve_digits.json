@@ -1,0 +1,5 @@
+
+{
+    "id": "timebound:twelve_digit",
+    "regex": "^\\d{12}$"
+}
