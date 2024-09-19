@@ -1,0 +1,5 @@
+{
+    "id": "l",
+    "regex": "^l$",
+    "description":"(lower case 'el', not uppercase 'i'), when the vertical coordinate to be used is model level, and all model levels should be reported." 
+}

@@ -18,6 +18,7 @@
 @prefix variable: <http://es-vocab.ipsl.fr/variable/> .
 @prefix variant_label: <http://es-vocab.ipsl.fr/Variant_label/> .
 @prefix version: <http://es-vocab.ipsl.fr/version/> .
+@prefix verticallabel: <http://es-vocab.ipsl.fr/vertical_label/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 activity:aerchemmip activity:cmip_acronym "AerChemMIP" ;
@@ -15824,6 +15825,38 @@ variable:zvelsurf variable:cmip_acronym "zvelsurf" ;
     variant_label:separator "" .
 
 version:eight_digit version:regex "^v\\d{8}$" .
+
+verticallabel:hnx verticallabel:description """'h<n>[<x>]', when data should be reported at n>1 heights in the atmosphere.<n> is  included when recording more than 1 level or layer of data.
+ The value of n should be the number of levels or layers on which data are mandated (an integer>1) or, if the number of levels is left to the discretion of the data provider, <n> is replaced by the character 'n'; for example, 'rhon' indicates that the number of density surfaces on which data is reported is left up to the data provider.
+ When  <x> is needed, it is a single letter ('a', 'b', 'c', etc.) used to distinguish among different vectors of reporting levels when the number of levels is the same (e.g., p12, p12a, and p12b would all indicate that data are mandated on 12 pressure levels, but the three options would distinguish 3 different sets of pressure levels).  Note that some collections might permit groups to include additional levels (not in the list of those required), but this would not affect the value of n, which is the number of required (requested) levels.  In the case that the number of levels reported is not specified but left up to the data provider, <n> is replaced by 'n' and  <x> is omitted.s""" ;
+    verticallabel:regex "^h(\\d+)([a-z]?)$" .
+
+verticallabel:l verticallabel:description "(lower case 'el', not uppercase 'i'), when the vertical coordinate to be used is model level, and all model levels should be reported." ;
+    verticallabel:regex "^l$" .
+
+verticallabel:ls verticallabel:description "for a variable reported on the model layer nearest the earth's surface. (i.e., lowest model layer in the atmosphere; top-most model layer of the ocean, soil, ice sheet, etc.)" ;
+    verticallabel:regex "^ls$" .
+
+verticallabel:pnx verticallabel:description """'p<n>[<x>]',when data should be reported at n>1 pressures. (The vertical coordinate for the variable must be pressure and may represent either a specific vertical location (a 'point') or be the coordinate for a value representative of a layer.)   
+ The value of n should be the number of levels or layers on which data are mandated (an integer>1) or, if the number of levels is left to the discretion of the data provider, <n> is replaced by the character 'n'; for example, 'rhon' indicates that the number of density surfaces on which data is reported is left up to the data provider.
+ When  <x> is needed, it is a single letter ('a', 'b', 'c', etc.) used to distinguish among different vectors of reporting levels when the number of levels is the same (e.g., p12, p12a, and p12b would all indicate that data are mandated on 12 pressure levels, but the three options would distinguish 3 different sets of pressure levels).  Note that some collections might permit groups to include additional levels (not in the list of those required), but this would not affect the value of n, which is the number of required (requested) levels.  In the case that the number of levels reported is not specified but left up to the data provider, <n> is replaced by 'n' and  <x> is omitted.s""" ;
+    verticallabel:regex "^p(\\d+)([a-z]?)$" .
+
+verticallabel:rhonx verticallabel:description """'rho<n>[<x>]',when data should be reported at n>1 (potential) densities. 
+ The value of n should be the number of levels or layers on which data are mandated (an integer>1) or, if the number of levels is left to the discretion of the data provider, <n> is replaced by the character 'n'; for example, 'rhon' indicates that the number of density surfaces on which data is reported is left up to the data provider.
+ When  <x> is needed, it is a single letter ('a', 'b', 'c', etc.) used to distinguish among different vectors of reporting levels when the number of levels is the same (e.g., p12, p12a, and p12b would all indicate that data are mandated on 12 pressure levels, but the three options would distinguish 3 different sets of pressure levels).  Note that some collections might permit groups to include additional levels (not in the list of those required), but this would not affect the value of n, which is the number of required (requested) levels.  In the case that the number of levels reported is not specified but left up to the data provider, <n> is replaced by 'n' and  <x> is omitted.s""" ;
+    verticallabel:regex "^rho(\\d+)([a-z]?)$" .
+
+verticallabel:type0m verticallabel:description "<type>0<m>, for a variable that should be reported on a single coordinate surface or that represents a single layer defined by coordinate bounds, where <type> is replaced by 'h', 'p', 'z', or 'rho' (which have the same meaning as defined in the first 4 bulleted points above), and m is the coordinate value associated with the level or layer, expressed in the following units: meters for 'h' or 'z', hPa for 'p', and 'sigma-t units' (density in kg m-3 - 1000 kg m-3) for 'rho'.  For example, 'p0500' could be used to identify the 500 mb level and rho026 would indicate a density of 1026 kg m-3.  For m, the character 'p' can be used to replace a decimal point if one is needed, and at least one digit, must precede the decimal point (e.g., 'h00p5' represents 0.5 meters above the surface; note also that 'h0p5' would be incorrect).  For this vertical label to apply under CMIP6 data requirements, the vertical coordinate value must also be recorded in the file as a scalar dimension recorded by the CF conventions 'coordinates' attribute.  Note that 'z00' indicates that there is a depth scalar coordinate attached to the variable and set to 0 m.  If the standard name for a variable already indicates that it is a surface variable (e.g., 'surface_temperature'), then it is good practice to omit explicit specification of the vertical location, so that 'z0' would be the correct verticalLabelDD, not 'z00'." ;
+    verticallabel:regex "^\\b(?!z00\\b)(h|p|rho|z)(0)(?!0\\b)(\\d*p?\\d*\\b)$" .
+
+verticallabel:z0 verticallabel:description "when there is no vertical scalar or vector coordinate such as, for example, a variable representing a column mean or reported on a quasi-horizontal surface (e.g., 'at the earth's surface', 'at the interface between sea ice and the ocean below', 'at the tropopause', 'at the top of the atmosphere', or 'at the base of the main thermocline in the ocean'). " ;
+    verticallabel:regex "^z0$" .
+
+verticallabel:znx verticallabel:description """'z<n>[<x>]',when data should be reported at n>1 depths (below the surface of the ocean, soil, or ice substance).   
+ The value of n should be the number of levels or layers on which data are mandated (an integer>1) or, if the number of levels is left to the discretion of the data provider, <n> is replaced by the character 'n'; for example, 'rhon' indicates that the number of density surfaces on which data is reported is left up to the data provider.
+ When  <x> is needed, it is a single letter ('a', 'b', 'c', etc.) used to distinguish among different vectors of reporting levels when the number of levels is the same (e.g., p12, p12a, and p12b would all indicate that data are mandated on 12 pressure levels, but the three options would distinguish 3 different sets of pressure levels).  Note that some collections might permit groups to include additional levels (not in the list of those required), but this would not affect the value of n, which is the number of required (requested) levels.  In the case that the number of levels reported is not specified but left up to the data provider, <n> is replaced by 'n' and  <x> is omitted.s""" ;
+    verticallabel:regex "^z(\\d+)([a-z]?)$" .
 
 institution:02haar591 institution:city "Paris" ;
     institution:country "FR",

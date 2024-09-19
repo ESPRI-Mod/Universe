@@ -98,7 +98,7 @@ class HorizontalLabel(ConfiguredBaseModel):
     validation_method: str = Field("list", json_schema_extra = { "linkml_meta": {'alias': 'validation_method',
          'domain_of': ['Horizontal_label'],
          'ifabsent': 'string(list)',
-         'slot_uri': 'es-vocab:validation_method'} })
+         'slot_uri': 'esvocab:validation_method'} })
     label: str = Field(..., json_schema_extra = { "linkml_meta": {'alias': 'label', 'domain_of': ['Horizontal_label']} })
     description: Optional[str] = Field(None, json_schema_extra = { "linkml_meta": {'alias': 'description', 'domain_of': ['Horizontal_label']} })
 

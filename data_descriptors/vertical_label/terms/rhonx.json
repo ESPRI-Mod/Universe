@@ -1,0 +1,6 @@
+{
+    "id": "rhonx",
+    "regex": "^rho(\\d+)([a-z]?)$",
+    "description":"'rho<n>[<x>]',when data should be reported at n>1 (potential) densities. \n The value of n should be the number of levels or layers on which data are mandated (an integer>1) or, if the number of levels is left to the discretion of the data provider, <n> is replaced by the character 'n'; for example, 'rhon' indicates that the number of density surfaces on which data is reported is left up to the data provider.\n When  <x> is needed, it is a single letter ('a', 'b', 'c', etc.) used to distinguish among different vectors of reporting levels when the number of levels is the same (e.g., p12, p12a, and p12b would all indicate that data are mandated on 12 pressure levels, but the three options would distinguish 3 different sets of pressure levels).  Note that some collections might permit groups to include additional levels (not in the list of those required), but this would not affect the value of n, which is the number of required (requested) levels.  In the case that the number of levels reported is not specified but left up to the data provider, <n> is replaced by 'n' and  <x> is omitted.s"  
+
+}

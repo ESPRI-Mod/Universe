@@ -41,6 +41,7 @@ def generate_all_jsonld(gen_file=False)->list:
         
         terms_path = universe_path / sch_path.stem / "terms" 
         for term_path in terms_path.glob("*.json"):
+            print(term_path)
             jsonld_res = json.loads(term_path.read_text())
             jsonld_res["@context"] = jsonld_context
             res.append(jsonld_res)
