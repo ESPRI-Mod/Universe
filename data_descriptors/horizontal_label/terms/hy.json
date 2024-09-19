@@ -1,0 +1,5 @@
+{
+    "id": "hy",
+    "label": "hy",
+    "description": "the values reported are zonal means or sums over all longitudes in the domain, which means the variable is a function of latitude, but not longitude."
+}

@@ -1,0 +1,46 @@
+
+imports:
+  - linkml:types
+
+
+id: http://es-vocab.ipsl.fr/temporalLabelSchema
+name: temporal_label_schema
+
+
+prefixes:
+    esvocab: http://es-vocab.ipsl.fr/
+    linkml: https://w3id.org/linkml/
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
+    schema: http://schema.org/
+    temporal_label:  http://es-vocab.ipsl.fr/temporal_label/
+
+default_range: string  
+default_prefix: temporal_label
+default_curi_maps:
+  - semweb_context
+  
+classes:
+    Temporal_label:
+        description: >
+            The temporalLabelDD indicates the temporal sampling or processing procedure.     
+        class_uri: esvocab:temportal_label
+        attributes:
+            id:
+                slot_uri: temporal:id
+                range: string
+                required: true
+                identifier: true
+
+            validation_method :
+                required: true
+                range : string
+                ifabsent: string(list)
+                slot_uri: es-vocab:validation_method
+                
+            label:
+                range: string
+                required: true
+
+            description:
+                range: string
+                

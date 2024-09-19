@@ -1,0 +1,5 @@
+{
+    "id": "hm",
+    "label": "hm",
+    "description": "the variable represents a spatial mean over the entire domain spanned by the recorded data (as recorded in the dataRegionDD) or is independent of spatial position.  In this case, there should be no horizontal spatial coordinates."
+}

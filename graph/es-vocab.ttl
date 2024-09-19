@@ -1,7 +1,10 @@
 @prefix : <http://es-vocab.ipsl.fr/experiment/> .
 @prefix activity: <http://es-vocab.ipsl.fr/activity/> .
+@prefix area_label: <http://es-vocab.ipsl.fr/area_label/> .
+@prefix branded_label: <http://es-vocab.ipsl.fr/Variant_label/> .
 @prefix forcing: <http://es-vocab.ipsl.fr/forcing_index/> .
 @prefix grid: <http://es-vocab.ipsl.fr/grid/> .
+@prefix horizontal_label: <http://es-vocab.ipsl.fr/horizontal_label/> .
 @prefix initialization: <http://es-vocab.ipsl.fr/initialization_index/> .
 @prefix institution: <http://es-vocab.ipsl.fr/institution/> .
 @prefix physic: <http://es-vocab.ipsl.fr/physic_index/> .
@@ -10,11 +13,12 @@
 @prefix schema1: <http://schema.org/> .
 @prefix source: <http://es-vocab.ipsl.fr/source/> .
 @prefix table: <http://es-vocab.ipsl.fr/table/> .
+@prefix temporal_label: <http://es-vocab.ipsl.fr/temporal_label/> .
 @prefix time_range: <http://es-vocab.ipsl.fr/time_range/> .
 @prefix timebound: <http://es-vocab.ipsl.fr/timebound/> .
 @prefix variable: <http://es-vocab.ipsl.fr/variable/> .
-@prefix variant_label: <http://es-vocab.ipsl.fr/Variant_label/> .
 @prefix version: <http://es-vocab.ipsl.fr/version/> .
+@prefix verticallabel: <http://es-vocab.ipsl.fr/vertical_label/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 activity:aerchemmip activity:cmip_acronym "AerChemMIP" ;
@@ -118,6 +122,81 @@ activity:viacsab activity:cmip_acronym "VIACSAB" ;
 activity:volmip activity:cmip_acronym "VolMIP" ;
     activity:long_name "Volcanic Forcings Model Intercomparison Project" ;
     activity:name "VolMIP" .
+
+area_label:air area_label:description "in cell_methods : cloud" ;
+    area_label:label "air" .
+
+area_label:ccl area_label:description "in cell_methods : convective_cloud" ;
+    area_label:label "ccl" .
+
+area_label:cl area_label:description "in cell_methods : cloud" ;
+    area_label:label "cl" .
+
+area_label:crp area_label:description "in cell_methods : crops" ;
+    area_label:label "crp" .
+
+area_label:fis area_label:description "in cell_methods : floating_ice_shelf" ;
+    area_label:label "fis" .
+
+area_label:gis area_label:description "in cell_methods : grounding_ice_sheet" ;
+    area_label:label "gis" .
+
+area_label:ifs area_label:description "in cell_methods : ice_free_sea" ;
+    area_label:label "ifs" .
+
+area_label:is area_label:description "in cell_methods : ice_sheet" ;
+    area_label:label "is" .
+
+area_label:li area_label:description "in cell_methods : land_ice" ;
+    area_label:label "li" .
+
+area_label:lnd area_label:description "in cell_methods : land" ;
+    area_label:label "lnd" .
+
+area_label:lus area_label:description "in cell_methods : sector (auxiliary coordinate for land-use erea types)" ;
+    area_label:label "lus" .
+
+area_label:ng area_label:description "in cell_methods : natural_grasses" ;
+    area_label:label "ng" .
+
+area_label:pst area_label:description "in cell_methods : pastures" ;
+    area_label:label "pst" .
+
+area_label:scl area_label:description "in cell_methods : stratiform_soil" ;
+    area_label:label "scl" .
+
+area_label:sea area_label:description "in cell_methods : sea" ;
+    area_label:label "sea" .
+
+area_label:shb area_label:description "in cell_methods : shrubs" ;
+    area_label:label "shb" .
+
+area_label:si area_label:description "in cell_methods : sea_ice" ;
+    area_label:label "si" .
+
+area_label:simp area_label:description "in cell_methods : sea_ice_melt_pond" ;
+    area_label:label "simp" .
+
+area_label:sir area_label:description "in cell_methods : sea_ice_ridges" ;
+    area_label:label "sir" .
+
+area_label:sn area_label:description "in cell_methods : snow" ;
+    area_label:label "sn" .
+
+area_label:tree area_label:description "in cell_methods : trees" ;
+    area_label:label "tree" .
+
+area_label:ufs area_label:description "in cell_methods : unfrozen_soil" ;
+    area_label:label "ufs" .
+
+area_label:veg area_label:description "in cell_methods : vegetation" ;
+    area_label:label "veg" .
+
+area_label:wl area_label:description "in cell_methods : wetland" ;
+    area_label:label "wl" .
+
+area_label:x area_label:description "'where' directive not included in cell_method" ;
+    area_label:label "x" .
 
 :1pctco2 :activity_id "CMIP" ;
     :additional_allowed_model_components "AER",
@@ -5403,6 +5482,24 @@ grid:grg grid:description "regridded data in the region of Greenland reported on
 grid:grz grid:description "regridded zonal mean data reported on the data provider's preferred latitude target grid" ;
     grid:label "grz" .
 
+horizontal_label:hm horizontal_label:description "the variable represents a spatial mean over the entire domain spanned by the recorded data (as recorded in the dataRegionDD) or is independent of spatial position.  In this case, there should be no horizontal spatial coordinates." ;
+    horizontal_label:label "hm" .
+
+horizontal_label:ht horizontal_label:description "the variable represents a horizontal transport or a stream function in the vertical plane computed by averaging or summing along a transect not constrained to coincide with a latitude circle.  (If the transect is along a latitude circle, 'hy' or 'hys' would apply.)" ;
+    horizontal_label:label "ht" .
+
+horizontal_label:hxy horizontal_label:description "the variable is carried on a (roughly) horizontal (spatially two-dimensional) grid covering the domain reported." ;
+    horizontal_label:label "hxy" .
+
+horizontal_label:hxys horizontal_label:description "the variable is a function of longitude and latitude, but is reported only at selected sites.  This differs from 'hms' in that each reported value should be representative of an area about the size of an original grid cell (e.g., data reported from a subset of cells extracted from a grid).  For observations each value should be from measurements made at a single site (not an average of a collection of sites)." ;
+    horizontal_label:label "hxys" .
+
+horizontal_label:hy horizontal_label:description "the values reported are zonal means or sums over all longitudes in the domain, which means the variable is a function of latitude, but not longitude." ;
+    horizontal_label:label "hy" .
+
+horizontal_label:hys horizontal_label:description "the variable is a function of latitude alone but may represent selected transects or means (or sums) over sub-domains (e.g., a mean over longitude for different ocean basins as a function of latitude)" ;
+    horizontal_label:label "hys" .
+
 <http://es-vocab.ipsl.fr/initialization_index/initialization_index:one_digit> initialization:regex "^i\\d$" .
 
 institution:dkrz institution:acronyms "DKRZ" ;
@@ -7739,6 +7836,24 @@ table:SImonPt table:variable_entry "sidivvel",
         "sishevel",
         "sistremax",
         "sistresave" .
+
+temporal_label:tavg temporal_label:description "time-average" ;
+    temporal_label:label "tavg" .
+
+temporal_label:tclmdc temporal_label:description "diurnal cycle climatology" ;
+    temporal_label:label "tclmdc" .
+
+temporal_label:ti temporal_label:description "time-independent data (no time coordinate)" ;
+    temporal_label:label "ti" .
+
+temporal_label:tpt temporal_label:description "synoptically sampled (i.e., a snapshot, referred to as 'point' data in the CF conventions cell_methods)" ;
+    temporal_label:label "tpt" .
+
+temporal_label:tstat temporal_label:description "statistical measure (e.g., a maximum or minimum value), other than those, like 'mean value' already accounted for by other options above." ;
+    temporal_label:label "tstat" .
+
+temporal_label:tsum temporal_label:description "accumulation, sum, or integral over the reporting interval" ;
+    temporal_label:label "tsum" .
 
 time_range:monthly time_range:description "Regex to validate time range like YYYYMM-YYYYMM" ;
     time_range:parts <timebound:six_digits> ;
@@ -15692,24 +15807,56 @@ variable:zvelsurf variable:cmip_acronym "zvelsurf" ;
     variable:type "real" ;
     variable:units "m s-1" .
 
-<http://es-vocab.ipsl.fr/variant_label/rip> variant_label:description "TODO IMPROVE THIS" ;
-    variant_label:parts <http://es-vocab.ipsl.fr/variant_label/initialization_index:one_digit>,
+<http://es-vocab.ipsl.fr/variant_label/rip> branded_label:description "TODO IMPROVE THIS" ;
+    branded_label:parts <http://es-vocab.ipsl.fr/variant_label/initialization_index:one_digit>,
         <http://es-vocab.ipsl.fr/variant_label/physic_index:one_digit>,
         <http://es-vocab.ipsl.fr/variant_label/realization_index:one_digit> ;
-    variant_label:separator "" .
+    branded_label:separator "" .
 
-<http://es-vocab.ipsl.fr/variant_label/ripf> variant_label:description "TODO IMPROVE THIS" ;
-    variant_label:parts <http://es-vocab.ipsl.fr/variant_label/forcing_index:multiple_digit>,
+<http://es-vocab.ipsl.fr/variant_label/ripf> branded_label:description "TODO IMPROVE THIS" ;
+    branded_label:parts <http://es-vocab.ipsl.fr/variant_label/forcing_index:multiple_digit>,
         <http://es-vocab.ipsl.fr/variant_label/initialization_index:one_digit>,
         <http://es-vocab.ipsl.fr/variant_label/physic_index:one_digit>,
         <http://es-vocab.ipsl.fr/variant_label/realization_index:one_digit> ;
-    variant_label:separator "" .
+    branded_label:separator "" .
 
-<http://es-vocab.ipsl.fr/variant_label/run> variant_label:description "TODO IMPROVE THIS" ;
-    variant_label:parts <realization:run> ;
-    variant_label:separator "" .
+<http://es-vocab.ipsl.fr/variant_label/run> branded_label:description "TODO IMPROVE THIS" ;
+    branded_label:parts <realization:run> ;
+    branded_label:separator "" .
 
 version:eight_digit version:regex "^v\\d{8}$" .
+
+verticallabel:hnx verticallabel:description """'h<n>[<x>]', when data should be reported at n>1 heights in the atmosphere.<n> is  included when recording more than 1 level or layer of data.
+ The value of n should be the number of levels or layers on which data are mandated (an integer>1) or, if the number of levels is left to the discretion of the data provider, <n> is replaced by the character 'n'; for example, 'rhon' indicates that the number of density surfaces on which data is reported is left up to the data provider.
+ When  <x> is needed, it is a single letter ('a', 'b', 'c', etc.) used to distinguish among different vectors of reporting levels when the number of levels is the same (e.g., p12, p12a, and p12b would all indicate that data are mandated on 12 pressure levels, but the three options would distinguish 3 different sets of pressure levels).  Note that some collections might permit groups to include additional levels (not in the list of those required), but this would not affect the value of n, which is the number of required (requested) levels.  In the case that the number of levels reported is not specified but left up to the data provider, <n> is replaced by 'n' and  <x> is omitted.s""" ;
+    verticallabel:regex "^h(\\d+)([a-z]?)$" .
+
+verticallabel:l verticallabel:description "(lower case 'el', not uppercase 'i'), when the vertical coordinate to be used is model level, and all model levels should be reported." ;
+    verticallabel:regex "^l$" .
+
+verticallabel:ls verticallabel:description "for a variable reported on the model layer nearest the earth's surface. (i.e., lowest model layer in the atmosphere; top-most model layer of the ocean, soil, ice sheet, etc.)" ;
+    verticallabel:regex "^ls$" .
+
+verticallabel:pnx verticallabel:description """'p<n>[<x>]',when data should be reported at n>1 pressures. (The vertical coordinate for the variable must be pressure and may represent either a specific vertical location (a 'point') or be the coordinate for a value representative of a layer.)   
+ The value of n should be the number of levels or layers on which data are mandated (an integer>1) or, if the number of levels is left to the discretion of the data provider, <n> is replaced by the character 'n'; for example, 'rhon' indicates that the number of density surfaces on which data is reported is left up to the data provider.
+ When  <x> is needed, it is a single letter ('a', 'b', 'c', etc.) used to distinguish among different vectors of reporting levels when the number of levels is the same (e.g., p12, p12a, and p12b would all indicate that data are mandated on 12 pressure levels, but the three options would distinguish 3 different sets of pressure levels).  Note that some collections might permit groups to include additional levels (not in the list of those required), but this would not affect the value of n, which is the number of required (requested) levels.  In the case that the number of levels reported is not specified but left up to the data provider, <n> is replaced by 'n' and  <x> is omitted.s""" ;
+    verticallabel:regex "^p(\\d+)([a-z]?)$" .
+
+verticallabel:rhonx verticallabel:description """'rho<n>[<x>]',when data should be reported at n>1 (potential) densities. 
+ The value of n should be the number of levels or layers on which data are mandated (an integer>1) or, if the number of levels is left to the discretion of the data provider, <n> is replaced by the character 'n'; for example, 'rhon' indicates that the number of density surfaces on which data is reported is left up to the data provider.
+ When  <x> is needed, it is a single letter ('a', 'b', 'c', etc.) used to distinguish among different vectors of reporting levels when the number of levels is the same (e.g., p12, p12a, and p12b would all indicate that data are mandated on 12 pressure levels, but the three options would distinguish 3 different sets of pressure levels).  Note that some collections might permit groups to include additional levels (not in the list of those required), but this would not affect the value of n, which is the number of required (requested) levels.  In the case that the number of levels reported is not specified but left up to the data provider, <n> is replaced by 'n' and  <x> is omitted.s""" ;
+    verticallabel:regex "^rho(\\d+)([a-z]?)$" .
+
+verticallabel:type0m verticallabel:description "<type>0<m>, for a variable that should be reported on a single coordinate surface or that represents a single layer defined by coordinate bounds, where <type> is replaced by 'h', 'p', 'z', or 'rho' (which have the same meaning as defined in the first 4 bulleted points above), and m is the coordinate value associated with the level or layer, expressed in the following units: meters for 'h' or 'z', hPa for 'p', and 'sigma-t units' (density in kg m-3 - 1000 kg m-3) for 'rho'.  For example, 'p0500' could be used to identify the 500 mb level and rho026 would indicate a density of 1026 kg m-3.  For m, the character 'p' can be used to replace a decimal point if one is needed, and at least one digit, must precede the decimal point (e.g., 'h00p5' represents 0.5 meters above the surface; note also that 'h0p5' would be incorrect).  For this vertical label to apply under CMIP6 data requirements, the vertical coordinate value must also be recorded in the file as a scalar dimension recorded by the CF conventions 'coordinates' attribute.  Note that 'z00' indicates that there is a depth scalar coordinate attached to the variable and set to 0 m.  If the standard name for a variable already indicates that it is a surface variable (e.g., 'surface_temperature'), then it is good practice to omit explicit specification of the vertical location, so that 'z0' would be the correct verticalLabelDD, not 'z00'." ;
+    verticallabel:regex "^\\b(?!z00\\b)(h|p|rho|z)(0)(?!0\\b)(\\d*p?\\d*\\b)$" .
+
+verticallabel:z0 verticallabel:description "when there is no vertical scalar or vector coordinate such as, for example, a variable representing a column mean or reported on a quasi-horizontal surface (e.g., 'at the earth's surface', 'at the interface between sea ice and the ocean below', 'at the tropopause', 'at the top of the atmosphere', or 'at the base of the main thermocline in the ocean'). " ;
+    verticallabel:regex "^z0$" .
+
+verticallabel:znx verticallabel:description """'z<n>[<x>]',when data should be reported at n>1 depths (below the surface of the ocean, soil, or ice substance).   
+ The value of n should be the number of levels or layers on which data are mandated (an integer>1) or, if the number of levels is left to the discretion of the data provider, <n> is replaced by the character 'n'; for example, 'rhon' indicates that the number of density surfaces on which data is reported is left up to the data provider.
+ When  <x> is needed, it is a single letter ('a', 'b', 'c', etc.) used to distinguish among different vectors of reporting levels when the number of levels is the same (e.g., p12, p12a, and p12b would all indicate that data are mandated on 12 pressure levels, but the three options would distinguish 3 different sets of pressure levels).  Note that some collections might permit groups to include additional levels (not in the list of those required), but this would not affect the value of n, which is the number of required (requested) levels.  In the case that the number of levels reported is not specified but left up to the data provider, <n> is replaced by 'n' and  <x> is omitted.s""" ;
+    verticallabel:regex "^z(\\d+)([a-z]?)$" .
 
 institution:02haar591 institution:city "Paris" ;
     institution:country "FR",
@@ -15730,15 +15877,27 @@ institution:041nk4h53 institution:city "Livermore" ;
     institution:lon "-121.76801"^^<xsd:float> ;
     institution:type "location" .
 
-<http://es-vocab.ipsl.fr/variant_label/forcing_index:multiple_digit> variant_label:is_required "true"^^<xsd:boolean> .
+<http://es-vocab.ipsl.fr/variant_label/forcing_index:multiple_digit> branded_label:is_required "true"^^<xsd:boolean> .
 
-<realization:run> variant_label:is_required "true"^^<xsd:boolean> .
+<realization:run> branded_label:is_required "true"^^<xsd:boolean> .
 
 <timebound:six_digits> time_range:is_required "true"^^<xsd:boolean> .
 
-<http://es-vocab.ipsl.fr/variant_label/initialization_index:one_digit> variant_label:is_required "true"^^<xsd:boolean> .
+<http://es-vocab.ipsl.fr/variant_label/initialization_index:one_digit> branded_label:is_required "true"^^<xsd:boolean> .
 
-<http://es-vocab.ipsl.fr/variant_label/physic_index:one_digit> variant_label:is_required "true"^^<xsd:boolean> .
+<http://es-vocab.ipsl.fr/variant_label/physic_index:one_digit> branded_label:is_required "true"^^<xsd:boolean> .
 
-<http://es-vocab.ipsl.fr/variant_label/realization_index:one_digit> variant_label:is_required "true"^^<xsd:boolean> .
+<http://es-vocab.ipsl.fr/variant_label/realization_index:one_digit> branded_label:is_required "true"^^<xsd:boolean> .
+
+[] branded_label:description "As a preview example of a 'branded variable label', consider surface precipitation (with root name 'pr') falling onto land reported on a grid as monthly means: 'pr_tavg-z0-hxy-lnd'.  The suffix component of the branded variable label (following the underscore), as described in detail below, is constructed from five hyphen-connected 'data descriptors', which here are given the names (in the order they appear in the branding suffix): temporalLabelDD, verticalLabelDD, horizontalLabelDD, and areaLabelDD.Branded variable names are not meant to fully describe all possible differences among the datasets in an archive; the branding is limited to identifying a physical quantity, the dimensions defining its structure, and how it was sampled and reported (spatially and temporally), including which portions of a domain have been sampled (e.g., a certain level in the atmosphere or a certain 'area type' such as sea ice or land).  Notably, the branding does not indicate the frequency of sampling (hourly, daily, monthly, etc.), nor does it identify the source of the data in a dataset or the region over which it is reported.  (For example, data reported only over the Northern Hemisphere would have the same branded variable label as data reported globally, and data produced by two different models will also have identical branded variable labels.)  Unique identification of datasets requires additional descriptors be defined in addition to the branded variable label." ;
+    branded_label:id "label" ;
+    branded_label:parts [ branded_label:id "area_label" ;
+            branded_label:is_required "true"^^<xsd:boolean> ],
+        [ branded_label:id "temporal_label" ;
+            branded_label:is_required "true"^^<xsd:boolean> ],
+        [ branded_label:id "horizontal_label" ;
+            branded_label:is_required "true"^^<xsd:boolean> ],
+        [ branded_label:id "vertical_label" ;
+            branded_label:is_required "true"^^<xsd:boolean> ] ;
+    branded_label:separator "-" .
 

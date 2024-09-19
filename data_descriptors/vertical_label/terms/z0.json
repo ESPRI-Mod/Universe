@@ -1,0 +1,5 @@
+{
+    "id": "z0",
+    "regex": "^z0$",
+    "description":"when there is no vertical scalar or vector coordinate such as, for example, a variable representing a column mean or reported on a quasi-horizontal surface (e.g., 'at the earth's surface', 'at the interface between sea ice and the ocean below', 'at the tropopause', 'at the top of the atmosphere', or 'at the base of the main thermocline in the ocean'). " 
+}

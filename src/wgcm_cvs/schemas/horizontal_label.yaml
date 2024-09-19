@@ -1,0 +1,47 @@
+
+
+imports:
+  - linkml:types
+
+
+id: http://es-vocab.ipsl.fr/horizontalLabelSchema
+name: horizontal_label_schema
+
+
+prefixes:
+    esvocab: http://es-vocab.ipsl.fr/
+    linkml: https://w3id.org/linkml/
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
+    schema: http://schema.org/
+    horizontal_label:  http://es-vocab.ipsl.fr/horizontal_label/
+
+default_range: string  
+default_prefix: horizontal_label
+default_curi_maps:
+  - semweb_context
+  
+classes:
+    Horizontal_label:
+        description: >
+            The horizontalLabelDD is an abbreviated indicator of the horizontal structure of the dataset.      
+        class_uri: esvocab:horizontal_label
+        attributes:
+            id:
+                slot_uri: horizontal:id
+                range: string
+                required: true
+                identifier: true
+
+            validation_method :
+                required: true
+                range : string
+                ifabsent: string(list)
+                slot_uri: esvocab:validation_method
+                
+            label:
+                range: string
+                required: true
+
+            description:
+                range: string
+                

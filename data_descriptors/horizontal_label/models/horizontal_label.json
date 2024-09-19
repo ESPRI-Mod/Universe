@@ -1,0 +1,36 @@
+{
+    "$defs": {
+        "HorizontalLabel": {
+            "additionalProperties": false,
+            "description": "The horizontalLabelDD is an abbreviated indicator of the horizontal structure of the dataset.",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "validation_method": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "validation_method",
+                "label"
+            ],
+            "title": "HorizontalLabel",
+            "type": "object"
+        }
+    },
+    "$id": "http://es-vocab.ipsl.fr/horizontalLabelSchema",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "horizontal_label_schema",
+    "type": "object",
+    "version": null
+}

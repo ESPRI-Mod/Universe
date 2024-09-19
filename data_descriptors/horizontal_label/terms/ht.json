@@ -1,0 +1,5 @@
+{
+    "id": "ht",
+    "label": "ht",
+    "description": "the variable represents a horizontal transport or a stream function in the vertical plane computed by averaging or summing along a transect not constrained to coincide with a latitude circle.  (If the transect is along a latitude circle, 'hy' or 'hys' would apply.)"
+}

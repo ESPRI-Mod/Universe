@@ -1,0 +1,5 @@
+{
+    "id": "ls",
+    "regex": "^ls$",
+    "description":"for a variable reported on the model layer nearest the earth's surface. (i.e., lowest model layer in the atmosphere; top-most model layer of the ocean, soil, ice sheet, etc.)" 
+}

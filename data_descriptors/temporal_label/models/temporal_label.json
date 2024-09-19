@@ -1,0 +1,36 @@
+{
+    "$defs": {
+        "TemporalLabel": {
+            "additionalProperties": false,
+            "description": "The temporalLabelDD indicates the temporal sampling or processing procedure.",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "validation_method": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "validation_method",
+                "label"
+            ],
+            "title": "TemporalLabel",
+            "type": "object"
+        }
+    },
+    "$id": "http://es-vocab.ipsl.fr/temporalLabelSchema",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "temporal_label_schema",
+    "type": "object",
+    "version": null
+}

@@ -1,0 +1,5 @@
+{
+    "id": "tstat",
+    "label": "tstat",
+    "description": "statistical measure (e.g., a maximum or minimum value), other than those, like 'mean value' already accounted for by other options above."
+}

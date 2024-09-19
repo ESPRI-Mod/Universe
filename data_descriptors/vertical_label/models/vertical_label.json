@@ -1,0 +1,36 @@
+{
+    "$defs": {
+        "VerticalLabel": {
+            "additionalProperties": false,
+            "description": "The verticalLabelDD indicates whether or not the data is a function of a vertical coordinate and if so, what type of coordinate it is and its length (when specified by a MIP's data request)",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "regex": {
+                    "type": "string"
+                },
+                "validation_method": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "validation_method",
+                "regex"
+            ],
+            "title": "VerticalLabel",
+            "type": "object"
+        }
+    },
+    "$id": "http://es-vocab.ipsl.fr/verticalLabelSchema",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "vertical_label_schema",
+    "type": "object",
+    "version": null
+}
