@@ -1,0 +1,50 @@
+
+
+
+imports:
+  - linkml:types
+
+
+id: http://es-vocab.ipsl.fr/areaLabelSchema
+name: area_label_schema
+
+
+prefixes:
+    esvocab: http://es-vocab.ipsl.fr/
+    linkml: https://w3id.org/linkml/
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
+    schema: http://schema.org/
+    area_label:  http://es-vocab.ipsl.fr/area_label/
+
+default_range: string  
+default_prefix: area_label
+default_curi_maps:
+  - semweb_context
+  
+classes:
+    Area_label:
+        description: >
+            The areaLabelDD is somewhat reminiscent of the "realm" attribute defined in CMIP6 but is used exclusively in identifying the "area type" over which a variable is reported. 
+        # TODO maybe add CF area type description to this model :https://cfconventions.org/Data/area-type-table/current/build/area-type-table.html  
+
+        class_uri: esvocab:area_label
+        attributes:
+            id:
+                slot_uri: horizontal:id
+                range: string
+                required: true
+                identifier: true
+
+            validation_method :
+                required: true
+                range : string
+                ifabsent: string(list)
+                slot_uri: es-vocab:validation_method
+                
+            label:
+                range: string
+                required: true
+
+            description:
+                range: string
+                

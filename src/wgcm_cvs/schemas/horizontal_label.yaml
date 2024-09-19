@@ -21,7 +21,7 @@ default_curi_maps:
   - semweb_context
   
 classes:
-    Temporal_label:
+    Horizontal_label:
         description: >
             The horizontalLabelDD is an abbreviated indicator of the horizontal structure of the dataset.      
         class_uri: esvocab:horizontal_label

@@ -1,0 +1,36 @@
+{
+    "$defs": {
+        "AreaLabel": {
+            "additionalProperties": false,
+            "description": "The areaLabelDD is somewhat reminiscent of the \"realm\" attribute defined in CMIP6 but is used exclusively in identifying the \"area type\" over which a variable is reported.",
+            "properties": {
+                "description": {
+                    "type": "string"
+                },
+                "id": {
+                    "type": "string"
+                },
+                "label": {
+                    "type": "string"
+                },
+                "validation_method": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "id",
+                "validation_method",
+                "label"
+            ],
+            "title": "AreaLabel",
+            "type": "object"
+        }
+    },
+    "$id": "http://es-vocab.ipsl.fr/areaLabelSchema",
+    "$schema": "https://json-schema.org/draft/2019-09/schema",
+    "additionalProperties": true,
+    "metamodel_version": "1.7.0",
+    "title": "area_label_schema",
+    "type": "object",
+    "version": null
+}

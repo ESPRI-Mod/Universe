@@ -1,7 +1,9 @@
 @prefix : <http://es-vocab.ipsl.fr/experiment/> .
 @prefix activity: <http://es-vocab.ipsl.fr/activity/> .
+@prefix area_label: <http://es-vocab.ipsl.fr/area_label/> .
 @prefix forcing: <http://es-vocab.ipsl.fr/forcing_index/> .
 @prefix grid: <http://es-vocab.ipsl.fr/grid/> .
+@prefix horizontal_label: <http://es-vocab.ipsl.fr/horizontal_label/> .
 @prefix initialization: <http://es-vocab.ipsl.fr/initialization_index/> .
 @prefix institution: <http://es-vocab.ipsl.fr/institution/> .
 @prefix physic: <http://es-vocab.ipsl.fr/physic_index/> .
@@ -119,6 +121,81 @@ activity:viacsab activity:cmip_acronym "VIACSAB" ;
 activity:volmip activity:cmip_acronym "VolMIP" ;
     activity:long_name "Volcanic Forcings Model Intercomparison Project" ;
     activity:name "VolMIP" .
+
+area_label:air area_label:description "in cell_methods : cloud" ;
+    area_label:label "air" .
+
+area_label:ccl area_label:description "in cell_methods : convective_cloud" ;
+    area_label:label "ccl" .
+
+area_label:cl area_label:description "in cell_methods : cloud" ;
+    area_label:label "cl" .
+
+area_label:crp area_label:description "in cell_methods : crops" ;
+    area_label:label "crp" .
+
+area_label:fis area_label:description "in cell_methods : floating_ice_shelf" ;
+    area_label:label "fis" .
+
+area_label:gis area_label:description "in cell_methods : grounding_ice_sheet" ;
+    area_label:label "gis" .
+
+area_label:ifs area_label:description "in cell_methods : ice_free_sea" ;
+    area_label:label "ifs" .
+
+area_label:is area_label:description "in cell_methods : ice_sheet" ;
+    area_label:label "is" .
+
+area_label:li area_label:description "in cell_methods : land_ice" ;
+    area_label:label "li" .
+
+area_label:lnd area_label:description "in cell_methods : land" ;
+    area_label:label "lnd" .
+
+area_label:lus area_label:description "in cell_methods : sector (auxiliary coordinate for land-use erea types)" ;
+    area_label:label "lus" .
+
+area_label:ng area_label:description "in cell_methods : natural_grasses" ;
+    area_label:label "ng" .
+
+area_label:pst area_label:description "in cell_methods : pastures" ;
+    area_label:label "pst" .
+
+area_label:scl area_label:description "in cell_methods : stratiform_soil" ;
+    area_label:label "scl" .
+
+area_label:sea area_label:description "in cell_methods : sea" ;
+    area_label:label "sea" .
+
+area_label:shb area_label:description "in cell_methods : shrubs" ;
+    area_label:label "shb" .
+
+area_label:si area_label:description "in cell_methods : sea_ice" ;
+    area_label:label "si" .
+
+area_label:simp area_label:description "in cell_methods : sea_ice_melt_pond" ;
+    area_label:label "simp" .
+
+area_label:sir area_label:description "in cell_methods : sea_ice_ridges" ;
+    area_label:label "sir" .
+
+area_label:sn area_label:description "in cell_methods : snow" ;
+    area_label:label "sn" .
+
+area_label:tree area_label:description "in cell_methods : trees" ;
+    area_label:label "tree" .
+
+area_label:ufs area_label:description "in cell_methods : unfrozen_soil" ;
+    area_label:label "ufs" .
+
+area_label:veg area_label:description "in cell_methods : vegetation" ;
+    area_label:label "veg" .
+
+area_label:wl area_label:description "in cell_methods : wetland" ;
+    area_label:label "wl" .
+
+area_label:x area_label:description "'where' directive not included in cell_method" ;
+    area_label:label "x" .
 
 :1pctco2 :activity_id "CMIP" ;
     :additional_allowed_model_components "AER",
@@ -5403,6 +5480,24 @@ grid:grg grid:description "regridded data in the region of Greenland reported on
 
 grid:grz grid:description "regridded zonal mean data reported on the data provider's preferred latitude target grid" ;
     grid:label "grz" .
+
+horizontal_label:hm horizontal_label:description "the variable represents a spatial mean over the entire domain spanned by the recorded data (as recorded in the dataRegionDD) or is independent of spatial position.  In this case, there should be no horizontal spatial coordinates." ;
+    horizontal_label:label "hm" .
+
+horizontal_label:ht horizontal_label:description "the variable represents a horizontal transport or a stream function in the vertical plane computed by averaging or summing along a transect not constrained to coincide with a latitude circle.  (If the transect is along a latitude circle, 'hy' or 'hys' would apply.)" ;
+    horizontal_label:label "ht" .
+
+horizontal_label:hxy horizontal_label:description "the variable is carried on a (roughly) horizontal (spatially two-dimensional) grid covering the domain reported." ;
+    horizontal_label:label "hxy" .
+
+horizontal_label:hxys horizontal_label:description "the variable is a function of longitude and latitude, but is reported only at selected sites.  This differs from 'hms' in that each reported value should be representative of an area about the size of an original grid cell (e.g., data reported from a subset of cells extracted from a grid).  For observations each value should be from measurements made at a single site (not an average of a collection of sites)." ;
+    horizontal_label:label "hxys" .
+
+horizontal_label:hy horizontal_label:description "the values reported are zonal means or sums over all longitudes in the domain, which means the variable is a function of latitude, but not longitude." ;
+    horizontal_label:label "hy" .
+
+horizontal_label:hys horizontal_label:description "the variable is a function of latitude alone but may represent selected transects or means (or sums) over sub-domains (e.g., a mean over longitude for different ocean basins as a function of latitude)" ;
+    horizontal_label:label "hys" .
 
 <http://es-vocab.ipsl.fr/initialization_index/initialization_index:one_digit> initialization:regex "^i\\d$" .
 
