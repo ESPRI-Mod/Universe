@@ -1,6 +1,7 @@
 @prefix : <http://es-vocab.ipsl.fr/experiment/> .
 @prefix activity: <http://es-vocab.ipsl.fr/activity/> .
 @prefix area_label: <http://es-vocab.ipsl.fr/area_label/> .
+@prefix branded_label: <http://es-vocab.ipsl.fr/Variant_label/> .
 @prefix forcing: <http://es-vocab.ipsl.fr/forcing_index/> .
 @prefix grid: <http://es-vocab.ipsl.fr/grid/> .
 @prefix horizontal_label: <http://es-vocab.ipsl.fr/horizontal_label/> .
@@ -16,7 +17,6 @@
 @prefix time_range: <http://es-vocab.ipsl.fr/time_range/> .
 @prefix timebound: <http://es-vocab.ipsl.fr/timebound/> .
 @prefix variable: <http://es-vocab.ipsl.fr/variable/> .
-@prefix variant_label: <http://es-vocab.ipsl.fr/Variant_label/> .
 @prefix version: <http://es-vocab.ipsl.fr/version/> .
 @prefix verticallabel: <http://es-vocab.ipsl.fr/vertical_label/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
@@ -15807,22 +15807,22 @@ variable:zvelsurf variable:cmip_acronym "zvelsurf" ;
     variable:type "real" ;
     variable:units "m s-1" .
 
-<http://es-vocab.ipsl.fr/variant_label/rip> variant_label:description "TODO IMPROVE THIS" ;
-    variant_label:parts <http://es-vocab.ipsl.fr/variant_label/initialization_index:one_digit>,
+<http://es-vocab.ipsl.fr/variant_label/rip> branded_label:description "TODO IMPROVE THIS" ;
+    branded_label:parts <http://es-vocab.ipsl.fr/variant_label/initialization_index:one_digit>,
         <http://es-vocab.ipsl.fr/variant_label/physic_index:one_digit>,
         <http://es-vocab.ipsl.fr/variant_label/realization_index:one_digit> ;
-    variant_label:separator "" .
+    branded_label:separator "" .
 
-<http://es-vocab.ipsl.fr/variant_label/ripf> variant_label:description "TODO IMPROVE THIS" ;
-    variant_label:parts <http://es-vocab.ipsl.fr/variant_label/forcing_index:multiple_digit>,
+<http://es-vocab.ipsl.fr/variant_label/ripf> branded_label:description "TODO IMPROVE THIS" ;
+    branded_label:parts <http://es-vocab.ipsl.fr/variant_label/forcing_index:multiple_digit>,
         <http://es-vocab.ipsl.fr/variant_label/initialization_index:one_digit>,
         <http://es-vocab.ipsl.fr/variant_label/physic_index:one_digit>,
         <http://es-vocab.ipsl.fr/variant_label/realization_index:one_digit> ;
-    variant_label:separator "" .
+    branded_label:separator "" .
 
-<http://es-vocab.ipsl.fr/variant_label/run> variant_label:description "TODO IMPROVE THIS" ;
-    variant_label:parts <realization:run> ;
-    variant_label:separator "" .
+<http://es-vocab.ipsl.fr/variant_label/run> branded_label:description "TODO IMPROVE THIS" ;
+    branded_label:parts <realization:run> ;
+    branded_label:separator "" .
 
 version:eight_digit version:regex "^v\\d{8}$" .
 
@@ -15877,15 +15877,27 @@ institution:041nk4h53 institution:city "Livermore" ;
     institution:lon "-121.76801"^^<xsd:float> ;
     institution:type "location" .
 
-<http://es-vocab.ipsl.fr/variant_label/forcing_index:multiple_digit> variant_label:is_required "true"^^<xsd:boolean> .
+<http://es-vocab.ipsl.fr/variant_label/forcing_index:multiple_digit> branded_label:is_required "true"^^<xsd:boolean> .
 
-<realization:run> variant_label:is_required "true"^^<xsd:boolean> .
+<realization:run> branded_label:is_required "true"^^<xsd:boolean> .
 
 <timebound:six_digits> time_range:is_required "true"^^<xsd:boolean> .
 
-<http://es-vocab.ipsl.fr/variant_label/initialization_index:one_digit> variant_label:is_required "true"^^<xsd:boolean> .
+<http://es-vocab.ipsl.fr/variant_label/initialization_index:one_digit> branded_label:is_required "true"^^<xsd:boolean> .
 
-<http://es-vocab.ipsl.fr/variant_label/physic_index:one_digit> variant_label:is_required "true"^^<xsd:boolean> .
+<http://es-vocab.ipsl.fr/variant_label/physic_index:one_digit> branded_label:is_required "true"^^<xsd:boolean> .
 
-<http://es-vocab.ipsl.fr/variant_label/realization_index:one_digit> variant_label:is_required "true"^^<xsd:boolean> .
+<http://es-vocab.ipsl.fr/variant_label/realization_index:one_digit> branded_label:is_required "true"^^<xsd:boolean> .
+
+[] branded_label:description "As a preview example of a 'branded variable label', consider surface precipitation (with root name 'pr') falling onto land reported on a grid as monthly means: 'pr_tavg-z0-hxy-lnd'.  The suffix component of the branded variable label (following the underscore), as described in detail below, is constructed from five hyphen-connected 'data descriptors', which here are given the names (in the order they appear in the branding suffix): temporalLabelDD, verticalLabelDD, horizontalLabelDD, and areaLabelDD.Branded variable names are not meant to fully describe all possible differences among the datasets in an archive; the branding is limited to identifying a physical quantity, the dimensions defining its structure, and how it was sampled and reported (spatially and temporally), including which portions of a domain have been sampled (e.g., a certain level in the atmosphere or a certain 'area type' such as sea ice or land).  Notably, the branding does not indicate the frequency of sampling (hourly, daily, monthly, etc.), nor does it identify the source of the data in a dataset or the region over which it is reported.  (For example, data reported only over the Northern Hemisphere would have the same branded variable label as data reported globally, and data produced by two different models will also have identical branded variable labels.)  Unique identification of datasets requires additional descriptors be defined in addition to the branded variable label." ;
+    branded_label:id "label" ;
+    branded_label:parts [ branded_label:id "area_label" ;
+            branded_label:is_required "true"^^<xsd:boolean> ],
+        [ branded_label:id "temporal_label" ;
+            branded_label:is_required "true"^^<xsd:boolean> ],
+        [ branded_label:id "horizontal_label" ;
+            branded_label:is_required "true"^^<xsd:boolean> ],
+        [ branded_label:id "vertical_label" ;
+            branded_label:is_required "true"^^<xsd:boolean> ] ;
+    branded_label:separator "-" .
 

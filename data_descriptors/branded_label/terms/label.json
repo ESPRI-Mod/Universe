@@ -1,0 +1,24 @@
+
+{
+	"id": "label",
+     	"separator": "-",
+	"parts": [
+		{ 
+			"id" : "temporal_label",
+			"is_required": true
+		},
+		{ 
+			"id" : "vertical_label",
+			"is_required": true
+		},
+		{ 
+			"id" : "horizontal_label",
+			"is_required": true
+		},
+		{ 
+			"id" : "area_label",
+			"is_required": true
+		}
+	],
+	"description" : "As a preview example of a 'branded variable label', consider surface precipitation (with root name 'pr') falling onto land reported on a grid as monthly means: 'pr_tavg-z0-hxy-lnd'.  The suffix component of the branded variable label (following the underscore), as described in detail below, is constructed from five hyphen-connected 'data descriptors', which here are given the names (in the order they appear in the branding suffix): temporalLabelDD, verticalLabelDD, horizontalLabelDD, and areaLabelDD.Branded variable names are not meant to fully describe all possible differences among the datasets in an archive; the branding is limited to identifying a physical quantity, the dimensions defining its structure, and how it was sampled and reported (spatially and temporally), including which portions of a domain have been sampled (e.g., a certain level in the atmosphere or a certain 'area type' such as sea ice or land).  Notably, the branding does not indicate the frequency of sampling (hourly, daily, monthly, etc.), nor does it identify the source of the data in a dataset or the region over which it is reported.  (For example, data reported only over the Northern Hemisphere would have the same branded variable label as data reported globally, and data produced by two different models will also have identical branded variable labels.)  Unique identification of datasets requires additional descriptors be defined in addition to the branded variable label."
+}	

@@ -1,0 +1,82 @@
+
+
+
+id: http://es-vocab.ipsl.fr/Branded_labelSchema
+name: branded_label_schema
+title: branded_label schema
+license: https://creativecommons.org/publicdomain/zero/1.0/
+
+
+prefixes:
+    esvocab: http://es-vocab.ipsl.fr/
+    
+    branded_label: http://es-vocab.ipsl.fr/Variant_label/
+    linkml: https://w3id.org/linkml/
+    rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns
+    schema: http://schema.org/
+
+# imports:
+#   - linkml:types
+default_range: string  
+default_prefix: branded_label 
+default_curi_maps:
+  - semweb_context
+  
+classes:
+    Branded_label:
+        description : a data-descriptor composed from other  
+        class_uri: esvocab:branded_label
+        attributes:
+            id: 
+                range : string
+                required: true
+                identifier: true
+            
+            validation_method :
+                required: true
+                range : string
+                ifabsent: string(composite)
+                
+            separator :
+                range : string
+
+            parts: 
+                range: DataDescriptorId
+                multivalued: true
+                
+            description: 
+                range : string
+                
+    DataDescriptorId:
+        class_uri: esvocab:data-descriptor
+        attributes:
+            is_required:
+                range: boolean
+            id:
+                range : string
+        
+
+
+
+
+types:
+  string:
+    uri: xsd:string
+    base: str
+    description: A character string
+    notes: >-
+      In RDF serializations, a slot with range of string is treated as a literal or type xsd:string.  
+      If you are authoring schemas in LinkML YAML, the type is referenced with the lower case "string".
+    exact_mappings:
+      - schema:Text
+    
+
+  boolean:
+    uri: xsd:boolean
+    base: Bool
+    repr: bool
+    description: A binary (true or false) value
+    notes: >-
+      If you are authoring schemas in LinkML YAML, the type is referenced with the lower case "boolean".
+    exact_mappings:
+      - schema:Boolean
