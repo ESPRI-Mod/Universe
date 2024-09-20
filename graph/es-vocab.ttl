@@ -2,6 +2,7 @@
 @prefix activity: <http://es-vocab.ipsl.fr/activity/> .
 @prefix area_label: <http://es-vocab.ipsl.fr/area_label/> .
 @prefix branded_label: <http://es-vocab.ipsl.fr/Variant_label/> .
+@prefix branded_variable: <http://es-vocab.ipsl.fr/Branded_variable/> .
 @prefix forcing: <http://es-vocab.ipsl.fr/forcing_index/> .
 @prefix grid: <http://es-vocab.ipsl.fr/grid/> .
 @prefix horizontal_label: <http://es-vocab.ipsl.fr/horizontal_label/> .
@@ -15891,13 +15892,21 @@ institution:041nk4h53 institution:city "Livermore" ;
 
 [] branded_label:description "As a preview example of a 'branded variable label', consider surface precipitation (with root name 'pr') falling onto land reported on a grid as monthly means: 'pr_tavg-z0-hxy-lnd'.  The suffix component of the branded variable label (following the underscore), as described in detail below, is constructed from five hyphen-connected 'data descriptors', which here are given the names (in the order they appear in the branding suffix): temporalLabelDD, verticalLabelDD, horizontalLabelDD, and areaLabelDD.Branded variable names are not meant to fully describe all possible differences among the datasets in an archive; the branding is limited to identifying a physical quantity, the dimensions defining its structure, and how it was sampled and reported (spatially and temporally), including which portions of a domain have been sampled (e.g., a certain level in the atmosphere or a certain 'area type' such as sea ice or land).  Notably, the branding does not indicate the frequency of sampling (hourly, daily, monthly, etc.), nor does it identify the source of the data in a dataset or the region over which it is reported.  (For example, data reported only over the Northern Hemisphere would have the same branded variable label as data reported globally, and data produced by two different models will also have identical branded variable labels.)  Unique identification of datasets requires additional descriptors be defined in addition to the branded variable label." ;
     branded_label:id "label" ;
-    branded_label:parts [ branded_label:id "area_label" ;
+    branded_label:parts [ branded_label:id "horizontal_label" ;
             branded_label:is_required "true"^^<xsd:boolean> ],
-        [ branded_label:id "temporal_label" ;
-            branded_label:is_required "true"^^<xsd:boolean> ],
-        [ branded_label:id "horizontal_label" ;
+        [ branded_label:id "area_label" ;
             branded_label:is_required "true"^^<xsd:boolean> ],
         [ branded_label:id "vertical_label" ;
+            branded_label:is_required "true"^^<xsd:boolean> ],
+        [ branded_label:id "temporal_label" ;
             branded_label:is_required "true"^^<xsd:boolean> ] ;
     branded_label:separator "-" .
+
+[] branded_variable:description "define each variable with two elements (a root name and a suffix which in CMIP6 was a table name), but to redefine the suffix.  The variable's root name should usually remain unchanged from earlier CMIP phases (so that it might be recognized by seasoned users of CMIP data), and this name identifies the physical quantity represented by the variable.  The table name, however, is to be replaced by a 'branding suffix' that explicitly indicates certain characteristics of the processing that produced the variable.  This approach mimics to some extent the practice under the CF conventions of using a standard_name to describe the variable and then defining attributes such as cell_methods and coordinates, along with the dimension information stored in the file, to fully describe the data.  We shall refer to the combination of the two elements (a variable's root name plus its descriptive modifier) as a 'branded variable label'.  " ;
+    branded_variable:id "label" ;
+    branded_variable:parts [ branded_variable:id "variable" ;
+            branded_variable:is_required "true"^^<xsd:boolean> ],
+        [ branded_variable:id "branded_label" ;
+            branded_variable:is_required "true"^^<xsd:boolean> ] ;
+    branded_variable:separator "_" .
 

@@ -1,0 +1,18 @@
+
+
+{
+	"id": "label",
+     	"separator": "_",
+	"parts": [
+		{ 
+			"id" : "variable",
+			"is_required": true
+		},
+		{ 
+			"id" : "branded_label",
+			"is_required": true
+		}
+	],
+	"description" : "define each variable with two elements (a root name and a suffix which in CMIP6 was a table name), but to redefine the suffix.  The variable's root name should usually remain unchanged from earlier CMIP phases (so that it might be recognized by seasoned users of CMIP data), and this name identifies the physical quantity represented by the variable.  The table name, however, is to be replaced by a 'branding suffix' that explicitly indicates certain characteristics of the processing that produced the variable.  This approach mimics to some extent the practice under the CF conventions of using a standard_name to describe the variable and then defining attributes such as cell_methods and coordinates, along with the dimension information stored in the file, to fully describe the data.  We shall refer to the combination of the two elements (a variable's root name plus its descriptive modifier) as a 'branded variable label'.  "
+
+}	
